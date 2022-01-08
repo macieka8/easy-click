@@ -11,6 +11,7 @@ namespace EasyClick
         {
             if (collider.CompareTag("Player"))
             {
+                LevelTimer.Instance.SaveData(LevelLoader.CurrentLevel);
                 LevelLoader.StartLevel(_levelName);
             }
         }
