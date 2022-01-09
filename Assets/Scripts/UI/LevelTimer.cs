@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using System;
 using System.IO;
 
@@ -28,23 +27,22 @@ namespace EasyClick
             }
         }
 
-        string _scorePath;
-        float _timeElapsed;
-        TextMeshProUGUI _timeText;
-
         [SerializeField]
         ChangeLevelOnTrigger _levelChanger;
+        
+        string _scorePath;
+        float _timeElapsed;
+
+        public float TimeElapsed { get => _timeElapsed; }
 
         void Awake()
         {
-            _timeText = GetComponent<TextMeshProUGUI>();
             _scorePath = Application.persistentDataPath + "/bestTimes.json";
         }
 
         void Update()
         {
             _timeElapsed += Time.deltaTime;
-            UpdateTimeText();
         }
 
         private void OnEnable()
@@ -93,12 +91,6 @@ namespace EasyClick
 
                 File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
             }
-        }
-
-        void UpdateTimeText()
-        {
-            TimeSpan timeSpan = TimeSpan.FromSeconds(_timeElapsed);
-            _timeText.text = $"{timeSpan.Minutes:d2}:{timeSpan.Seconds:d2}";
         }
     }
 }
