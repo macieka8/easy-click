@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 namespace EasyClick
 {
@@ -7,11 +8,13 @@ namespace EasyClick
         [SerializeField]
         string _levelName;
 
+        public event Action onLevelFinished = delegate { };
+
         private void OnTriggerEnter2D(Collider2D collider)
         {
             if (collider.CompareTag("Player"))
             {
-                LevelTimer.Instance.SaveData(LevelLoader.CurrentLevel);
+                onLevelFinished?.Invoke();
                 LevelLoader.StartLevel(_levelName);
             }
         }

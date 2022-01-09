@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using System;
 using System.IO;
-using System.Linq;
 
 namespace EasyClick
 {
@@ -29,30 +28,17 @@ namespace EasyClick
             }
         }
 
-        public static LevelTimer Instance;
         string _scorePath;
-
         float _timeElapsed;
         TextMeshProUGUI _timeText;
 
+        [SerializeField]
+        ChangeLevelOnTrigger _levelChanger;
+
         void Awake()
         {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
             _timeText = GetComponent<TextMeshProUGUI>();
             _scorePath = Application.persistentDataPath + "/bestTimes.json";
-        }
-
-        void OnEnable()
-        {
-            LevelLoader.onLevelLoaded += ResetTimer;
-        }
-
-        void OnDisable()
-        {
-            LevelLoader.onLevelLoaded -= ResetTimer;
         }
 
         void Update()
@@ -61,12 +47,17 @@ namespace EasyClick
             UpdateTimeText();
         }
 
-        void ResetTimer()
+        private void OnEnable()
         {
-            _timeElapsed = 0f;
+            _levelChanger.onLevelFinished += SaveScore;
         }
 
-        public void SaveData(string levelName)
+        private void OnDisable()
+        {
+            _levelChanger.onLevelFinished -= SaveScore;
+        }
+
+        private void SaveScore()
         {
             if (File.Exists(_scorePath))
             {
@@ -74,7 +65,7 @@ namespace EasyClick
                 var data = JsonUtility.FromJson<TimeScoreList>(fileContent);
                 if (data != null)
                 {
-                    var entry = data.Scores.Find(entry => entry.LevelName == levelName);
+                    var entry = data.Scores.Find(entry => entry.LevelName == LevelLoader.CurrentLevel);
                     if (entry != null && entry.Time > _timeElapsed)
                     {
                         entry.Time = _timeElapsed;
@@ -82,14 +73,14 @@ namespace EasyClick
                     }
                     else
                     {
-                        data.Scores.Add(new TimeScoreEntry(levelName, _timeElapsed));
+                        data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
                         File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
                     }
                 }
                 else
                 {
                     data = new TimeScoreList();
-                    data.Scores.Add(new TimeScoreEntry(levelName, _timeElapsed));
+                    data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
                     File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
                 }
             }
@@ -98,7 +89,7 @@ namespace EasyClick
                 File.Create(_scorePath);
 
                 var data = new TimeScoreList();
-                data.Scores.Add(new TimeScoreEntry(levelName, _timeElapsed));
+                data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
 
                 File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
             }
