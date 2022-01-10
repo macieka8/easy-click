@@ -72,7 +72,7 @@ namespace EasyClick
         private void LevelLoader_onLevelLoaded()
         {
             PlayerSpawner spawner = FindObjectOfType(typeof(PlayerSpawner)) as PlayerSpawner;
-            spawner.Respawn(_Characterbody);
+            spawner?.Respawn(_Characterbody);
         }
 
         void OnRotate(IInputData obj)

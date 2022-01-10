@@ -72,11 +72,14 @@ namespace EasyClick
             _Checkpoints.Clear();
             _CurrentCheckpointId = 0;
 
-            var checkpoints = GameObject.Find("Gameplay Logic").transform.Find("Checkpoints").transform;
-            int checkpointCount = checkpoints.childCount;
-            for (int i = 0; i < checkpointCount; i++)
+            var checkpoints = GameObject.Find("Gameplay Logic")?.transform.Find("Checkpoints")?.transform;
+            if (checkpoints)
             {
-                _Checkpoints.Add(checkpoints.GetChild(i).GetComponent<Collider2D>());
+                int checkpointCount = checkpoints.childCount;
+                for (int i = 0; i < checkpointCount; i++)
+                {
+                    _Checkpoints.Add(checkpoints.GetChild(i).GetComponent<Collider2D>());
+                }
             }
         }
     }
