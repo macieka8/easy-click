@@ -15901,6 +15901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelName: Level Bridge
+  _gameResults: {fileID: 11400000, guid: e7110af5a72861349a99c46da57b4a7d, type: 2}
+  _levelTimer: {fileID: 252129482}
 --- !u!61 &1914547380
 BoxCollider2D:
   m_ObjectHideFlags: 0

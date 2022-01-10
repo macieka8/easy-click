@@ -590,6 +590,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelName: Level Elevator
+  _gameResults: {fileID: 11400000, guid: e7110af5a72861349a99c46da57b4a7d, type: 2}
+  _levelTimer: {fileID: 1371552513}
 --- !u!61 &198676931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1498,10 +1500,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _levelChanger
-      value: 
-      objectReference: {fileID: 198676930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d7aeb8569270244a6352727ce10880, type: 3}
 --- !u!224 &337541051 stripped

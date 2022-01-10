@@ -8,6 +8,12 @@ namespace EasyClick
         [SerializeField]
         string _levelName;
 
+        [SerializeField]
+        PostGameLobbyData _gameResults;
+
+        [SerializeField]
+        LevelTimer _levelTimer;
+
         public event Action onLevelFinished = delegate { };
 
         private void OnTriggerEnter2D(Collider2D collider)
@@ -15,7 +21,18 @@ namespace EasyClick
             if (collider.CompareTag("Player"))
             {
                 onLevelFinished?.Invoke();
-                LevelLoader.StartLevel(_levelName);
+                var bestScore = LevelTimer.getBestScore(LevelLoader.CurrentLevel);
+                float bestScoreValue = bestScore.HasValue
+                    ? bestScore.Value
+                    : _levelTimer.TimeElapsed;
+
+                _gameResults.SetupData(
+                    LevelLoader.CurrentLevel,
+                    _levelTimer.TimeElapsed,
+                    bestScoreValue,
+                    "TODO: Winner name!",
+                    _levelName);
+                LevelLoader.StartLevel("PostGame Lobby");
             }
         }
     }

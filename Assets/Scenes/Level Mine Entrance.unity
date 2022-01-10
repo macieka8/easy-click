@@ -19285,6 +19285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelName: Level Mine Hole
+  _gameResults: {fileID: 11400000, guid: e7110af5a72861349a99c46da57b4a7d, type: 2}
+  _levelTimer: {fileID: 1183807059}
 --- !u!1 &1808865227
 GameObject:
   m_ObjectHideFlags: 0
