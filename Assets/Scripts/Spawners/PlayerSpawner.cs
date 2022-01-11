@@ -34,7 +34,10 @@ namespace EasyClick
 
         public void Respawn(IBody playerBody)
         {
-            playerBody.Position = _SpawnLocations[CurrentSpawnLocationIndex].position;
+            if (Spawner != null)
+            {
+                playerBody.Position = _SpawnLocations[CurrentSpawnLocationIndex].position;
+            }
         }
     }
 }
