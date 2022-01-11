@@ -71,7 +71,7 @@ namespace EasyClick
 
         private void LevelLoader_onLevelLoaded()
         {
-            PlayerSpawner spawner = FindObjectOfType(typeof(PlayerSpawner)) as PlayerSpawner;
+            var spawner = PlayerSpawner.Spawner;
             spawner?.Respawn(_Characterbody);
         }
 
