@@ -26,11 +26,13 @@ namespace EasyClick
                     ? bestScore.Value
                     : _levelTimer.TimeElapsed;
 
+                var playerName = $"Player {PlayerInput.AllPlayers.IndexOf(collider.GetComponent<PlayerInput>())}";
+
                 _gameResults.SetupData(
                     LevelLoader.CurrentLevel,
                     _levelTimer.TimeElapsed,
                     bestScoreValue,
-                    "TODO: Winner name!",
+                    playerName,
                     _levelName);
                 LevelLoader.StartLevel("PostGame Lobby");
             }
