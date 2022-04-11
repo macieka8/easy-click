@@ -5,26 +5,33 @@ namespace EasyClick
     [RequireComponent(typeof(Softbody))]
     public class CharacterSoftbody : MonoBehaviour, ICharacterbody
     {
-        Softbody _Softbody;
-        bool _TouchingGround;
+        [SerializeField] CircleCollider2D _GroundChecker;
         [SerializeField] LayerMask _WhatIsGround;
+
+        Softbody _Softbody;
+        float _GroundCheckerDistanceFromCenter;
+        bool _TouchingGround;
 
         private void Awake()
         {
             _Softbody = GetComponent<Softbody>();
         }
 
+        private void Start()
+        {
+            _GroundCheckerDistanceFromCenter = Vector2.Distance(_GroundChecker.transform.position, transform.position);
+        }
+
         private void Update()
         {
-            _TouchingGround = Physics2D.OverlapCircle(
-                _Softbody.Position + _Softbody.UpVector * _Softbody.Height * 0.5f,
-                _Softbody.Width * 0.51f,
-                _WhatIsGround) ||
-            Physics2D.OverlapCircle(
-                _Softbody.Position - _Softbody.UpVector * _Softbody.Height * 0.5f,
-                _Softbody.Width * 0.51f,
-                _WhatIsGround
-            );
+            var up = _Softbody.UpVector;
+            var checkUpPosition = _Softbody.Position + up * _GroundCheckerDistanceFromCenter;
+            var checkDownPosition = _Softbody.Position + up * -_GroundCheckerDistanceFromCenter;
+
+            _TouchingGround = 
+                (Physics2D.OverlapCircle(checkUpPosition, _GroundChecker.radius, _WhatIsGround)) ||
+                (Physics2D.OverlapCircle(checkDownPosition, _GroundChecker.radius, _WhatIsGround));
+
         }
 
         public Vector2 Position { get => _Softbody.Position; set => _Softbody.Position = value; }
