@@ -129,9 +129,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b11f313193796ad45800015708e629de, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8584906, g: 0.185, b: 0.23810963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -194,7 +194,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8900042810367859503}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb120ee8d4341db4f88dd36c2b182046, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2777f86f017688843a6e3c75f4154185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotateSpeed: 24
+  _RotateSpeed: 16
   _JumpForce: 7.5
   _TimeBeforeJump: 0.2
 --- !u!114 &8900042810367859928
@@ -367,7 +367,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8900042810777252816}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb120ee8d4341db4f88dd36c2b182046, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -520,7 +520,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8900042811049166944}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb120ee8d4341db4f88dd36c2b182046, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -673,7 +673,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8900042811662379921}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb120ee8d4341db4f88dd36c2b182046, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -826,7 +826,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8900042811947198669}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb120ee8d4341db4f88dd36c2b182046, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

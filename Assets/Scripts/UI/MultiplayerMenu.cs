@@ -81,16 +81,16 @@ namespace EasyClick
             GameObject bindingsDisplayBar = Instantiate(_HotKeyPrefab, _HotKeysParent);
             var gameplayActions = PlayerInput.AllPlayers[playerId].PlayerControls.Gameplay;
 
-            createBindingEntry(bindingsDisplayBar, "Left", gameplayActions.Rotate, 1);
-            createBindingEntry(bindingsDisplayBar, "Right", gameplayActions.Rotate, 2);
-            createBindingEntry(bindingsDisplayBar, "Respawn", gameplayActions.Respawn, 0);
+            CreateBindingEntry(bindingsDisplayBar, "Left", gameplayActions.Rotate, 1);
+            CreateBindingEntry(bindingsDisplayBar, "Right", gameplayActions.Rotate, 2);
+            CreateBindingEntry(bindingsDisplayBar, "Respawn", gameplayActions.Respawn, 0);
 
-            createChangeCharacterEntry(bindingsDisplayBar, playerId);
+            CreateChangeCharacterEntry(bindingsDisplayBar, playerId);
 
             _PlayerBindingEntries.Add(bindingsDisplayBar);
         }
 
-        void createBindingEntry(GameObject bindingsDisplayBar, string name, InputAction inputAction, int bindingIndex)
+        void CreateBindingEntry(GameObject bindingsDisplayBar, string name, InputAction inputAction, int bindingIndex)
         {
             var binding = bindingsDisplayBar.transform.Find(name);
             var bindingText = binding.Find("Text").GetComponent<TextMeshProUGUI>();
@@ -106,19 +106,23 @@ namespace EasyClick
             });
         }
 
-        void createChangeCharacterEntry(GameObject bindingsDisplayBar, int playerId)
+        void CreateChangeCharacterEntry(GameObject bindingsDisplayBar, int playerId)
         {
             var character = bindingsDisplayBar.transform.Find("Character");
             var characterText = character.Find("Text").GetComponent<TextMeshProUGUI>();
             characterText.text = "0";
 
-            character.GetComponent<Button>().onClick.AddListener(() => {
+            character.GetComponent<Button>().onClick.AddListener(() =>
+            {
                 var characterText = character.Find("Text").GetComponent<TextMeshProUGUI>();
-                var characterId = uint.Parse(characterText.text);
 
                 // TODO: store player character info
                 var characters = GameCharactersManager.PlayableCharacters;
-                characterId = (characterId >= characters.Length - 1) ? 0 : characterId + 1;
+                
+                var characterId = int.Parse(characterText.text) + 1;
+                if (characterId > characters.Count - 1)
+                    characterId = 0;
+
                 characterText.text = characterId.ToString();
 
                 PlayerManager.ReplacePlayer(playerId, GameCharactersManager.PlayableCharacters[characterId]);

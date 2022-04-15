@@ -26,4 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Bridge.unity
     guid: 04689b5f925b63a47abc9b464732c3dd
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 30cb49bae0a1d8d4ea91d78c337780ea,
+      type: 2}

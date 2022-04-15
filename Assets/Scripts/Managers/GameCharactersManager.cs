@@ -1,16 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace EasyClick
 {
     public class GameCharactersManager : MonoBehaviour
     {
+        [SerializeField] AssetLabelReference _playableCharactersAssetLabel;
         public static GameCharactersManager Instance;
 
-        GameObject[] _PlayableCharacters;
-        public static GameObject[] PlayableCharacters { get => Instance._PlayableCharacters; }
+        IList<GameObject> _PlayableCharacters;
+
+        public static IList<GameObject> PlayableCharacters { get => Instance._PlayableCharacters; }
 
         private void Awake()
         {
@@ -24,7 +26,16 @@ namespace EasyClick
         {
             if (Instance == this)
             {
-                _PlayableCharacters = Resources.LoadAll<GameObject>("Playable Characters");
+                var handle = Addressables.LoadAssetsAsync<GameObject>(
+                    _playableCharactersAssetLabel,
+                    addressable => { });
+                handle.Completed += obj =>
+                {
+                    if (obj.Status != AsyncOperationStatus.Succeeded)
+                        Debug.LogWarning("Could not load assets");
+
+                    _PlayableCharacters = obj.Result;
+                };
             }
         }
     }
