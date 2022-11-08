@@ -1,16 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Linq;
-using System;
 
 namespace EasyClick
 {
     public class MultiplayerMenu : MonoBehaviour
     {
+        [SerializeField] SpawnerVariable _spawnerVariable;
+
         [SerializeField] GameObject _EntryPrefab;
         [SerializeField] GameObject _HotKeyPrefab;
 
@@ -39,9 +39,8 @@ namespace EasyClick
 
         public void AddPlayer()
         {
-            var spawner = FindObjectOfType(typeof(PlayerSpawner)) as PlayerSpawner;
-            spawner.Spawn();
-            
+            _spawnerVariable.Value.Spawn();
+
             var player = PlayerInput.AllPlayers.Last();
             _PlayerSaver.LoadPlayerInputs(player);
 
@@ -118,7 +117,7 @@ namespace EasyClick
 
                 // TODO: store player character info
                 var characters = GameCharactersManager.PlayableCharacters;
-                
+
                 var characterId = int.Parse(characterText.text) + 1;
                 if (characterId > characters.Count - 1)
                     characterId = 0;

@@ -4,14 +4,13 @@ namespace EasyClick
 {
     public class PlayerSpawner : MonoBehaviour, ISpawner, IRespawner
     {
-        public static PlayerSpawner Spawner;
-
+        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] Transform[] _SpawnLocations;
 
-        int _CurrentSpawnLocationIndex = 0;
+        int _CurrentSpawnLocationIndex;
         int CurrentSpawnLocationIndex
-        { 
-            get 
+        {
+            get
             {
                 if (_CurrentSpawnLocationIndex >= _SpawnLocations.Length)
                 {
@@ -23,7 +22,7 @@ namespace EasyClick
 
         void Awake()
         {
-            Spawner = this;
+            _spawnerVariable.RegisterVariable(this);
         }
 
         public void Spawn()
@@ -34,10 +33,7 @@ namespace EasyClick
 
         public void Respawn(IBody playerBody)
         {
-            if (Spawner != null)
-            {
-                playerBody.Position = _SpawnLocations[CurrentSpawnLocationIndex].position;
-            }
+            playerBody.Position = _SpawnLocations[CurrentSpawnLocationIndex].position;
         }
     }
 }

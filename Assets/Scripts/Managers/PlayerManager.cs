@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,9 +6,19 @@ namespace EasyClick
 {
     public class PlayerManager : MonoBehaviour
     {
+        static PlayerManager _Instance;
         public static event Action onRebindPerformed = delegate { };
+        [SerializeField] SpawnerVariable _SpawnerVariable;
 
-        public static void ReplacePlayer(PlayerInput oldPlayerInput, GameObject playerPrefab)
+        void Awake()
+        {
+            if (_Instance == null)
+            {
+                _Instance = this;
+            }
+        }
+
+        void ReplacePlayerInner(PlayerInput oldPlayerInput, GameObject playerPrefab)
         {
             if (PlayerInput.AllPlayers.Contains(oldPlayerInput))
             {
@@ -19,8 +28,7 @@ namespace EasyClick
 
                 newPlayerInput.RebindControls(oldPlayerInput.PlayerControls);
 
-                var playerSpawner = FindObjectOfType(typeof(PlayerSpawner)) as PlayerSpawner;
-                playerSpawner.Respawn(newPlayerBody);
+                _SpawnerVariable.Value.Respawn(newPlayerBody);
 
                 var newPlayerIndex = PlayerInput.AllPlayers.IndexOf(newPlayerInput);
                 PlayerInput.AllPlayers[PlayerInput.AllPlayers.IndexOf(oldPlayerInput)] = newPlayerInput;
@@ -28,6 +36,11 @@ namespace EasyClick
 
                 Destroy(oldPlayerInput.gameObject);
             }
+        }
+
+        public static void ReplacePlayer(PlayerInput oldPlayerInput, GameObject playerPrefab)
+        {
+            _Instance.ReplacePlayerInner(oldPlayerInput, playerPrefab);
         }
 
         public static void ReplacePlayer(int oldPlayerId, GameObject playerPrefab)

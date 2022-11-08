@@ -134,6 +134,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -143,8 +145,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -165,9 +167,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -963,6 +968,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pillars_6: -2901974315643516265
+      pillars_26: -8146087500527173240
+      pillars_14: -5867096560935425559
+      pillars_12: -6511392611392563531
+      pillars_34: -154488173501775282
+      pillars_27: 6537651045722650512
+      pillars_17: -8772404509903527665
+      pillars_4: -369942900157323991
+      pillars_29: 3578545581739474951
+      pillars_10: 7258315461620346864
+      pillars_16: -1296902933601242875
+      pillars_2: -1213036255528317540
+      pillars_9: 7702622200773343813
+      pillars_0: -3777793517876888765
+      pillars_19: 6205995773332862193
+      pillars_5: -1745863990912121733
+      pillars_20: 2048743667186145342
+      pillars_33: 1446336851499307598
+      pillars_11: -5334505303420598092
+      pillars_21: 7196855096111898578
+      pillars_28: -4779812794350476661
+      pillars_18: -5728654808370228552
+      pillars_31: 9053543122453159405
+      pillars_24: -8030139400491137287
+      pillars_13: 8297313570560780209
+      pillars_15: 3678150098532668989
+      pillars_3: 4591877312507497515
+      pillars_22: -7916028868995302169
+      pillars_23: -4348746076531086992
+      pillars_32: 3184500861004898486
+      pillars_30: -5306802615145641122
+      pillars_8: -6675332654869201065
+      pillars_25: 6407640405778835540
+      pillars_7: 2209224853639453896
+      pillars_1: -347248075366841778
+      pillars_35: -273189582684345542
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

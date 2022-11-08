@@ -1,20 +1,19 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace EasyClick
 {
     public class CharacterMovement : MonoBehaviour
     {
-        ICharacterbody _Characterbody;
-        IMovementInput _MovementInput;
-
+        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] float _RotateSpeed = 5f;
         [SerializeField] float _JumpForce = 4f;
-
-        CharacterState _CharacterState = CharacterState.Flying;
-        float _DesiredRotation = 0f;
-
         [SerializeField] float _TimeBeforeJump;
+
+        ICharacterbody _Characterbody;
+        IMovementInput _MovementInput;
+        CharacterState _CharacterState = CharacterState.Flying;
+
+        float _DesiredRotation = 0f;
         float _BeforeJumpStopwatch;
 
         void Awake()
@@ -31,7 +30,7 @@ namespace EasyClick
             LevelLoader.onLevelLoaded += LevelLoader_onLevelLoaded;
         }
 
-        private void OnDestroy()
+        void OnDestroy()
         {
             LevelLoader.onLevelLoaded -= LevelLoader_onLevelLoaded;
             _MovementInput.onRotationChanged -= OnRotate;
@@ -69,10 +68,9 @@ namespace EasyClick
             }
         }
 
-        private void LevelLoader_onLevelLoaded()
+        void LevelLoader_onLevelLoaded()
         {
-            var spawner = PlayerSpawner.Spawner;
-            spawner?.Respawn(_Characterbody);
+            _spawnerVariable.Value.Respawn(_Characterbody);
         }
 
         void OnRotate(IInputData obj)
