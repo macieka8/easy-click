@@ -1,0 +1,18 @@
+{
+    "name": "EasyClick.Editor",
+    "rootNamespace": "EasyClick.Editor",
+    "references": [
+        "GUID:664e2758eab4be2409ad9a4bd331d8ad"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

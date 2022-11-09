@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 1376449780302305443}
   - component: {fileID: 3486815384872594535}
   - component: {fileID: -384991868642188462}
+  - component: {fileID: 7635172814367605554}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Player
@@ -458,7 +459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
-  _RotateSpeed: 5
+  _RotateSpeed:
+    _baseValue: 5
   _JumpForce: 7.5
   _TimeBeforeJump: 0.2
 --- !u!114 &1376449780302305443
@@ -497,6 +499,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dd5801167930b14183f65b4a2a39262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7635172814367605554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210649085785192145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2297f6079bc96324095000e89b8faedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3872097637696004399

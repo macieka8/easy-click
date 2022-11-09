@@ -1,7 +1,7 @@
 using UnityEditor.SceneManagement;
 using UnityEditor;
 
-namespace uss.editor
+namespace EasyClick.Editor
 {
     /// <summary>
     /// Class that permits auto-loading a bootstrap scene when the editor switches play state. This class is

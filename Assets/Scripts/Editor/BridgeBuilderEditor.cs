@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace EasyClick
+namespace EasyClick.Editor
 {
     [CustomEditor(typeof(BridgeBuilder))]
-    public class BridgeBuilderEditor : Editor
+    public class BridgeBuilderEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

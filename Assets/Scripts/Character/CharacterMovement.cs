@@ -5,7 +5,7 @@ namespace EasyClick
     public class CharacterMovement : MonoBehaviour
     {
         [SerializeField] SpawnerVariable _spawnerVariable;
-        [SerializeField] float _RotateSpeed = 5f;
+        [SerializeField] Attribute _RotateSpeed;
         [SerializeField] float _JumpForce = 4f;
         [SerializeField] float _TimeBeforeJump;
 
@@ -13,8 +13,9 @@ namespace EasyClick
         IMovementInput _MovementInput;
         CharacterState _CharacterState = CharacterState.Flying;
 
-        float _DesiredRotation = 0f;
+        float _DesiredRotation;
         float _BeforeJumpStopwatch;
+        float _DesiredRotationMultiplier = 1f;
 
         void Awake()
         {
@@ -41,13 +42,13 @@ namespace EasyClick
         {
             if (_CharacterState == CharacterState.OnGround)
             {
-                if (_Characterbody.Rotation > _DesiredRotation)
+                if (_Characterbody.Rotation > _DesiredRotation * _DesiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(-_RotateSpeed);
+                    _Characterbody.AddTorque(-_RotateSpeed.Value);
                 }
-                else if (_Characterbody.Rotation < _DesiredRotation)
+                else if (_Characterbody.Rotation < _DesiredRotation * _DesiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(_RotateSpeed);
+                    _Characterbody.AddTorque(_RotateSpeed.Value);
                 }
             }
             else if (_CharacterState == CharacterState.Jump)
@@ -86,6 +87,11 @@ namespace EasyClick
                 if (_Characterbody.TouchingGround)
                     _CharacterState = CharacterState.Jump;
             }
+        }
+
+        public void ReverseControls()
+        {
+            _DesiredRotationMultiplier *= -1f;
         }
     }
 }
