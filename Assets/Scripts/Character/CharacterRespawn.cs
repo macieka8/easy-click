@@ -1,7 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace EasyClick
 {
@@ -11,10 +11,11 @@ namespace EasyClick
         ICharacterbody _Characterbody;
 
         [SerializeField] List<Collider2D> _Checkpoints;
+        [SerializeField] float _TimeToRespawn = 2.0f;
+        
         int _CurrentCheckpointId = 0;
 
-        [SerializeField] float _TimeToRespawn = 2.0f;
-
+        public event Action<float> OnRespawnStarted;
 
         private void Awake()
         {
@@ -58,6 +59,7 @@ namespace EasyClick
         {
             if (obj.ReadValue<bool>())
             {
+                OnRespawnStarted?.Invoke(_TimeToRespawn);
                 StartCoroutine(MoveBodyToCheckpoint());
             }
         }

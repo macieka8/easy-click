@@ -68,6 +68,8 @@ GameObject:
   - component: {fileID: 8900042810367859926}
   - component: {fileID: 8900042810367859931}
   - component: {fileID: 8900042810367859924}
+  - component: {fileID: -7261281215115677418}
+  - component: {fileID: 3442333298004870877}
   m_Layer: 0
   m_Name: Softbody
   m_TagString: Player
@@ -112,7 +114,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 0e4f728d50235634d871ff8f27464e2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -231,8 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
   _RotateSpeed:
-    _baseValue: 12
-  _JumpForce: 7.5
+    _baseValue: 15
+  _JumpForce: 8
   _TimeBeforeJump: 0.2
 --- !u!114 &8900042810367859928
 MonoBehaviour:
@@ -307,6 +309,31 @@ MonoBehaviour:
   _WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &-7261281215115677418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900042810367859503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2297f6079bc96324095000e89b8faedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3442333298004870877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900042810367859503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6add469f22240846be8762c78560189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterRespawn: {fileID: 8900042810367859928}
 --- !u!1 &8900042810777252816
 GameObject:
   m_ObjectHideFlags: 0
