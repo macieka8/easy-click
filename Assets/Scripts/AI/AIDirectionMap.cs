@@ -19,6 +19,7 @@ public class AIDirectionMap : MonoBehaviour
     [SerializeField] Grid _grid;
     [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
 
+    public Grid Grid => _grid;
     public IReadOnlyList<DirectionMapEntry> DirectionMap => _directionMap;
 
     public void SetDirection(Vector2Int coords, Vector2 direction)
