@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EasyClick;
 
 [System.Serializable]
 public class DirectionMapEntry
@@ -16,11 +17,22 @@ public class DirectionMapEntry
 }
 public class AIDirectionMap : MonoBehaviour
 {
+    [SerializeField] DirectionMapVariable _variable;
     [SerializeField] Grid _grid;
     [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
 
     public Grid Grid => _grid;
     public IReadOnlyList<DirectionMapEntry> DirectionMap => _directionMap;
+
+    void OnEnable()
+    {
+        _variable.RegisterVariable(this);
+    }
+
+    void OnDisable()
+    {
+        _variable.UnregisterVariable(this);
+    }
 
     public void SetDirection(Vector2Int coords, Vector2 direction)
     {

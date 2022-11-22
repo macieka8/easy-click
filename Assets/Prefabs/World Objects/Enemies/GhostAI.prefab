@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7a1b74a1b1ed540a67d915f917405a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Target: {fileID: 0}
+  _directionMap: {fileID: 11400000, guid: 7de13140e25518a49952567c63803990, type: 2}
   _MaxTimeTillJump: 5
 --- !u!114 &92112383889017799
 MonoBehaviour:

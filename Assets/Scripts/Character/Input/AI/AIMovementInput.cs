@@ -5,11 +5,12 @@ namespace EasyClick
 {
     public class AIMovementInput : MonoBehaviour, IMovementInput
     {
+        [SerializeField] DirectionMapVariable _directionMap;
         public event Action<IInputData> onRotationChanged;
         public event Action<IInputData> onJump;
 
         ICharacterbody _Body;
-        [SerializeField] Transform _Target;
+        Transform _transform;
 
         Vector2 _TargetDir;
         [SerializeField] float _MaxTimeTillJump;
@@ -17,6 +18,7 @@ namespace EasyClick
 
         void Awake()
         {
+            _transform = transform;
             _Body = GetComponent<ICharacterbody>();
         }
 
@@ -24,10 +26,9 @@ namespace EasyClick
         {
             _TimeTillLastJump += Time.deltaTime;
 
-            if (_Target != null)
+            if (_directionMap != null)
             {
-                Vector2 targetPosition = _Target.position;
-                _TargetDir = targetPosition - _Body.Position;
+                _TargetDir = _directionMap.Value.GetDirection(_transform.position);
                 _TargetDir.Normalize();
 
                 DecideRotation();
