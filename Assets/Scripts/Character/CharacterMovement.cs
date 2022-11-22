@@ -11,8 +11,8 @@ namespace EasyClick
 
         ICharacterbody _Characterbody;
         IMovementInput _MovementInput;
-        CharacterState _CharacterState = CharacterState.Flying;
 
+        CharacterState _CharacterState = CharacterState.Flying;
         float _DesiredRotation;
         float _BeforeJumpStopwatch;
         float _DesiredRotationMultiplier = 1f;

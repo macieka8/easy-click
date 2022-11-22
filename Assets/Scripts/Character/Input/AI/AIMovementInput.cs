@@ -1,9 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using System.Threading.Tasks;
 
 namespace EasyClick
 {
@@ -19,16 +15,12 @@ namespace EasyClick
         [SerializeField] float _MaxTimeTillJump;
         float _TimeTillLastJump;
 
-        private void Awake()
+        void Awake()
         {
             _Body = GetComponent<ICharacterbody>();
         }
 
-        private void Start()
-        {
-        }
-
-        private void Update()
+        void Update()
         {
             _TimeTillLastJump += Time.deltaTime;
 

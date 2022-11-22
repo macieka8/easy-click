@@ -462,7 +462,7 @@ MonoBehaviour:
   _RotateSpeed:
     _baseValue: 5
   _JumpForce: 7.5
-  _TimeBeforeJump: 0.2
+  _TimeBeforeJump: 0.3
 --- !u!114 &1376449780302305443
 MonoBehaviour:
   m_ObjectHideFlags: 0
