@@ -5,7 +5,20 @@ using UnityEditor.UIElements;
 
 public class AIDirectionMapEditorWindow : EditorWindow
 {
+    [SerializeField] Vector2 _targetPosition;
+    [SerializeField] int _brushSize;
+    [SerializeField] bool _isDrawingEnabled;
+
+    SerializedObject _serializedObject;
+    SerializedProperty _targetProp;
+    SerializedProperty _brushSizeProp;
+    SerializedProperty _isDrawingEnabledProp;
+
+    SerializedObject _serializedMapObject;
+    SerializedProperty _serilaizedMapProp;
+
     Vector2Field _targetField;
+    IntegerField _brushSizeField;
     Toggle _drawToggle;
     HelpBox _drawToggleHelpBox;
 
@@ -19,24 +32,37 @@ public class AIDirectionMapEditorWindow : EditorWindow
         wnd.titleContent = new GUIContent("Direction Map Editor");
     }
 
-    public void OnEnable()
+    void OnEnable()
     {
+        _serializedObject = new SerializedObject(this);
+        _targetProp = _serializedObject.FindProperty("_targetPosition");
+        _brushSizeProp = _serializedObject.FindProperty("_brushSize");
+        _isDrawingEnabledProp = _serializedObject.FindProperty("_isDrawingEnabled");
+
+        _controlId = GUIUtility.GetControlID(FocusType.Passive);
         SceneView.duringSceneGui += DuringSceneGui;
         Selection.selectionChanged += HandleSelectionChanged;
-        _controlId = GUIUtility.GetControlID(FocusType.Passive);
     }
 
-    public void OnDisable()
+    void OnDisable()
     {
         SceneView.duringSceneGui -= DuringSceneGui;
+        Selection.selectionChanged -= HandleSelectionChanged;
     }
 
-    public void CreateGUI()
+    void CreateGUI()
     {
         _targetField = new Vector2Field("Target Direction");
+        _brushSizeField = new IntegerField("Brush Size");
         _drawToggle = new Toggle("Draw");
+
+        _targetField.BindProperty(_targetProp);
+        _brushSizeField.BindProperty(_brushSizeProp);
+        _drawToggle.BindProperty(_isDrawingEnabledProp);
         _drawToggle.RegisterValueChangedCallback(HandleDrawToggleChanged);
+
         rootVisualElement.Add(_targetField);
+        rootVisualElement.Add(_brushSizeField);
         rootVisualElement.Add(_drawToggle);
 
         _drawToggleHelpBox = new HelpBox("Select object with AIDirectionMap component", HelpBoxMessageType.Warning)
@@ -48,11 +74,8 @@ public class AIDirectionMapEditorWindow : EditorWindow
 
     void DuringSceneGui(SceneView sceneView)
     {
-        if (_targetField != null)
-        {
-            _targetField.value = Handles.PositionHandle(_targetField.value, Quaternion.identity);
-        }
-        if (_drawToggle != null && _drawToggle.value)
+        _targetPosition = Handles.PositionHandle(_targetPosition, Quaternion.identity);
+        if (_isDrawingEnabled)
         {
             if (Selection.activeGameObject != null && Selection.activeGameObject.TryGetComponent<AIDirectionMap>(out var aiDirectionMap))
             {
@@ -63,9 +86,9 @@ public class AIDirectionMapEditorWindow : EditorWindow
 
     void DrawOnDirectionMap(AIDirectionMap aiDirectionMap)
     {
-        var serializedMap = new SerializedObject(aiDirectionMap);
-        var serilaizedMapProp = serializedMap.FindProperty("_directionMap");
-        serializedMap.Update();
+        _serializedMapObject = new SerializedObject(aiDirectionMap);
+        _serilaizedMapProp = _serializedMapObject.FindProperty("_directionMap");
+        _serializedMapObject.Update();
         var grid = aiDirectionMap.Grid;
         if (grid == null)
         {
@@ -75,28 +98,20 @@ public class AIDirectionMapEditorWindow : EditorWindow
         var screenPos = Event.current.mousePosition;
         var worldPos = HandleUtility.GUIPointToWorldRay(screenPos).origin;
         var cellCoords = (Vector2Int)grid.WorldToCell(worldPos);
-        var drawPos = (Vector2)grid.CellToWorld((Vector3Int)cellCoords);
-        //Debug.Log($"Screen: {screenPos} & {Event.current.mousePosition} | World: {worldPos} | CellCoords : {cellCoords} | DrawPos: {drawPos}");
-        Handles.DrawSolidRectangleWithOutline(new Rect(drawPos, Vector2.one), new Color(0f, 0.5f, 0.5f, 0.25f), Color.black);
+        var drawPos = (Vector2)grid.CellToWorld((Vector3Int)cellCoords) - new Vector2(_brushSize / 2, _brushSize / 2);
+
+        Handles.DrawSolidRectangleWithOutline(new Rect(drawPos, Vector2.one * _brushSize), new Color(0f, 0.5f, 0.5f, 0.25f), Color.black);
         SceneView.RepaintAll();
+
         if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && !Event.current.alt)
         {
-            Event.current.Use();
-            GUIUtility.hotControl = _controlId;
-            var direction = (_targetField.value - drawPos).normalized;
-            SetDirectionToProperty(serilaizedMapProp, cellCoords, direction);
-            //aiDirectionMap.SetDirection(cellCoords, direction);
+            DrawDirectionsOnSquare(aiDirectionMap, cellCoords);
         }
         else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0 && !Event.current.alt)
         {
             if (!_ignoreCell.HasValue || cellCoords != _ignoreCell.Value)
             {
-                Event.current.Use();
-                GUIUtility.hotControl = _controlId;
-                var direction = (_targetField.value - drawPos).normalized;
-                //aiDirectionMap.SetDirection(cellCoords, direction);
-                SetDirectionToProperty(serilaizedMapProp, cellCoords, direction);
-
+                DrawDirectionsOnSquare(aiDirectionMap, cellCoords);
                 _ignoreCell = cellCoords;
             }
         }
@@ -105,12 +120,28 @@ public class AIDirectionMapEditorWindow : EditorWindow
             GUIUtility.hotControl = 0;
             _ignoreCell = null;
         }
-        serializedMap.ApplyModifiedProperties();
+    }
+
+    void DrawDirectionsOnSquare(AIDirectionMap aiDirectionMap, Vector2Int centerCoords)
+    {
+        Event.current.Use();
+        GUIUtility.hotControl = _controlId;
+        for (int i = 0; i < _brushSize; i++)
+        {
+            for (int j = 0; j < _brushSize; j++)
+            {
+                var coords = new Vector2Int(centerCoords.x + i - _brushSize / 2, centerCoords.y + j - _brushSize / 2);
+                var cellPos = (Vector2)aiDirectionMap.Grid.CellToWorld((Vector3Int)coords);
+                var direction = (_targetPosition - cellPos).normalized;
+                SetDirectionToProperty(coords, direction);
+            }
+        }
     }
 
     void HandleSelectionChanged()
     {
-        _drawToggleHelpBox.visible = _drawToggle != null && _drawToggle.value &&
+        if (_drawToggleHelpBox == null) return;
+        _drawToggleHelpBox.visible = _isDrawingEnabled &&
             Selection.activeGameObject != null &&
             !Selection.activeGameObject.TryGetComponent<AIDirectionMap>(out var _);
     }
@@ -127,23 +158,26 @@ public class AIDirectionMapEditorWindow : EditorWindow
         }
     }
 
-    void SetDirectionToProperty(SerializedProperty directionMapProp, Vector2Int coords, Vector2 direction)
+    void SetDirectionToProperty(Vector2Int coords, Vector2 direction)
     {
-        for (int i = 0; i < directionMapProp.arraySize; i++)
+        _serializedMapObject.Update();
+        for (int i = 0; i < _serilaizedMapProp.arraySize; i++)
         {
-            var coordsProp = directionMapProp.GetArrayElementAtIndex(i).FindPropertyRelative("Coords");
-            var directionProp = directionMapProp.GetArrayElementAtIndex(i).FindPropertyRelative("Direction");
+            var coordsProp = _serilaizedMapProp.GetArrayElementAtIndex(i).FindPropertyRelative("Coords");
+            var directionProp = _serilaizedMapProp.GetArrayElementAtIndex(i).FindPropertyRelative("Direction");
 
             if (coordsProp.vector2IntValue == coords)
             {
                 directionProp.vector2Value = direction;
+                _serializedMapObject.ApplyModifiedProperties();
                 return;
             }
         }
-        directionMapProp.arraySize++;
-        directionMapProp.InsertArrayElementAtIndex(directionMapProp.arraySize - 1);
-        var elementProp = directionMapProp.GetArrayElementAtIndex(directionMapProp.arraySize -1);
+        _serilaizedMapProp.InsertArrayElementAtIndex(_serilaizedMapProp.arraySize);
+        var elementProp = _serilaizedMapProp.GetArrayElementAtIndex(_serilaizedMapProp.arraySize -1);
         elementProp.FindPropertyRelative("Coords").vector2IntValue = coords;
         elementProp.FindPropertyRelative("Direction").vector2Value = direction;
+
+        _serializedMapObject.ApplyModifiedProperties();
     }
 }

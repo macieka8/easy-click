@@ -3449,1026 +3449,2294 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 7de13140e25518a49952567c63803990, type: 2}
   _grid: {fileID: 1068049552}
   _directionMap:
-  - Coords: {x: 0, y: 0}
-    Direction: {x: 0, y: 0}
-  - Coords: {x: -58, y: 0}
-    Direction: {x: 0.9974655, y: 0.07115192}
-  - Coords: {x: -58, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -55, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -55, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -56, y: 1}
-    Direction: {x: 0.9998406, y: -0.017854298}
-  - Coords: {x: -56, y: 1}
-    Direction: {x: 0.9998406, y: -0.017854298}
-  - Coords: {x: -56, y: 2}
-    Direction: {x: 0.9993629, y: -0.03569153}
-  - Coords: {x: -56, y: 2}
-    Direction: {x: 0.9993629, y: -0.03569153}
-  - Coords: {x: -55, y: 3}
-    Direction: {x: 0.9985157, y: -0.054464493}
-  - Coords: {x: -55, y: 3}
-    Direction: {x: 0.9985157, y: -0.054464493}
-  - Coords: {x: -54, y: 3}
-    Direction: {x: 0.90727866, y: -0.42053002}
-  - Coords: {x: -54, y: 3}
-    Direction: {x: 0.9984603, y: -0.055470016}
-  - Coords: {x: -53, y: 2}
-    Direction: {x: 0.99928874, y: -0.03770901}
-  - Coords: {x: -53, y: 2}
-    Direction: {x: 0.99928874, y: -0.03770901}
-  - Coords: {x: -53, y: 1}
-    Direction: {x: 0.999822, y: -0.018864566}
-  - Coords: {x: -53, y: 1}
-    Direction: {x: 0.999822, y: -0.018864566}
-  - Coords: {x: -53, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -53, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -54, y: -1}
-    Direction: {x: 0.9998286, y: 0.018515345}
-  - Coords: {x: -54, y: -1}
-    Direction: {x: 0.9998286, y: 0.018515345}
-  - Coords: {x: -55, y: -1}
-    Direction: {x: 0.9998348, y: 0.018178813}
-  - Coords: {x: -55, y: -1}
-    Direction: {x: 0.9998348, y: 0.018178813}
-  - Coords: {x: -56, y: -1}
-    Direction: {x: 0.9739507, y: 0.22676}
-  - Coords: {x: -56, y: -1}
-    Direction: {x: 0.9998406, y: 0.017854298}
-  - Coords: {x: -57, y: -1}
-    Direction: {x: 0.9798208, y: 0.19987807}
-  - Coords: {x: -57, y: -1}
-    Direction: {x: 0.99984616, y: 0.01754116}
-  - Coords: {x: -57, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -57, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -56, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -56, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -55, y: 1}
-    Direction: {x: 0.9998348, y: -0.018178813}
-  - Coords: {x: -55, y: 1}
-    Direction: {x: 0.9998348, y: -0.018178813}
-  - Coords: {x: -55, y: 2}
-    Direction: {x: 0.9993395, y: -0.03633962}
-  - Coords: {x: -55, y: 2}
-    Direction: {x: 0.9993395, y: -0.03633962}
-  - Coords: {x: -54, y: 2}
-    Direction: {x: 0.9993148, y: -0.03701166}
-  - Coords: {x: -54, y: 2}
-    Direction: {x: 0.9993148, y: -0.03701166}
-  - Coords: {x: -54, y: 1}
-    Direction: {x: 0.9998286, y: -0.018515345}
-  - Coords: {x: -54, y: 1}
-    Direction: {x: 0.9998286, y: -0.018515345}
-  - Coords: {x: -54, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -54, y: 0}
-    Direction: {x: 1, y: 0}
-  - Coords: {x: -57, y: 1}
-    Direction: {x: 0.99984616, y: -0.01754116}
-  - Coords: {x: -57, y: 1}
-    Direction: {x: 0.99984616, y: -0.01754116}
-  - Coords: {x: -52, y: 3}
-    Direction: {x: 0.7942798, y: -0.6075522}
-  - Coords: {x: -52, y: 3}
-    Direction: {x: 0.7942798, y: -0.6075522}
-  - Coords: {x: -52, y: 2}
-    Direction: {x: 0.9153903, y: -0.40256754}
-  - Coords: {x: -52, y: 2}
-    Direction: {x: 0.9153903, y: -0.40256754}
-  - Coords: {x: -52, y: 0}
-    Direction: {x: 0.97855735, y: 0.20597482}
-  - Coords: {x: -52, y: 0}
-    Direction: {x: 0.97855735, y: 0.20597482}
-  - Coords: {x: -52, y: -1}
-    Direction: {x: 0.88151425, y: 0.47215742}
-  - Coords: {x: -52, y: -1}
-    Direction: {x: 0.88151425, y: 0.47215742}
-  - Coords: {x: -52, y: -2}
-    Direction: {x: 0.7579028, y: 0.6523674}
-  - Coords: {x: -52, y: -2}
-    Direction: {x: 0.7579028, y: 0.6523674}
-  - Coords: {x: -53, y: -2}
-    Direction: {x: 0.8386121, y: 0.54472905}
-  - Coords: {x: -53, y: -2}
-    Direction: {x: 0.8386121, y: 0.54472905}
-  - Coords: {x: -54, y: -2}
-    Direction: {x: 0.8866409, y: 0.46245852}
-  - Coords: {x: -54, y: -2}
-    Direction: {x: 0.8866409, y: 0.46245852}
-  - Coords: {x: -55, y: -2}
-    Direction: {x: 0.9167499, y: 0.39946163}
-  - Coords: {x: -55, y: -2}
-    Direction: {x: 0.9167499, y: 0.39946163}
-  - Coords: {x: -57, y: -2}
-    Direction: {x: 0.9502424, y: 0.31151158}
-  - Coords: {x: -57, y: -2}
-    Direction: {x: 0.9502424, y: 0.31151158}
-  - Coords: {x: -58, y: -2}
-    Direction: {x: 0.9599908, y: 0.28003138}
-  - Coords: {x: -58, y: -2}
-    Direction: {x: 0.9599908, y: 0.28003138}
-  - Coords: {x: -59, y: -2}
-    Direction: {x: 0.9671713, y: 0.25412524}
-  - Coords: {x: -59, y: -2}
-    Direction: {x: 0.9671713, y: 0.25412524}
-  - Coords: {x: -60, y: -2}
-    Direction: {x: 0.97260153, y: 0.23247875}
-  - Coords: {x: -60, y: -2}
-    Direction: {x: 0.97260153, y: 0.23247875}
-  - Coords: {x: -61, y: -2}
-    Direction: {x: 0.97680134, y: 0.21414766}
-  - Coords: {x: -61, y: -2}
-    Direction: {x: 0.97680134, y: 0.21414766}
-  - Coords: {x: -62, y: -2}
-    Direction: {x: 0.9801129, y: 0.19844058}
-  - Coords: {x: -62, y: -2}
-    Direction: {x: 0.9801129, y: 0.19844058}
-  - Coords: {x: -62, y: -1}
-    Direction: {x: 0.9921566, y: 0.12500095}
-  - Coords: {x: -62, y: -1}
-    Direction: {x: 0.9921566, y: 0.12500095}
-  - Coords: {x: -61, y: -1}
-    Direction: {x: 0.9908224, y: 0.1351704}
-  - Coords: {x: -61, y: -1}
-    Direction: {x: 0.9908224, y: 0.1351704}
-  - Coords: {x: -59, y: -1}
-    Direction: {x: 0.9868957, y: 0.16135943}
-  - Coords: {x: -59, y: -1}
-    Direction: {x: 0.9868957, y: 0.16135943}
-  - Coords: {x: -58, y: -1}
-    Direction: {x: 0.983922, y: 0.178599}
-  - Coords: {x: -58, y: -1}
-    Direction: {x: 0.983922, y: 0.178599}
-  - Coords: {x: -56, y: -2}
-    Direction: {x: 0.93658936, y: 0.35042897}
-  - Coords: {x: -56, y: -2}
-    Direction: {x: 0.93658936, y: 0.35042897}
-  - Coords: {x: -60, y: -1}
-    Direction: {x: 0.98911846, y: 0.14712122}
-  - Coords: {x: -60, y: -1}
-    Direction: {x: 0.98911846, y: 0.14712122}
-  - Coords: {x: -61, y: 0}
-    Direction: {x: 0.998566, y: 0.0535344}
-  - Coords: {x: -61, y: 0}
-    Direction: {x: 0.998566, y: 0.0535344}
-  - Coords: {x: -62, y: 0}
-    Direction: {x: 0.99877656, y: 0.049450625}
-  - Coords: {x: -62, y: 0}
-    Direction: {x: 0.99877656, y: 0.049450625}
-  - Coords: {x: -60, y: 0}
-    Direction: {x: 0.998296, y: 0.058352135}
-  - Coords: {x: -60, y: 0}
-    Direction: {x: 0.998296, y: 0.058352135}
-  - Coords: {x: -59, y: 0}
-    Direction: {x: 0.99794215, y: 0.06412079}
-  - Coords: {x: -59, y: 0}
-    Direction: {x: 0.99794215, y: 0.06412079}
-  - Coords: {x: -63, y: 0}
-    Direction: {x: 0.998944, y: 0.045945127}
-  - Coords: {x: -63, y: 0}
-    Direction: {x: 0.998944, y: 0.045945127}
-  - Coords: {x: -63, y: 1}
-    Direction: {x: 0.9996864, y: -0.02504303}
-  - Coords: {x: -63, y: 1}
-    Direction: {x: 0.9996864, y: -0.02504303}
-  - Coords: {x: -61, y: 1}
-    Direction: {x: 0.99957395, y: -0.029187432}
-  - Coords: {x: -61, y: 1}
-    Direction: {x: 0.99957395, y: -0.029187432}
-  - Coords: {x: -58, y: 2}
-    Direction: {x: 0.98907566, y: -0.1474086}
-  - Coords: {x: -58, y: 2}
-    Direction: {x: 0.98907566, y: -0.1474086}
-  - Coords: {x: -59, y: 2}
-    Direction: {x: 0.9911091, y: -0.13305143}
-  - Coords: {x: -59, y: 2}
-    Direction: {x: 0.9911091, y: -0.13305143}
-  - Coords: {x: -60, y: 2}
-    Direction: {x: 0.9926252, y: -0.12122363}
-  - Coords: {x: -60, y: 2}
-    Direction: {x: 0.9926252, y: -0.12122363}
-  - Coords: {x: -62, y: 2}
-    Direction: {x: 0.9946922, y: -0.10289559}
-  - Coords: {x: -62, y: 2}
-    Direction: {x: 0.9946922, y: -0.10289559}
-  - Coords: {x: -63, y: 2}
-    Direction: {x: 0.99541456, y: -0.09565483}
-  - Coords: {x: -63, y: 2}
-    Direction: {x: 0.99541456, y: -0.09565483}
-  - Coords: {x: -57, y: 2}
-    Direction: {x: 0.98626167, y: -0.16519071}
-  - Coords: {x: -57, y: 2}
-    Direction: {x: 0.98626167, y: -0.16519071}
-  - Coords: {x: -58, y: 1}
-    Direction: {x: 0.9992461, y: -0.03882272}
-  - Coords: {x: -58, y: 1}
-    Direction: {x: 0.9992461, y: -0.03882272}
-  - Coords: {x: -64, y: 1}
-    Direction: {x: 0.9997266, y: -0.023382815}
-  - Coords: {x: -64, y: 1}
-    Direction: {x: 0.9997266, y: -0.023382815}
-  - Coords: {x: -59, y: 1}
-    Direction: {x: 0.99938816, y: -0.034974575}
-  - Coords: {x: -59, y: 1}
-    Direction: {x: 0.99938816, y: -0.034974575}
-  - Coords: {x: -60, y: 1}
-    Direction: {x: 0.9994936, y: -0.03182015}
-  - Coords: {x: -60, y: 1}
-    Direction: {x: 0.9994936, y: -0.03182015}
-  - Coords: {x: -62, y: 1}
-    Direction: {x: 0.99963665, y: -0.026956927}
-  - Coords: {x: -62, y: 1}
-    Direction: {x: 0.99963665, y: -0.026956927}
-  - Coords: {x: -61, y: 2}
-    Direction: {x: 0.99378514, y: -0.11131489}
-  - Coords: {x: -61, y: 2}
-    Direction: {x: 0.99378514, y: -0.11131489}
-  - Coords: {x: -60, y: 3}
-    Direction: {x: 0.9781763, y: -0.20777667}
-  - Coords: {x: -60, y: 3}
-    Direction: {x: 0.9781763, y: -0.20777667}
-  - Coords: {x: -61, y: 3}
-    Direction: {x: 0.98154587, y: -0.1912269}
-  - Coords: {x: -61, y: 3}
-    Direction: {x: 0.98154587, y: -0.1912269}
-  - Coords: {x: -62, y: 3}
-    Direction: {x: 0.9841966, y: -0.17707919}
-  - Coords: {x: -62, y: 3}
-    Direction: {x: 0.9841966, y: -0.17707919}
-  - Coords: {x: -63, y: 3}
-    Direction: {x: 0.9863181, y: -0.16485326}
-  - Coords: {x: -63, y: 3}
-    Direction: {x: 0.9863181, y: -0.16485326}
-  - Coords: {x: -64, y: 3}
-    Direction: {x: 0.9880417, y: -0.15418717}
-  - Coords: {x: -64, y: 3}
-    Direction: {x: 0.9880417, y: -0.15418717}
-  - Coords: {x: -59, y: 3}
-    Direction: {x: 0.97380656, y: -0.22737798}
-  - Coords: {x: -59, y: 3}
-    Direction: {x: 0.97380656, y: -0.22737798}
-  - Coords: {x: -58, y: 3}
-    Direction: {x: 0.9680058, y: -0.25092787}
-  - Coords: {x: -58, y: 3}
-    Direction: {x: 0.9680058, y: -0.25092787}
-  - Coords: {x: -57, y: 3}
-    Direction: {x: 0.96008927, y: -0.27969372}
-  - Coords: {x: -57, y: 3}
-    Direction: {x: 0.96008927, y: -0.27969372}
-  - Coords: {x: -56, y: 3}
-    Direction: {x: 0.94892234, y: -0.31550974}
-  - Coords: {x: -56, y: 3}
-    Direction: {x: 0.94892234, y: -0.31550974}
-  - Coords: {x: -53, y: 3}
-    Direction: {x: 0.86606956, y: -0.49992344}
-  - Coords: {x: -53, y: 3}
-    Direction: {x: 0.86606956, y: -0.49992344}
-  - Coords: {x: -52, y: 1}
-    Direction: {x: 0.99349236, y: -0.11389828}
-  - Coords: {x: -52, y: 1}
-    Direction: {x: 0.99349236, y: -0.11389828}
-  - Coords: {x: -51, y: -1}
-    Direction: {x: 0.7832822, y: 0.62166625}
-  - Coords: {x: -51, y: -1}
-    Direction: {x: 0.7832822, y: 0.62166625}
-  - Coords: {x: -53, y: -1}
-    Direction: {x: 0.9271273, y: 0.3747464}
-  - Coords: {x: -53, y: -1}
-    Direction: {x: 0.9271273, y: 0.3747464}
-  - Coords: {x: -51, y: -2}
-    Direction: {x: 0.61700785, y: 0.78695697}
-  - Coords: {x: -51, y: -2}
-    Direction: {x: 0.61700785, y: 0.78695697}
-  - Coords: {x: -50, y: -2}
-    Direction: {x: 0.3764267, y: 0.92644644}
-  - Coords: {x: -50, y: -2}
-    Direction: {x: 0.3764267, y: 0.92644644}
-  - Coords: {x: -49, y: -2}
-    Direction: {x: 0.02857055, y: 0.99959177}
-  - Coords: {x: -49, y: -2}
-    Direction: {x: 0.02857055, y: 0.99959177}
-  - Coords: {x: -48, y: -2}
-    Direction: {x: -0.32963374, y: 0.9441089}
-  - Coords: {x: -48, y: -2}
-    Direction: {x: -0.32963374, y: 0.9441089}
-  - Coords: {x: -45, y: -2}
-    Direction: {x: -0.8289987, y: 0.55925053}
-  - Coords: {x: -45, y: -2}
-    Direction: {x: -0.8289987, y: 0.55925053}
-  - Coords: {x: -45, y: -1}
-    Direction: {x: -0.9220515, y: 0.38706726}
-  - Coords: {x: -45, y: -1}
-    Direction: {x: -0.9220515, y: 0.38706726}
-  - Coords: {x: -45, y: 0}
-    Direction: {x: -0.98666424, y: 0.16276875}
-  - Coords: {x: -45, y: 0}
-    Direction: {x: -0.98666424, y: 0.16276875}
   - Coords: {x: -45, y: 1}
-    Direction: {x: -0.99598765, y: -0.0894912}
-  - Coords: {x: -45, y: 1}
-    Direction: {x: -0.99598765, y: -0.0894912}
+    Direction: {x: 0.99681526, y: -0.079745226}
   - Coords: {x: -45, y: 2}
-    Direction: {x: -0.9454183, y: -0.32585937}
-  - Coords: {x: -45, y: 2}
-    Direction: {x: -0.9454183, y: -0.32585937}
+    Direction: {x: 0.99681526, y: -0.079745226}
   - Coords: {x: -45, y: 3}
-    Direction: {x: -0.85768485, y: -0.5141758}
-  - Coords: {x: -45, y: 3}
-    Direction: {x: -0.85768485, y: -0.5141758}
+    Direction: {x: 0.99681526, y: -0.079745226}
   - Coords: {x: -45, y: 4}
-    Direction: {x: -0.7603187, y: -0.64955026}
-  - Coords: {x: -45, y: 4}
-    Direction: {x: -0.7603187, y: -0.64955026}
-  - Coords: {x: -45, y: 5}
-    Direction: {x: -0.66962296, y: -0.7427013}
-  - Coords: {x: -45, y: 5}
-    Direction: {x: -0.66962296, y: -0.7427013}
-  - Coords: {x: -45, y: 6}
-    Direction: {x: -0.5912741, y: -0.80647063}
-  - Coords: {x: -45, y: 6}
-    Direction: {x: -0.5912741, y: -0.80647063}
-  - Coords: {x: -45, y: 7}
-    Direction: {x: -0.5255571, y: -0.8507584}
-  - Coords: {x: -45, y: 7}
-    Direction: {x: -0.5255571, y: -0.8507584}
-  - Coords: {x: -46, y: 7}
-    Direction: {x: -0.41815722, y: -0.90837467}
-  - Coords: {x: -46, y: 7}
-    Direction: {x: -0.41815722, y: -0.90837467}
-  - Coords: {x: -46, y: 6}
-    Direction: {x: -0.4794494, y: -0.87756956}
-  - Coords: {x: -46, y: 6}
-    Direction: {x: -0.4794494, y: -0.87756956}
-  - Coords: {x: -46, y: 5}
-    Direction: {x: -0.5576795, y: -0.83005637}
-  - Coords: {x: -46, y: 5}
-    Direction: {x: -0.5576795, y: -0.83005637}
-  - Coords: {x: -46, y: 4}
-    Direction: {x: -0.65733254, y: -0.75360066}
-  - Coords: {x: -46, y: 4}
-    Direction: {x: -0.65733254, y: -0.75360066}
-  - Coords: {x: -46, y: 3}
-    Direction: {x: -0.7791577, y: -0.6268279}
-  - Coords: {x: -46, y: 3}
-    Direction: {x: -0.7791577, y: -0.6268279}
-  - Coords: {x: -46, y: 2}
-    Direction: {x: -0.9076147, y: -0.41980425}
-  - Coords: {x: -46, y: 2}
-    Direction: {x: -0.9076147, y: -0.41980425}
-  - Coords: {x: -46, y: 1}
-    Direction: {x: -0.9928089, y: -0.11971019}
-  - Coords: {x: -46, y: 1}
-    Direction: {x: -0.9928089, y: -0.11971019}
-  - Coords: {x: -46, y: 0}
-    Direction: {x: -0.9763606, y: 0.21614787}
-  - Coords: {x: -46, y: 0}
-    Direction: {x: -0.9763606, y: 0.21614787}
-  - Coords: {x: -46, y: -1}
-    Direction: {x: -0.8712627, y: 0.49081686}
-  - Coords: {x: -46, y: -1}
-    Direction: {x: -0.8712627, y: 0.49081686}
-  - Coords: {x: -46, y: -2}
-    Direction: {x: -0.74133795, y: 0.6711319}
-  - Coords: {x: -46, y: -2}
-    Direction: {x: -0.74133795, y: 0.6711319}
-  - Coords: {x: -47, y: -2}
-    Direction: {x: -0.587963, y: 0.8088879}
-  - Coords: {x: -47, y: -2}
-    Direction: {x: -0.587963, y: 0.8088879}
-  - Coords: {x: -47, y: -1}
-    Direction: {x: -0.75965345, y: 0.65032816}
-  - Coords: {x: -47, y: -1}
-    Direction: {x: -0.75965345, y: 0.65032816}
-  - Coords: {x: -47, y: 0}
-    Direction: {x: -0.9478007, y: 0.31886324}
-  - Coords: {x: -47, y: 0}
-    Direction: {x: -0.9478007, y: 0.31886324}
-  - Coords: {x: -47, y: 1}
-    Direction: {x: -0.9836234, y: -0.18023579}
-  - Coords: {x: -47, y: 1}
-    Direction: {x: -0.9836234, y: -0.18023579}
-  - Coords: {x: -47, y: 2}
-    Direction: {x: -0.8181167, y: -0.5750522}
-  - Coords: {x: -47, y: 2}
-    Direction: {x: -0.8181167, y: -0.5750522}
-  - Coords: {x: -47, y: 3}
-    Direction: {x: -0.6331335, y: -0.77404267}
-  - Coords: {x: -47, y: 3}
-    Direction: {x: -0.6331335, y: -0.77404267}
-  - Coords: {x: -47, y: 4}
-    Direction: {x: -0.4978065, y: -0.8672882}
-  - Coords: {x: -47, y: 4}
-    Direction: {x: -0.4978065, y: -0.8672882}
-  - Coords: {x: -47, y: 5}
-    Direction: {x: -0.4043548, y: -0.91460216}
-  - Coords: {x: -47, y: 5}
-    Direction: {x: -0.4043548, y: -0.91460216}
-  - Coords: {x: -47, y: 6}
-    Direction: {x: -0.33831367, y: -0.9410334}
-  - Coords: {x: -47, y: 6}
-    Direction: {x: -0.33831367, y: -0.9410334}
-  - Coords: {x: -48, y: 6}
-    Direction: {x: -0.17016941, y: -0.98541486}
-  - Coords: {x: -48, y: 6}
-    Direction: {x: -0.17016941, y: -0.98541486}
-  - Coords: {x: -48, y: 7}
-    Direction: {x: -0.14398804, y: -0.98957944}
-  - Coords: {x: -48, y: 7}
-    Direction: {x: -0.14398804, y: -0.98957944}
-  - Coords: {x: -47, y: 7}
-    Direction: {x: -0.28991067, y: -0.9570537}
-  - Coords: {x: -47, y: 7}
-    Direction: {x: -0.28991067, y: -0.9570537}
-  - Coords: {x: -49, y: 7}
-    Direction: {x: 0.011910536, y: -0.9999291}
-  - Coords: {x: -49, y: 7}
-    Direction: {x: 0.011910536, y: -0.9999291}
-  - Coords: {x: -50, y: 7}
-    Direction: {x: 0.16695058, y: -0.98596525}
-  - Coords: {x: -50, y: 7}
-    Direction: {x: 0.16695058, y: -0.98596525}
-  - Coords: {x: -51, y: 7}
-    Direction: {x: 0.31058395, y: -0.9505459}
-  - Coords: {x: -51, y: 7}
-    Direction: {x: 0.31058395, y: -0.9505459}
-  - Coords: {x: -52, y: 7}
-    Direction: {x: 0.43577054, y: -0.9000578}
-  - Coords: {x: -52, y: 7}
-    Direction: {x: 0.43577054, y: -0.9000578}
-  - Coords: {x: -53, y: 7}
-    Direction: {x: 0.5399932, y: -0.8416694}
-  - Coords: {x: -53, y: 7}
-    Direction: {x: 0.5399932, y: -0.8416694}
-  - Coords: {x: -55, y: 7}
-    Direction: {x: 0.6911788, y: -0.7226839}
-  - Coords: {x: -55, y: 7}
-    Direction: {x: 0.6911788, y: -0.7226839}
-  - Coords: {x: -56, y: 7}
-    Direction: {x: 0.7441038, y: -0.668064}
-  - Coords: {x: -56, y: 7}
-    Direction: {x: 0.7441038, y: -0.668064}
-  - Coords: {x: -57, y: 7}
-    Direction: {x: 0.78596646, y: -0.61826915}
-  - Coords: {x: -57, y: 7}
-    Direction: {x: 0.78596646, y: -0.61826915}
-  - Coords: {x: -58, y: 7}
-    Direction: {x: 0.8192472, y: -0.57344055}
-  - Coords: {x: -58, y: 7}
-    Direction: {x: 0.8192472, y: -0.57344055}
-  - Coords: {x: -59, y: 7}
-    Direction: {x: 0.8459045, y: -0.5333343}
-  - Coords: {x: -59, y: 7}
-    Direction: {x: 0.8459045, y: -0.5333343}
-  - Coords: {x: -59, y: 6}
-    Direction: {x: 0.883119, y: -0.469149}
-  - Coords: {x: -59, y: 6}
-    Direction: {x: 0.883119, y: -0.469149}
-  - Coords: {x: -60, y: 6}
-    Direction: {x: 0.9003691, y: -0.43512702}
-  - Coords: {x: -60, y: 6}
-    Direction: {x: 0.9003691, y: -0.43512702}
-  - Coords: {x: -61, y: 6}
-    Direction: {x: 0.91421443, y: -0.40523067}
-  - Coords: {x: -61, y: 6}
-    Direction: {x: 0.91421443, y: -0.40523067}
-  - Coords: {x: -61, y: 5}
-    Direction: {x: 0.94075406, y: -0.33908957}
-  - Coords: {x: -61, y: 5}
-    Direction: {x: 0.94075406, y: -0.33908957}
-  - Coords: {x: -60, y: 5}
-    Direction: {x: 0.93070996, y: -0.3657581}
-  - Coords: {x: -60, y: 5}
-    Direction: {x: 0.93070996, y: -0.3657581}
-  - Coords: {x: -59, y: 5}
-    Direction: {x: 0.9180043, y: -0.39657047}
-  - Coords: {x: -59, y: 5}
-    Direction: {x: 0.9180043, y: -0.39657047}
-  - Coords: {x: -56, y: 5}
-    Direction: {x: 0.8517469, y: -0.5239534}
-  - Coords: {x: -56, y: 5}
-    Direction: {x: 0.8517469, y: -0.5239534}
-  - Coords: {x: -54, y: 5}
-    Direction: {x: 0.75910616, y: -0.65096676}
-  - Coords: {x: -54, y: 5}
-    Direction: {x: 0.75910616, y: -0.65096676}
-  - Coords: {x: -53, y: 5}
-    Direction: {x: 0.68350357, y: -0.7299472}
-  - Coords: {x: -53, y: 5}
-    Direction: {x: 0.68350357, y: -0.7299472}
-  - Coords: {x: -51, y: 5}
-    Direction: {x: 0.4304403, y: -0.90261906}
-  - Coords: {x: -51, y: 5}
-    Direction: {x: 0.4304403, y: -0.90261906}
-  - Coords: {x: -50, y: 5}
-    Direction: {x: 0.23991422, y: -0.97079414}
-  - Coords: {x: -50, y: 5}
-    Direction: {x: 0.23991422, y: -0.97079414}
-  - Coords: {x: -50, y: 4}
-    Direction: {x: 0.30550572, y: -0.9521902}
-  - Coords: {x: -50, y: 4}
-    Direction: {x: 0.30550572, y: -0.9521902}
-  - Coords: {x: -49, y: 4}
-    Direction: {x: 0.022564245, y: -0.9997454}
-  - Coords: {x: -49, y: 4}
-    Direction: {x: 0.022564245, y: -0.9997454}
-  - Coords: {x: -49, y: 3}
-    Direction: {x: 0.03214697, y: -0.9994831}
-  - Coords: {x: -49, y: 3}
-    Direction: {x: 0.03214697, y: -0.9994831}
-  - Coords: {x: -48, y: 3}
-    Direction: {x: -0.36568418, y: -0.930739}
-  - Coords: {x: -48, y: 3}
-    Direction: {x: -0.36568418, y: -0.930739}
-  - Coords: {x: -48, y: 4}
-    Direction: {x: -0.26578853, y: -0.96403134}
-  - Coords: {x: -48, y: 4}
-    Direction: {x: -0.26578853, y: -0.96403134}
-  - Coords: {x: -48, y: 5}
-    Direction: {x: -0.20773028, y: -0.97818613}
-  - Coords: {x: -48, y: 5}
-    Direction: {x: -0.20773028, y: -0.97818613}
-  - Coords: {x: -48, y: 2}
-    Direction: {x: -0.56421113, y: -0.82563055}
-  - Coords: {x: -48, y: 2}
-    Direction: {x: -0.56421113, y: -0.82563055}
-  - Coords: {x: -48, y: 1}
-    Direction: {x: -0.9343257, y: -0.35642043}
-  - Coords: {x: -48, y: 1}
-    Direction: {x: -0.9343257, y: -0.35642043}
-  - Coords: {x: -48, y: 0}
-    Direction: {x: -0.8190821, y: 0.57367635}
-  - Coords: {x: -48, y: 0}
-    Direction: {x: -0.8190821, y: 0.57367635}
-  - Coords: {x: -48, y: -1}
-    Direction: {x: -0.48932543, y: 0.87210125}
-  - Coords: {x: -48, y: -1}
-    Direction: {x: -0.48932543, y: 0.87210125}
-  - Coords: {x: -49, y: -1}
-    Direction: {x: 0.04588382, y: 0.9989468}
-  - Coords: {x: -49, y: -1}
-    Direction: {x: 0.04588382, y: 0.9989468}
-  - Coords: {x: -49, y: 0}
-    Direction: {x: 0.11609149, y: 0.99323857}
-  - Coords: {x: -49, y: 0}
-    Direction: {x: 0.11609149, y: 0.99323857}
-  - Coords: {x: -49, y: 1}
-    Direction: {x: 0.20981935, y: -0.9777402}
-  - Coords: {x: -49, y: 1}
-    Direction: {x: 0.20981935, y: -0.9777402}
-  - Coords: {x: -49, y: 2}
-    Direction: {x: 0.055855215, y: -0.9984389}
-  - Coords: {x: -49, y: 2}
-    Direction: {x: 0.055855215, y: -0.9984389}
-  - Coords: {x: -50, y: 2}
-    Direction: {x: 0.62242794, y: -0.7826771}
-  - Coords: {x: -50, y: 2}
-    Direction: {x: 0.62242794, y: -0.7826771}
-  - Coords: {x: -50, y: 1}
-    Direction: {x: 0.9502479, y: -0.31149468}
-  - Coords: {x: -50, y: 1}
-    Direction: {x: 0.9502479, y: -0.31149468}
-  - Coords: {x: -50, y: 0}
-    Direction: {x: 0.8567925, y: 0.5156614}
-  - Coords: {x: -50, y: 0}
-    Direction: {x: 0.8567925, y: 0.5156614}
-  - Coords: {x: -51, y: 0}
-    Direction: {x: 0.95464414, y: 0.2977494}
-  - Coords: {x: -51, y: 0}
-    Direction: {x: 0.95464414, y: 0.2977494}
-  - Coords: {x: -51, y: 1}
-    Direction: {x: 0.9858759, y: -0.16747747}
-  - Coords: {x: -51, y: 1}
-    Direction: {x: 0.9858759, y: -0.16747747}
-  - Coords: {x: -51, y: 2}
-    Direction: {x: 0.83781165, y: -0.5459594}
-  - Coords: {x: -51, y: 2}
-    Direction: {x: 0.83781165, y: -0.5459594}
-  - Coords: {x: -51, y: 3}
-    Direction: {x: 0.6615926, y: -0.7498635}
-  - Coords: {x: -51, y: 3}
-    Direction: {x: 0.6615926, y: -0.7498635}
-  - Coords: {x: -50, y: 3}
-    Direction: {x: 0.41582063, y: -0.9094466}
-  - Coords: {x: -50, y: 3}
-    Direction: {x: 0.41582063, y: -0.9094466}
-  - Coords: {x: -51, y: 4}
-    Direction: {x: 0.52639943, y: -0.8502374}
-  - Coords: {x: -51, y: 4}
-    Direction: {x: 0.52639943, y: -0.8502374}
-  - Coords: {x: -52, y: 4}
-    Direction: {x: 0.6760165, y: -0.73688644}
-  - Coords: {x: -52, y: 4}
-    Direction: {x: 0.6760165, y: -0.73688644}
-  - Coords: {x: -53, y: 4}
-    Direction: {x: 0.77228576, y: -0.6352753}
-  - Coords: {x: -53, y: 4}
-    Direction: {x: 0.77228576, y: -0.6352753}
-  - Coords: {x: -54, y: 4}
-    Direction: {x: 0.8344078, y: -0.5511476}
-  - Coords: {x: -54, y: 4}
-    Direction: {x: 0.8344078, y: -0.5511476}
-  - Coords: {x: -55, y: 4}
-    Direction: {x: 0.8755463, y: -0.48313424}
-  - Coords: {x: -55, y: 4}
-    Direction: {x: 0.8755463, y: -0.48313424}
-  - Coords: {x: -59, y: 4}
-    Direction: {x: 0.94885117, y: -0.31572357}
-  - Coords: {x: -59, y: 4}
-    Direction: {x: 0.94885117, y: -0.31572357}
-  - Coords: {x: -61, y: 4}
-    Direction: {x: 0.9635538, y: -0.26751465}
-  - Coords: {x: -61, y: 4}
-    Direction: {x: 0.9635538, y: -0.26751465}
-  - Coords: {x: -62, y: 4}
-    Direction: {x: 0.96866614, y: -0.24836649}
-  - Coords: {x: -62, y: 4}
-    Direction: {x: 0.96866614, y: -0.24836649}
-  - Coords: {x: -63, y: 4}
-    Direction: {x: 0.9727866, y: -0.23170282}
-  - Coords: {x: -63, y: 4}
-    Direction: {x: 0.9727866, y: -0.23170282}
-  - Coords: {x: -63, y: -1}
-    Direction: {x: 0.99322057, y: 0.11624483}
-  - Coords: {x: -63, y: -1}
-    Direction: {x: 0.99322057, y: 0.11624483}
-  - Coords: {x: -63, y: -2}
-    Direction: {x: 0.9827683, y: 0.18484189}
-  - Coords: {x: -63, y: -2}
-    Direction: {x: 0.9827683, y: 0.18484189}
-  - Coords: {x: -64, y: -1}
-    Direction: {x: 0.9940824, y: 0.10862825}
-  - Coords: {x: -64, y: -1}
-    Direction: {x: 0.9940824, y: 0.10862825}
-  - Coords: {x: -64, y: 0}
-    Direction: {x: 0.9990792, y: 0.0429033}
-  - Coords: {x: -64, y: 0}
-    Direction: {x: 0.9990792, y: 0.0429033}
-  - Coords: {x: -65, y: 1}
-    Direction: {x: 0.99975955, y: -0.02192899}
-  - Coords: {x: -65, y: 1}
-    Direction: {x: 0.99975955, y: -0.02192899}
-  - Coords: {x: -65, y: 0}
-    Direction: {x: 0.99919003, y: 0.040238928}
-  - Coords: {x: -65, y: 0}
-    Direction: {x: 0.99919003, y: 0.040238928}
-  - Coords: {x: -64, y: 2}
-    Direction: {x: 0.99599916, y: -0.0893623}
-  - Coords: {x: -64, y: 2}
-    Direction: {x: 0.99599916, y: -0.0893623}
-  - Coords: {x: -60, y: 4}
-    Direction: {x: 0.9571121, y: -0.2897181}
-  - Coords: {x: -60, y: 4}
-    Direction: {x: 0.9571121, y: -0.2897181}
-  - Coords: {x: -58, y: 4}
-    Direction: {x: 0.938043, y: -0.34651887}
-  - Coords: {x: -58, y: 4}
-    Direction: {x: 0.938043, y: -0.34651887}
-  - Coords: {x: -57, y: 4}
-    Direction: {x: 0.92357373, y: -0.38342097}
-  - Coords: {x: -57, y: 4}
-    Direction: {x: 0.92357373, y: -0.38342097}
-  - Coords: {x: -56, y: 4}
-    Direction: {x: 0.9036896, y: -0.42818812}
-  - Coords: {x: -56, y: 4}
-    Direction: {x: 0.9036896, y: -0.42818812}
-  - Coords: {x: -58, y: 5}
-    Direction: {x: 0.90166694, y: -0.43243122}
-  - Coords: {x: -58, y: 5}
-    Direction: {x: 0.90166694, y: -0.43243122}
-  - Coords: {x: -57, y: 5}
-    Direction: {x: 0.88028127, y: -0.47445226}
-  - Coords: {x: -57, y: 5}
-    Direction: {x: 0.88028127, y: -0.47445226}
-  - Coords: {x: -57, y: 6}
-    Direction: {x: 0.8335322, y: -0.5524708}
-  - Coords: {x: -57, y: 6}
-    Direction: {x: 0.8335322, y: -0.5524708}
-  - Coords: {x: -55, y: 5}
-    Direction: {x: 0.81291986, y: -0.58237565}
-  - Coords: {x: -55, y: 5}
-    Direction: {x: 0.81291986, y: -0.58237565}
-  - Coords: {x: -52, y: 5}
-    Direction: {x: 0.5770888, y: -0.8166814}
-  - Coords: {x: -52, y: 5}
-    Direction: {x: 0.5770888, y: -0.8166814}
-  - Coords: {x: -50, y: 6}
-    Direction: {x: 0.1970225, y: -0.98039895}
-  - Coords: {x: -50, y: 6}
-    Direction: {x: 0.1970225, y: -0.98039895}
-  - Coords: {x: -51, y: 6}
-    Direction: {x: 0.3615532, y: -0.93235147}
-  - Coords: {x: -51, y: 6}
-    Direction: {x: 0.3615532, y: -0.93235147}
-  - Coords: {x: -52, y: 6}
-    Direction: {x: 0.49821776, y: -0.86705196}
-  - Coords: {x: -52, y: 6}
-    Direction: {x: 0.49821776, y: -0.86705196}
-  - Coords: {x: -53, y: 6}
-    Direction: {x: 0.60580724, y: -0.79561144}
-  - Coords: {x: -53, y: 6}
-    Direction: {x: 0.60580724, y: -0.79561144}
-  - Coords: {x: -54, y: 6}
-    Direction: {x: 0.68808585, y: -0.72562927}
-  - Coords: {x: -54, y: 6}
-    Direction: {x: 0.68808585, y: -0.72562927}
-  - Coords: {x: -55, y: 6}
-    Direction: {x: 0.7503447, y: -0.66104674}
-  - Coords: {x: -55, y: 6}
-    Direction: {x: 0.7503447, y: -0.66104674}
-  - Coords: {x: -56, y: 6}
-    Direction: {x: 0.79751223, y: -0.6033028}
-  - Coords: {x: -56, y: 6}
-    Direction: {x: 0.79751223, y: -0.6033028}
-  - Coords: {x: -54, y: 7}
-    Direction: {x: 0.62421364, y: -0.78125364}
-  - Coords: {x: -54, y: 7}
-    Direction: {x: 0.62421364, y: -0.78125364}
-  - Coords: {x: -49, y: 6}
-    Direction: {x: 0.01413531, y: -0.99990004}
-  - Coords: {x: -49, y: 6}
-    Direction: {x: 0.01413531, y: -0.99990004}
-  - Coords: {x: -49, y: 5}
-    Direction: {x: 0.017381972, y: -0.99984896}
-  - Coords: {x: -49, y: 5}
-    Direction: {x: 0.017381972, y: -0.99984896}
-  - Coords: {x: -44, y: 6}
-    Direction: {x: -0.6770515, y: -0.7359356}
-  - Coords: {x: -44, y: 6}
-    Direction: {x: -0.6770515, y: -0.7359356}
-  - Coords: {x: -44, y: 7}
-    Direction: {x: -0.61265415, y: -0.7903512}
-  - Coords: {x: -44, y: 7}
-    Direction: {x: -0.61265415, y: -0.7903512}
-  - Coords: {x: -43, y: 7}
-    Direction: {x: -0.6820248, y: -0.731329}
-  - Coords: {x: -43, y: 7}
-    Direction: {x: -0.6820248, y: -0.731329}
-  - Coords: {x: -42, y: 7}
-    Direction: {x: -0.7368729, y: -0.67603123}
-  - Coords: {x: -42, y: 7}
-    Direction: {x: -0.7368729, y: -0.67603123}
-  - Coords: {x: -40, y: 7}
-    Direction: {x: -0.8146786, y: -0.5799127}
-  - Coords: {x: -40, y: 7}
-    Direction: {x: -0.8146786, y: -0.5799127}
-  - Coords: {x: -39, y: 7}
-    Direction: {x: -0.8422315, y: -0.539116}
-  - Coords: {x: -39, y: 7}
-    Direction: {x: -0.8422315, y: -0.539116}
-  - Coords: {x: -39, y: 6}
-    Direction: {x: -0.8801474, y: -0.47470036}
-  - Coords: {x: -39, y: 6}
-    Direction: {x: -0.8801474, y: -0.47470036}
-  - Coords: {x: -39, y: 5}
-    Direction: {x: -0.91579396, y: -0.4016484}
-  - Coords: {x: -39, y: 5}
-    Direction: {x: -0.91579396, y: -0.4016484}
-  - Coords: {x: -39, y: 4}
-    Direction: {x: -0.9474012, y: -0.32004824}
-  - Coords: {x: -39, y: 4}
-    Direction: {x: -0.9474012, y: -0.32004824}
-  - Coords: {x: -39, y: 3}
-    Direction: {x: -0.97303396, y: -0.23066212}
-  - Coords: {x: -39, y: 3}
-    Direction: {x: -0.97303396, y: -0.23066212}
-  - Coords: {x: -39, y: 2}
-    Direction: {x: -0.9908396, y: -0.1350436}
-  - Coords: {x: -39, y: 2}
-    Direction: {x: -0.9908396, y: -0.1350436}
-  - Coords: {x: -39, y: 1}
-    Direction: {x: -0.99936944, y: -0.03550724}
-  - Coords: {x: -39, y: 1}
-    Direction: {x: -0.99936944, y: -0.03550724}
-  - Coords: {x: -39, y: 0}
-    Direction: {x: -0.9978791, y: 0.065094456}
-  - Coords: {x: -39, y: 0}
-    Direction: {x: -0.9978791, y: 0.065094456}
-  - Coords: {x: -39, y: -1}
-    Direction: {x: -0.98650116, y: 0.16375451}
-  - Coords: {x: -39, y: -1}
-    Direction: {x: -0.98650116, y: 0.16375451}
-  - Coords: {x: -40, y: -1}
-    Direction: {x: -0.9833857, y: 0.18152863}
-  - Coords: {x: -40, y: -1}
-    Direction: {x: -0.9833857, y: 0.18152863}
-  - Coords: {x: -41, y: -1}
-    Direction: {x: -0.97906697, y: 0.20353857}
-  - Coords: {x: -41, y: -1}
-    Direction: {x: -0.97906697, y: 0.20353857}
-  - Coords: {x: -42, y: -1}
-    Direction: {x: -0.97284603, y: 0.23145321}
-  - Coords: {x: -42, y: -1}
-    Direction: {x: -0.97284603, y: 0.23145321}
-  - Coords: {x: -43, y: -1}
-    Direction: {x: -0.96344477, y: 0.2679072}
-  - Coords: {x: -43, y: -1}
-    Direction: {x: -0.96344477, y: 0.2679072}
-  - Coords: {x: -44, y: -1}
-    Direction: {x: -0.94833905, y: 0.31725854}
-  - Coords: {x: -44, y: -1}
-    Direction: {x: -0.94833905, y: 0.31725854}
-  - Coords: {x: -44, y: 0}
-    Direction: {x: -0.99146855, y: 0.13034639}
-  - Coords: {x: -44, y: 0}
-    Direction: {x: -0.99146855, y: 0.13034639}
-  - Coords: {x: -43, y: 0}
-    Direction: {x: -0.9940823, y: 0.108630136}
-  - Coords: {x: -43, y: 0}
-    Direction: {x: -0.9940823, y: 0.108630136}
-  - Coords: {x: -42, y: 0}
-    Direction: {x: -0.9956578, y: 0.09308926}
-  - Coords: {x: -42, y: 0}
-    Direction: {x: -0.9956578, y: 0.09308926}
-  - Coords: {x: -41, y: 0}
-    Direction: {x: -0.9966794, y: 0.08142546}
-  - Coords: {x: -41, y: 0}
-    Direction: {x: -0.9966794, y: 0.08142546}
-  - Coords: {x: -40, y: 1}
-    Direction: {x: -0.99922043, y: -0.039480053}
-  - Coords: {x: -40, y: 1}
-    Direction: {x: -0.99922043, y: -0.039480053}
-  - Coords: {x: -41, y: 1}
-    Direction: {x: -0.99901146, y: -0.044452883}
-  - Coords: {x: -41, y: 1}
-    Direction: {x: -0.99901146, y: -0.044452883}
-  - Coords: {x: -42, y: 1}
-    Direction: {x: -0.9987059, y: -0.050857134}
-  - Coords: {x: -42, y: 1}
-    Direction: {x: -0.9987059, y: -0.050857134}
-  - Coords: {x: -43, y: 1}
-    Direction: {x: -0.99823344, y: -0.059413463}
-  - Coords: {x: -43, y: 1}
-    Direction: {x: -0.99823344, y: -0.059413463}
-  - Coords: {x: -40, y: 0}
-    Direction: {x: -0.9973791, y: 0.07235223}
-  - Coords: {x: -40, y: 0}
-    Direction: {x: -0.9973791, y: 0.07235223}
+    Direction: {x: 0.872506, y: -0.48860338}
   - Coords: {x: -44, y: 1}
-    Direction: {x: -0.9974462, y: -0.071422376}
-  - Coords: {x: -44, y: 1}
-    Direction: {x: -0.9974462, y: -0.071422376}
-  - Coords: {x: -40, y: 2}
-    Direction: {x: -0.9887084, y: -0.14985266}
-  - Coords: {x: -40, y: 2}
-    Direction: {x: -0.9887084, y: -0.14985266}
-  - Coords: {x: -41, y: 2}
-    Direction: {x: -0.98574317, y: -0.16825698}
-  - Coords: {x: -41, y: 2}
-    Direction: {x: -0.98574317, y: -0.16825698}
-  - Coords: {x: -42, y: 2}
-    Direction: {x: -0.98145014, y: -0.19171774}
-  - Coords: {x: -42, y: 2}
-    Direction: {x: -0.98145014, y: -0.19171774}
-  - Coords: {x: -43, y: 2}
-    Direction: {x: -0.974913, y: -0.2225863}
-  - Coords: {x: -43, y: 2}
-    Direction: {x: -0.974913, y: -0.2225863}
+    Direction: {x: 0.99681526, y: -0.079745226}
   - Coords: {x: -44, y: 2}
-    Direction: {x: -0.96428466, y: -0.26486826}
-  - Coords: {x: -44, y: 2}
-    Direction: {x: -0.96428466, y: -0.26486826}
+    Direction: {x: 0.96152395, y: -0.27472112}
   - Coords: {x: -44, y: 3}
-    Direction: {x: -0.90231293, y: -0.43108156}
-  - Coords: {x: -44, y: 3}
-    Direction: {x: -0.90231293, y: -0.43108156}
-  - Coords: {x: -43, y: 3}
-    Direction: {x: -0.92940015, y: -0.36907357}
-  - Coords: {x: -43, y: 3}
-    Direction: {x: -0.92940015, y: -0.36907357}
-  - Coords: {x: -42, y: 3}
-    Direction: {x: -0.9468421, y: -0.32169867}
-  - Coords: {x: -42, y: 3}
-    Direction: {x: -0.9468421, y: -0.32169867}
-  - Coords: {x: -41, y: 3}
-    Direction: {x: -0.9586445, y: -0.2846063}
-  - Coords: {x: -41, y: 3}
-    Direction: {x: -0.9586445, y: -0.2846063}
-  - Coords: {x: -40, y: 3}
-    Direction: {x: -0.96696514, y: -0.2549087}
-  - Coords: {x: -40, y: 3}
-    Direction: {x: -0.96696514, y: -0.2549087}
-  - Coords: {x: -40, y: 4}
-    Direction: {x: -0.9361227, y: -0.35167366}
-  - Coords: {x: -40, y: 4}
-    Direction: {x: -0.9361227, y: -0.35167366}
-  - Coords: {x: -41, y: 4}
-    Direction: {x: -0.92096704, y: -0.3896406}
-  - Coords: {x: -41, y: 4}
-    Direction: {x: -0.92096704, y: -0.3896406}
-  - Coords: {x: -42, y: 4}
-    Direction: {x: -0.90005094, y: -0.43578473}
-  - Coords: {x: -42, y: 4}
-    Direction: {x: -0.90005094, y: -0.43578473}
-  - Coords: {x: -43, y: 4}
-    Direction: {x: -0.87030643, y: -0.49251062}
-  - Coords: {x: -43, y: 4}
-    Direction: {x: -0.87030643, y: -0.49251062}
+    Direction: {x: 0.99896175, y: 0.04555807}
   - Coords: {x: -44, y: 4}
-    Direction: {x: -0.8266093, y: -0.56277627}
-  - Coords: {x: -44, y: 4}
-    Direction: {x: -0.8266093, y: -0.56277627}
-  - Coords: {x: -44, y: 5}
-    Direction: {x: -0.74926317, y: -0.66227233}
-  - Coords: {x: -44, y: 5}
-    Direction: {x: -0.74926317, y: -0.66227233}
-  - Coords: {x: -43, y: 5}
-    Direction: {x: -0.8058794, y: -0.59207976}
-  - Coords: {x: -43, y: 5}
-    Direction: {x: -0.8058794, y: -0.59207976}
-  - Coords: {x: -41, y: 5}
-    Direction: {x: -0.8764855, y: -0.4814283}
-  - Coords: {x: -41, y: 5}
-    Direction: {x: -0.8764855, y: -0.4814283}
-  - Coords: {x: -40, y: 5}
-    Direction: {x: -0.8987972, y: -0.43836468}
-  - Coords: {x: -40, y: 5}
-    Direction: {x: -0.8987972, y: -0.43836468}
-  - Coords: {x: -40, y: 6}
-    Direction: {x: -0.8575773, y: -0.51435506}
-  - Coords: {x: -40, y: 6}
-    Direction: {x: -0.8575773, y: -0.51435506}
-  - Coords: {x: -41, y: 6}
-    Direction: {x: -0.82867, y: -0.5597375}
-  - Coords: {x: -41, y: 6}
-    Direction: {x: -0.82867, y: -0.5597375}
-  - Coords: {x: -41, y: 7}
-    Direction: {x: -0.7802372, y: -0.62548375}
-  - Coords: {x: -41, y: 7}
-    Direction: {x: -0.7802372, y: -0.62548375}
-  - Coords: {x: -42, y: 6}
-    Direction: {x: -0.79117507, y: -0.61158967}
-  - Coords: {x: -42, y: 6}
-    Direction: {x: -0.79117507, y: -0.61158967}
-  - Coords: {x: -43, y: 6}
-    Direction: {x: -0.7420031, y: -0.6703965}
-  - Coords: {x: -43, y: 6}
-    Direction: {x: -0.7420031, y: -0.6703965}
-  - Coords: {x: -42, y: 5}
-    Direction: {x: -0.8466272, y: -0.5321865}
-  - Coords: {x: -42, y: 5}
-    Direction: {x: -0.8466272, y: -0.5321865}
-  - Coords: {x: -45, y: -3}
-    Direction: {x: -0.73247975, y: 0.68078876}
-  - Coords: {x: -45, y: -3}
-    Direction: {x: -0.73247975, y: 0.68078876}
-  - Coords: {x: -46, y: -3}
-    Direction: {x: -0.6255318, y: 0.78019863}
-  - Coords: {x: -46, y: -3}
-    Direction: {x: -0.6255318, y: 0.78019863}
-  - Coords: {x: -47, y: -3}
-    Direction: {x: -0.4666295, y: 0.88445294}
-  - Coords: {x: -47, y: -3}
-    Direction: {x: -0.4666295, y: 0.88445294}
-  - Coords: {x: -48, y: -3}
-    Direction: {x: -0.24565695, y: 0.96935683}
-  - Coords: {x: -48, y: -3}
-    Direction: {x: -0.24565695, y: 0.96935683}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -43, y: 1}
+    Direction: {x: 0.99681526, y: -0.079745226}
+  - Coords: {x: -43, y: 2}
+    Direction: {x: 0.96152395, y: -0.27472112}
+  - Coords: {x: -43, y: 3}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -43, y: 4}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -42, y: 1}
+    Direction: {x: 0.90795934, y: 0.41905817}
+  - Coords: {x: -42, y: 2}
+    Direction: {x: 0.90795934, y: 0.41905817}
+  - Coords: {x: -42, y: 3}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -42, y: 4}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -49, y: 1}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -49, y: 2}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -49, y: 3}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -49, y: 4}
+    Direction: {x: 0.9463498, y: -0.32314384}
+  - Coords: {x: -48, y: 1}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -48, y: 2}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -48, y: 3}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -48, y: 4}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -47, y: 1}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -47, y: 2}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -47, y: 3}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -47, y: 4}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -46, y: 1}
+    Direction: {x: 0.9988123, y: -0.048722554}
+  - Coords: {x: -46, y: 2}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -46, y: 3}
+    Direction: {x: 0.98946106, y: -0.14479917}
+  - Coords: {x: -46, y: 4}
+    Direction: {x: 0.9352862, y: -0.3538921}
   - Coords: {x: -49, y: -3}
-    Direction: {x: 0.02074141, y: 0.9997849}
-  - Coords: {x: -49, y: -3}
-    Direction: {x: 0.02074141, y: 0.9997849}
-  - Coords: {x: -50, y: -3}
-    Direction: {x: 0.28286958, y: 0.95915836}
-  - Coords: {x: -50, y: -3}
-    Direction: {x: 0.28286958, y: 0.95915836}
-  - Coords: {x: -49, y: -4}
-    Direction: {x: 0.016279733, y: 0.99986744}
-  - Coords: {x: -49, y: -4}
-    Direction: {x: 0.016279733, y: 0.99986744}
-  - Coords: {x: -48, y: -4}
-    Direction: {x: -0.19507162, y: 0.98078907}
-  - Coords: {x: -48, y: -4}
-    Direction: {x: -0.19507162, y: 0.98078907}
-  - Coords: {x: -47, y: -4}
-    Direction: {x: -0.38256785, y: 0.9239274}
-  - Coords: {x: -47, y: -4}
-    Direction: {x: -0.38256785, y: 0.9239274}
-  - Coords: {x: -46, y: -4}
-    Direction: {x: -0.53257793, y: 0.84638095}
-  - Coords: {x: -46, y: -4}
-    Direction: {x: -0.53257793, y: 0.84638095}
-  - Coords: {x: -45, y: -4}
-    Direction: {x: -0.64516807, y: 0.7640407}
-  - Coords: {x: -45, y: -4}
-    Direction: {x: -0.64516807, y: 0.7640407}
-  - Coords: {x: -50, y: -4}
-    Direction: {x: 0.22549503, y: 0.97424436}
-  - Coords: {x: -50, y: -4}
-    Direction: {x: 0.22549503, y: 0.97424436}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -49, y: -2}
+    Direction: {x: 0.9715203, y: 0.23695618}
+  - Coords: {x: -49, y: -1}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -49, y: 0}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -48, y: -3}
+    Direction: {x: 0.9352862, y: 0.3538921}
+  - Coords: {x: -48, y: -2}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -48, y: -1}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -48, y: 0}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -47, y: -3}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -47, y: -2}
+    Direction: {x: 0.9570244, y: 0.29000738}
+  - Coords: {x: -47, y: -1}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -47, y: 0}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -46, y: -3}
+    Direction: {x: 0.9005516, y: 0.43474907}
+  - Coords: {x: -46, y: -2}
+    Direction: {x: 0.94537294, y: 0.32599068}
+  - Coords: {x: -46, y: -1}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -46, y: 0}
+    Direction: {x: 0.9463498, y: 0.32314384}
+  - Coords: {x: -54, y: 0}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -54, y: 1}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -54, y: 2}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -54, y: 3}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -53, y: 0}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -53, y: 1}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -53, y: 2}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -53, y: 3}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -52, y: 0}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -52, y: 1}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -52, y: 2}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -52, y: 3}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -51, y: 0}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -51, y: 1}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -51, y: 2}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -51, y: 3}
+    Direction: {x: 0.99928874, y: 0.03770901}
+  - Coords: {x: -55, y: 0}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -55, y: 1}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -55, y: 2}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -55, y: 3}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -58, y: 0}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -58, y: 1}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -58, y: 2}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -58, y: 3}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -57, y: 0}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -57, y: 1}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -57, y: 2}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -57, y: 3}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -56, y: 0}
+    Direction: {x: 0.9996628, y: 0.025965268}
+  - Coords: {x: -56, y: 1}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -56, y: 2}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -56, y: 3}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -60, y: 0}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -60, y: 1}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -60, y: 2}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -60, y: 3}
+    Direction: {x: 0.99315065, y: -0.11684125}
+  - Coords: {x: -59, y: 0}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -59, y: 1}
+    Direction: {x: 0.99972326, y: 0.0235229}
+  - Coords: {x: -59, y: 2}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -59, y: 3}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -59, y: 4}
+    Direction: {x: 0.98538977, y: -0.17031428}
+  - Coords: {x: -59, y: 5}
+    Direction: {x: 0.97618705, y: -0.21693046}
+  - Coords: {x: -58, y: 4}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -58, y: 5}
+    Direction: {x: 0.9972678, y: -0.07387169}
+  - Coords: {x: -57, y: 4}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -57, y: 5}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -56, y: 4}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -56, y: 5}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -57, y: 6}
+    Direction: {x: 0.9574645, y: -0.28855094}
+  - Coords: {x: -56, y: 6}
+    Direction: {x: 0.9527443, y: -0.30377355}
+  - Coords: {x: -55, y: 4}
+    Direction: {x: 0.9995802, y: -0.02897334}
+  - Coords: {x: -55, y: 5}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -55, y: 6}
+    Direction: {x: 0.947216, y: -0.32059616}
+  - Coords: {x: -54, y: 4}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -54, y: 5}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -54, y: 6}
+    Direction: {x: 0.9907474, y: -0.13571882}
+  - Coords: {x: -53, y: 4}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -53, y: 5}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -53, y: 6}
+    Direction: {x: 0.98495704, y: -0.17279948}
+  - Coords: {x: -52, y: 4}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -52, y: 5}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -52, y: 6}
+    Direction: {x: 0.98495704, y: -0.17279948}
+  - Coords: {x: -51, y: 4}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -51, y: 5}
+    Direction: {x: 0.9951974, y: -0.09788827}
+  - Coords: {x: -51, y: 6}
+    Direction: {x: 0.98495704, y: -0.17279948}
+  - Coords: {x: -50, y: 3}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -50, y: 4}
+    Direction: {x: 0.95485675, y: -0.29706654}
+  - Coords: {x: -50, y: 5}
+    Direction: {x: 0.95485675, y: -0.29706654}
+  - Coords: {x: -50, y: 6}
+    Direction: {x: 0.95485675, y: -0.29706654}
+  - Coords: {x: -55, y: -1}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -54, y: -1}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -53, y: -1}
+    Direction: {x: 0.99576664, y: 0.091916926}
+  - Coords: {x: -52, y: -1}
+    Direction: {x: 0.99365294, y: 0.112489015}
+  - Coords: {x: -50, y: 0}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -50, y: 1}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -50, y: 2}
+    Direction: {x: 0.99901384, y: 0.044400614}
+  - Coords: {x: -49, y: 5}
+    Direction: {x: 0.9463498, y: -0.32314384}
+  - Coords: {x: -48, y: 5}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -47, y: 5}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -46, y: 5}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -50, y: 7}
+    Direction: {x: 0.95485675, y: -0.29706654}
+  - Coords: {x: -49, y: 6}
+    Direction: {x: 0.9463498, y: -0.32314384}
+  - Coords: {x: -49, y: 7}
+    Direction: {x: 0.9463498, y: -0.32314384}
+  - Coords: {x: -48, y: 6}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -48, y: 7}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -47, y: 6}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -47, y: 7}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -46, y: 6}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -46, y: 7}
+    Direction: {x: 0.9352862, y: -0.3538921}
+  - Coords: {x: -45, y: 5}
+    Direction: {x: 0.872506, y: -0.48860338}
+  - Coords: {x: -45, y: 6}
+    Direction: {x: 0.872506, y: -0.48860338}
+  - Coords: {x: -45, y: 7}
+    Direction: {x: 0.872506, y: -0.48860338}
+  - Coords: {x: -44, y: 5}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -44, y: 6}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -44, y: 7}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -43, y: 5}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -43, y: 6}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -43, y: 7}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -42, y: 5}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -42, y: 6}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -42, y: 7}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -41, y: 4}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -41, y: 5}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -41, y: 6}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -41, y: 7}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -40, y: 4}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -40, y: 5}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -40, y: 6}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -40, y: 7}
+    Direction: {x: 0.99896175, y: 0.04555807}
+  - Coords: {x: -41, y: 2}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -41, y: 3}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -42, y: -1}
+    Direction: {x: 0.90795934, y: 0.41905817}
+  - Coords: {x: -42, y: 0}
+    Direction: {x: 0.9883717, y: 0.15205719}
+  - Coords: {x: -41, y: -1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -41, y: 0}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -41, y: 1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -40, y: -1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -40, y: 0}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -40, y: 1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -40, y: 2}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: -1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: 0}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: 1}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: 2}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -43, y: 0}
+    Direction: {x: 0.9931506, y: 0.11684125}
+  - Coords: {x: -43, y: -1}
+    Direction: {x: 0.94299036, y: 0.33282012}
+  - Coords: {x: -44, y: -1}
+    Direction: {x: 0.96152395, y: 0.27472112}
+  - Coords: {x: -44, y: 0}
+    Direction: {x: 0.9954955, y: 0.0948091}
+  - Coords: {x: -45, y: -1}
+    Direction: {x: 0.97238725, y: 0.23337294}
+  - Coords: {x: -45, y: 0}
+    Direction: {x: 0.99681526, y: 0.079745226}
+  - Coords: {x: -45, y: -2}
+    Direction: {x: 0.9284767, y: 0.3713907}
+  - Coords: {x: -50, y: -2}
+    Direction: {x: 0.9761871, y: 0.21693046}
   - Coords: {x: -50, y: -1}
-    Direction: {x: 0.5467249, y: 0.8373123}
-  - Coords: {x: -50, y: -1}
-    Direction: {x: 0.5467249, y: 0.8373123}
+    Direction: {x: 0.99122787, y: 0.13216372}
+  - Coords: {x: -51, y: -1}
+    Direction: {x: 0.9925864, y: 0.12154119}
+  - Coords: {x: -52, y: -2}
+    Direction: {x: 0.98266166, y: 0.18540786}
+  - Coords: {x: -54, y: -2}
+    Direction: {x: 0.9868276, y: 0.16177502}
+  - Coords: {x: -55, y: -2}
+    Direction: {x: 0.9883717, y: 0.15205719}
+  - Coords: {x: -58, y: -2}
+    Direction: {x: 0.99167204, y: 0.12878858}
+  - Coords: {x: -59, y: -2}
+    Direction: {x: 0.9924652, y: 0.12252657}
+  - Coords: {x: -60, y: -2}
+    Direction: {x: 0.99315065, y: 0.11684125}
+  - Coords: {x: -57, y: -2}
+    Direction: {x: 0.9907474, y: 0.13571882}
+  - Coords: {x: -56, y: -2}
+    Direction: {x: 0.9896606, y: 0.14342907}
+  - Coords: {x: -53, y: -2}
+    Direction: {x: 0.98495704, y: 0.17279948}
+  - Coords: {x: -51, y: -2}
+    Direction: {x: 0.9798041, y: 0.19996001}
+  - Coords: {x: -56, y: -1}
+    Direction: {x: 0.9962406, y: 0.08662962}
+  - Coords: {x: -57, y: -1}
+    Direction: {x: 0.99663925, y: 0.08191556}
+  - Coords: {x: -58, y: -1}
+    Direction: {x: 0.9969778, y: 0.077686585}
+  - Coords: {x: -60, y: -1}
+    Direction: {x: 0.99751794, y: 0.07041303}
+  - Coords: {x: -61, y: -2}
+    Direction: {x: 0.9937468, y: 0.11165695}
+  - Coords: {x: -59, y: -1}
+    Direction: {x: 0.9972678, y: 0.07387169}
+  - Coords: {x: -62, y: -2}
+    Direction: {x: 0.99426866, y: 0.10691061}
+  - Coords: {x: -63, y: -2}
+    Direction: {x: 0.99472797, y: 0.10254927}
+  - Coords: {x: -63, y: -1}
+    Direction: {x: 0.9980925, y: 0.061737675}
+  - Coords: {x: -63, y: 0}
+    Direction: {x: 0.9997875, y: 0.020614175}
+  - Coords: {x: -62, y: 1}
+    Direction: {x: 0.99976885, y: -0.021500407}
+  - Coords: {x: -62, y: 3}
+    Direction: {x: 0.99426866, y: -0.10691061}
+  - Coords: {x: -62, y: 4}
+    Direction: {x: 0.9888582, y: -0.14886038}
+  - Coords: {x: -63, y: 4}
+    Direction: {x: 0.98974437, y: -0.1428497}
+  - Coords: {x: -63, y: 3}
+    Direction: {x: 0.99472797, y: -0.10254927}
+  - Coords: {x: -63, y: 2}
+    Direction: {x: 0.9980925, y: -0.061737675}
+  - Coords: {x: -62, y: 0}
+    Direction: {x: 0.99976885, y: 0.021500407}
+  - Coords: {x: -62, y: -1}
+    Direction: {x: 0.99792534, y: 0.06438228}
+  - Coords: {x: -61, y: -1}
+    Direction: {x: 0.99773526, y: 0.06726305}
+  - Coords: {x: -61, y: 0}
+    Direction: {x: 0.99974763, y: 0.022466239}
+  - Coords: {x: -61, y: 1}
+    Direction: {x: 0.99974763, y: -0.022466239}
+  - Coords: {x: -61, y: 2}
+    Direction: {x: 0.99773526, y: -0.06726305}
+  - Coords: {x: -61, y: 3}
+    Direction: {x: 0.9937468, y: -0.11165695}
+  - Coords: {x: -61, y: 6}
+    Direction: {x: 0.97078073, y: -0.23996827}
+  - Coords: {x: -61, y: 5}
+    Direction: {x: 0.9801549, y: -0.19823356}
+  - Coords: {x: -62, y: 2}
+    Direction: {x: 0.99792534, y: -0.06438228}
+  - Coords: {x: -62, y: 5}
+    Direction: {x: 0.9817798, y: -0.1900219}
+  - Coords: {x: -61, y: 4}
+    Direction: {x: 0.98785275, y: -0.15539257}
+  - Coords: {x: -60, y: 4}
+    Direction: {x: 0.9867059, y: -0.16251627}
+  - Coords: {x: -60, y: 5}
+    Direction: {x: 0.97830486, y: -0.20717044}
+  - Coords: {x: -60, y: 6}
+    Direction: {x: 0.9680993, y: -0.25056687}
+  - Coords: {x: -59, y: 6}
+    Direction: {x: 0.9650382, y: -0.26210913}
+  - Coords: {x: -59, y: 7}
+    Direction: {x: 0.9521508, y: -0.30562866}
+  - Coords: {x: -58, y: 7}
+    Direction: {x: 0.9474457, y: -0.31991673}
+  - Coords: {x: -57, y: 7}
+    Direction: {x: 0.9420335, y: -0.33551878}
+  - Coords: {x: -56, y: 7}
+    Direction: {x: 0.9357707, y: -0.35260925}
+  - Coords: {x: -55, y: 7}
+    Direction: {x: 0.9284767, y: -0.37139067}
+  - Coords: {x: -54, y: 7}
+    Direction: {x: 0.9199233, y: -0.39209846}
+  - Coords: {x: -53, y: 7}
+    Direction: {x: 0.909819, y: -0.41500518}
+  - Coords: {x: -52, y: 7}
+    Direction: {x: 0.8977894, y: -0.44042498}
+  - Coords: {x: -51, y: 7}
+    Direction: {x: 0.883349, y: -0.4687158}
   - Coords: {x: -58, y: 6}
-    Direction: {x: 0.8613538, y: -0.50800544}
+    Direction: {x: 0.96152395, y: -0.27472115}
+  - Coords: {x: -64, y: 2}
+    Direction: {x: 0.9982401, y: -0.05930139}
+  - Coords: {x: -64, y: 1}
+    Direction: {x: 0.999804, y: -0.0197981}
+  - Coords: {x: -63, y: 1}
+    Direction: {x: 0.9997875, y: -0.020614175}
+  - Coords: {x: -64, y: 0}
+    Direction: {x: 0.999804, y: 0.0197981}
+  - Coords: {x: -64, y: -1}
+    Direction: {x: 0.9982401, y: 0.05930139}
+  - Coords: {x: -65, y: 0}
+    Direction: {x: 0.9998187, y: 0.019044165}
+  - Coords: {x: -65, y: 1}
+    Direction: {x: 0.9998187, y: -0.019044165}
+  - Coords: {x: -64, y: 3}
+    Direction: {x: 0.99513423, y: -0.09852815}
+  - Coords: {x: -45, y: -3}
+    Direction: {x: 0.872506, y: 0.48860338}
+  - Coords: {x: -46, y: -4}
+    Direction: {x: 0.8496402, y: 0.5273629}
+  - Coords: {x: -47, y: -4}
+    Direction: {x: 0.87789553, y: 0.47885212}
+  - Coords: {x: -50, y: -3}
+    Direction: {x: 0.95485675, y: 0.29706654}
+  - Coords: {x: -50, y: -4}
+    Direction: {x: 0.9284767, y: 0.37139067}
+  - Coords: {x: -49, y: -4}
+    Direction: {x: 0.91564405, y: 0.40199006}
+  - Coords: {x: -48, y: -4}
+    Direction: {x: 0.8992351, y: 0.43746573}
+  - Coords: {x: -45, y: -4}
+    Direction: {x: 0.81153435, y: 0.58430475}
+  - Coords: {x: -40, y: 3}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: 3}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -39, y: 4}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -39, y: 5}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -39, y: 6}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -39, y: 7}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -38, y: 3}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -38, y: 4}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -38, y: 5}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -38, y: 6}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -38, y: 7}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -37, y: 3}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -37, y: 4}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -37, y: 5}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -37, y: 6}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -37, y: 7}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -36, y: 3}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -36, y: 4}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -36, y: 5}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -36, y: 6}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -36, y: 7}
+    Direction: {x: 0.9975047, y: 0.070600376}
+  - Coords: {x: -35, y: 3}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -35, y: 4}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -35, y: 5}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -35, y: 6}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -35, y: 7}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -34, y: 3}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -34, y: 4}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -34, y: 5}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -34, y: 6}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -34, y: 7}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -33, y: 3}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -33, y: 4}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -33, y: 5}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -33, y: 6}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -33, y: 7}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -32, y: 3}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -32, y: 4}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -32, y: 5}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -32, y: 6}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -32, y: 7}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -31, y: 3}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -31, y: 4}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -31, y: 5}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -31, y: 6}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -31, y: 7}
+    Direction: {x: 0.9920641, y: 0.12573335}
+  - Coords: {x: -37, y: -2}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -37, y: -1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -37, y: 0}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -37, y: 1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -37, y: 2}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -36, y: -2}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -36, y: -1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -36, y: 0}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -36, y: 1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -36, y: 2}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -35, y: -2}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -35, y: -1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -35, y: 0}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -35, y: 1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -35, y: 2}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -34, y: -2}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -34, y: -1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -34, y: 0}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -34, y: 1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -34, y: 2}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -33, y: -2}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -33, y: -1}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -33, y: 0}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -33, y: 1}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -33, y: 2}
+    Direction: {x: 0.78119105, y: 0.624292}
+  - Coords: {x: -38, y: -1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -38, y: 0}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -38, y: 1}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -38, y: 2}
+    Direction: {x: 0.92208874, y: 0.38697854}
+  - Coords: {x: -38, y: -3}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -38, y: -2}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -37, y: -3}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -36, y: -3}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -35, y: -3}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -34, y: -3}
+    Direction: {x: 0.7717231, y: 0.6359587}
+  - Coords: {x: -32, y: 1}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -32, y: 2}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -31, y: 1}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -31, y: 2}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -30, y: 1}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -30, y: 2}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -30, y: 3}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -30, y: 4}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -30, y: 5}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -29, y: 1}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -29, y: 2}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -29, y: 3}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -29, y: 4}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -29, y: 5}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -28, y: 1}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -28, y: 2}
+    Direction: {x: 0.91757786, y: 0.39755613}
+  - Coords: {x: -28, y: 3}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -28, y: 4}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -28, y: 5}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -30, y: 6}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -30, y: 7}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -29, y: 6}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -29, y: 7}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -28, y: 6}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -28, y: 7}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -27, y: 3}
+    Direction: {x: 0.8745525, y: 0.4849308}
+  - Coords: {x: -27, y: 4}
+    Direction: {x: 0.8745525, y: 0.4849308}
+  - Coords: {x: -27, y: 5}
+    Direction: {x: 0.8745525, y: 0.4849308}
+  - Coords: {x: -27, y: 6}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -27, y: 7}
+    Direction: {x: 0.97858083, y: 0.20586307}
+  - Coords: {x: -26, y: 3}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -26, y: 4}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -26, y: 5}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -26, y: 6}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -26, y: 7}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -27, y: 1}
+    Direction: {x: 0.8745525, y: 0.4849308}
+  - Coords: {x: -27, y: 2}
+    Direction: {x: 0.8745525, y: 0.4849308}
+  - Coords: {x: -26, y: 1}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -26, y: 2}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -25, y: 1}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -25, y: 2}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -25, y: 3}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -25, y: 4}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -25, y: 5}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -24, y: 1}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -24, y: 2}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -24, y: 3}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -24, y: 4}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -24, y: 5}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -23, y: 1}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -23, y: 2}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -23, y: 3}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -23, y: 4}
+    Direction: {x: 0.75841284, y: 0.6517745}
+  - Coords: {x: -23, y: 5}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -25, y: 6}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -25, y: 7}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -24, y: 6}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -24, y: 7}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -23, y: 6}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -23, y: 7}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -22, y: 3}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -22, y: 4}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -22, y: 5}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -22, y: 6}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -22, y: 7}
+    Direction: {x: 0.9651947, y: 0.2615325}
+  - Coords: {x: -26, y: 0}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -25, y: 0}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -24, y: 0}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -23, y: 0}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -22, y: 0}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -22, y: 1}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -22, y: 2}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -21, y: 0}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -21, y: 1}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -21, y: 2}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -21, y: 3}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -21, y: 4}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -20, y: 0}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -20, y: 1}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -20, y: 2}
+    Direction: {x: 0.9154876, y: 0.40234625}
+  - Coords: {x: -20, y: 3}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -20, y: 4}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -19, y: 0}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -19, y: 1}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -19, y: 2}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -19, y: 3}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -19, y: 4}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -18, y: 0}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -18, y: 1}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -18, y: 2}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -18, y: 3}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -18, y: 4}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -21, y: 5}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -21, y: 6}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -21, y: 7}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -20, y: 5}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -20, y: 6}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -20, y: 7}
+    Direction: {x: 0.99538916, y: 0.09591845}
+  - Coords: {x: -19, y: 5}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -19, y: 6}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -19, y: 7}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -18, y: 5}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -18, y: 6}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -18, y: 7}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -17, y: 3}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -17, y: 4}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -17, y: 5}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -17, y: 6}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -17, y: 7}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -16, y: 3}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -16, y: 4}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -16, y: 5}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -16, y: 6}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -16, y: 7}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -15, y: 3}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -15, y: 4}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -15, y: 5}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -15, y: 6}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -15, y: 7}
+    Direction: {x: 0.9914457, y: 0.13051939}
+  - Coords: {x: -19, y: -1}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -18, y: -1}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -17, y: -1}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -17, y: 0}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -17, y: 1}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -17, y: 2}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -16, y: -1}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -16, y: 0}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -16, y: 1}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -16, y: 2}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -15, y: -1}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -15, y: 0}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -15, y: 1}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -15, y: 2}
+    Direction: {x: 0.7567108, y: 0.65374976}
+  - Coords: {x: -26, y: -4}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -26, y: -3}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -26, y: -2}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -26, y: -1}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -25, y: -4}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -25, y: -3}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -25, y: -2}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -25, y: -1}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -24, y: -4}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -24, y: -3}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -24, y: -2}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -24, y: -1}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -23, y: -4}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -23, y: -3}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -23, y: -2}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -23, y: -1}
+    Direction: {x: 0.8501331, y: 0.5265679}
+  - Coords: {x: -22, y: -4}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -22, y: -3}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -22, y: -2}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -22, y: -1}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -21, y: -4}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -21, y: -3}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -21, y: -2}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -21, y: -1}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -20, y: -4}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -20, y: -3}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -20, y: -2}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -20, y: -1}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -19, y: -4}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -19, y: -3}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -19, y: -2}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -18, y: -4}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -18, y: -3}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -18, y: -2}
+    Direction: {x: 0.73880583, y: 0.67391837}
+  - Coords: {x: -17, y: -4}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -17, y: -3}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -17, y: -2}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -16, y: -4}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -16, y: -3}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -16, y: -2}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -15, y: -4}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -15, y: -3}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -15, y: -2}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -14, y: -4}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -14, y: -3}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -14, y: -2}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -14, y: -1}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -14, y: 0}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -13, y: -4}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -13, y: -3}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -13, y: -2}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -13, y: -1}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -13, y: 0}
+    Direction: {x: 0.40925586, y: 0.91241974}
+  - Coords: {x: -12, y: -3}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -12, y: -2}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -12, y: -1}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -12, y: 0}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -12, y: 1}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -11, y: -3}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -11, y: -2}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -11, y: -1}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -11, y: 0}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -11, y: 1}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -10, y: -3}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -10, y: -2}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -10, y: -1}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -10, y: 0}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -10, y: 1}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -9, y: -3}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -9, y: -2}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -9, y: -1}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -9, y: 0}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -9, y: 1}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -8, y: -3}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -8, y: -2}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -8, y: -1}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -8, y: 0}
+    Direction: {x: 0.61753684, y: 0.78654194}
+  - Coords: {x: -8, y: 1}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -14, y: 1}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -14, y: 2}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -14, y: 3}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -14, y: 4}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -14, y: 5}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -13, y: 1}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -13, y: 2}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -13, y: 3}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -13, y: 4}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -13, y: 5}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -12, y: 2}
+    Direction: {x: 0.9320876, y: 0.36223298}
+  - Coords: {x: -12, y: 3}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -12, y: 4}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -12, y: 5}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -11, y: 2}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -11, y: 3}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -11, y: 4}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -11, y: 5}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -10, y: 2}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -10, y: 3}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -10, y: 4}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -10, y: 5}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -14, y: 6}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -14, y: 7}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -13, y: 6}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -13, y: 7}
+    Direction: {x: 0.9930784, y: 0.11745308}
+  - Coords: {x: -12, y: 6}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -12, y: 7}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -11, y: 6}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -11, y: 7}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -10, y: 6}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -10, y: 7}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -9, y: 3}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -9, y: 4}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -9, y: 5}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -9, y: 6}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -9, y: 7}
+    Direction: {x: 0.98711604, y: 0.16000618}
+  - Coords: {x: -8, y: 3}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -8, y: 4}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -8, y: 5}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -8, y: 6}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -8, y: 7}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -9, y: 2}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -8, y: 2}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -7, y: 1}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -7, y: 2}
+    Direction: {x: 0.83701223, y: 0.5471843}
+  - Coords: {x: -7, y: 3}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -7, y: 4}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -7, y: 5}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -7, y: 6}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -7, y: 7}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 3}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 4}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 5}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 6}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 7}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -5, y: 3}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -5, y: 4}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -5, y: 5}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -5, y: 6}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -5, y: 7}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -4, y: 3}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -4, y: 4}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -4, y: 5}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -4, y: 6}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -4, y: 7}
+    Direction: {x: 0.99405444, y: 0.10888435}
+  - Coords: {x: -6, y: 2}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -5, y: 2}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -4, y: 2}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 2}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 3}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 4}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 5}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 6}
+    Direction: {x: 0.94439894, y: -0.3288018}
+  - Coords: {x: -2, y: 2}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -2, y: 3}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -2, y: 4}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -2, y: 5}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -2, y: 6}
+    Direction: {x: 0.94439894, y: -0.3288018}
+  - Coords: {x: -5, y: 1}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -4, y: 1}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -3, y: 1}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -2, y: 1}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: -1, y: 1}
+    Direction: {x: 0.9726699, y: -0.23219243}
+  - Coords: {x: -1, y: 2}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: -1, y: 3}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: -1, y: 4}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: -1, y: 5}
+    Direction: {x: 0.9726699, y: -0.23219243}
+  - Coords: {x: -6, y: 1}
+    Direction: {x: 0.91102195, y: 0.41235787}
+  - Coords: {x: 0, y: 2}
+    Direction: {x: 0.18711211, y: -0.9823386}
+  - Coords: {x: 0, y: 3}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: 0, y: 4}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: 1, y: 2}
+    Direction: {x: 0, y: -1}
+  - Coords: {x: 1, y: 3}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: 1, y: 4}
+    Direction: {x: 0.4036278, y: -0.91492325}
+  - Coords: {x: 2, y: -3}
+    Direction: {x: -0.9456025, y: 0.3253244}
+  - Coords: {x: 2, y: -2}
+    Direction: {x: -0.62469506, y: -0.78086877}
+  - Coords: {x: 2, y: -1}
+    Direction: {x: -0.80671996, y: -0.590934}
+  - Coords: {x: 3, y: -3}
+    Direction: {x: -0.96499366, y: 0.26227328}
+  - Coords: {x: 3, y: -2}
+    Direction: {x: -0.80671996, y: -0.590934}
+  - Coords: {x: 3, y: -1}
+    Direction: {x: -0.80671996, y: -0.590934}
+  - Coords: {x: 4, y: -3}
+    Direction: {x: -0.97568995, y: 0.21915554}
+  - Coords: {x: 4, y: -2}
+    Direction: {x: -0.80671996, y: -0.590934}
+  - Coords: {x: 4, y: -1}
+    Direction: {x: -0.80671996, y: -0.590934}
+  - Coords: {x: 2, y: -5}
+    Direction: {x: -0.7523093, y: 0.6588101}
+  - Coords: {x: 2, y: -4}
+    Direction: {x: -0.8537498, y: 0.52068335}
+  - Coords: {x: 3, y: -5}
+    Direction: {x: -0.8223846, y: 0.56893194}
+  - Coords: {x: 3, y: -4}
+    Direction: {x: -0.9008903, y: 0.43404678}
+  - Coords: {x: 4, y: -5}
+    Direction: {x: -0.8681277, y: 0.49634084}
+  - Coords: {x: 4, y: -4}
+    Direction: {x: -0.92905974, y: 0.3699298}
+  - Coords: {x: -1, y: -6}
+    Direction: {x: 0.58817166, y: 0.8087361}
+  - Coords: {x: -1, y: -5}
+    Direction: {x: -0.22527662, y: 0.9742949}
+  - Coords: {x: -1, y: -4}
+    Direction: {x: -0.3150941, y: 0.94906044}
+  - Coords: {x: 0, y: -6}
+    Direction: {x: 0.34174308, y: 0.93979347}
+  - Coords: {x: 0, y: -5}
+    Direction: {x: -0.4715861, y: 0.88182}
+  - Coords: {x: 0, y: -4}
+    Direction: {x: -0.6090449, y: 0.79313576}
+  - Coords: {x: 1, y: -6}
+    Direction: {x: 0, y: 1}
+  - Coords: {x: 1, y: -5}
+    Direction: {x: -0.6424524, y: 0.7663256}
+  - Coords: {x: 1, y: -4}
+    Direction: {x: -0.7692112, y: 0.6389947}
+  - Coords: {x: 0, y: -3}
+    Direction: {x: -0.80590993, y: 0.59203815}
+  - Coords: {x: 0, y: -2}
+    Direction: {x: 0.62469506, y: -0.78086877}
+  - Coords: {x: 1, y: -3}
+    Direction: {x: -0.9055058, y: 0.424334}
+  - Coords: {x: 1, y: -2}
+    Direction: {x: 0, y: -1}
+  - Coords: {x: 0, y: 0}
+    Direction: {x: 0.29408583, y: -0.95577896}
+  - Coords: {x: 0, y: 1}
+    Direction: {x: 0.22903934, y: -0.9734172}
+  - Coords: {x: 1, y: 0}
+    Direction: {x: 0, y: -1}
+  - Coords: {x: 1, y: 1}
+    Direction: {x: 0, y: -1}
+  - Coords: {x: 2, y: 0}
+    Direction: {x: -0.29408583, y: -0.95577896}
+  - Coords: {x: 2, y: 1}
+    Direction: {x: -0.22903934, y: -0.9734172}
+  - Coords: {x: 2, y: 2}
+    Direction: {x: -0.18711211, y: -0.9823386}
+  - Coords: {x: -1, y: -2}
+    Direction: {x: 0.8479983, y: -0.52999896}
+  - Coords: {x: -1, y: -1}
+    Direction: {x: 0.66436386, y: -0.74740934}
+  - Coords: {x: -1, y: 0}
+    Direction: {x: 0.52409744, y: -0.85165834}
+  - Coords: {x: 0, y: -1}
+    Direction: {x: 0.40613845, y: -0.91381156}
+  - Coords: {x: 1, y: -1}
+    Direction: {x: 0, y: -1}
+  - Coords: {x: 5, y: -4}
+    Direction: {x: -0.9469777, y: 0.32129937}
+  - Coords: {x: 5, y: -3}
+    Direction: {x: -0.98217195, y: 0.18798475}
+  - Coords: {x: 2, y: -6}
+    Direction: {x: -0.34174308, y: 0.93979347}
+  - Coords: {x: 3, y: -6}
+    Direction: {x: -0.58817166, y: 0.8087361}
+  - Coords: {x: -1, y: -3}
+    Direction: {x: -0.5072199, y: 0.8618166}
+  - Coords: {x: -1, y: -11}
+    Direction: {x: -0.6830307, y: 0.7303896}
+  - Coords: {x: -1, y: -10}
+    Direction: {x: -0.9976568, y: 0.06841575}
+  - Coords: {x: -1, y: -9}
+    Direction: {x: -0.73147464, y: -0.6818686}
+  - Coords: {x: -1, y: -8}
+    Direction: {x: -0.45949605, y: -0.88817984}
+  - Coords: {x: -1, y: -7}
+    Direction: {x: -0.32263747, y: -0.9465226}
+  - Coords: {x: 0, y: -11}
+    Direction: {x: -0.88193816, y: 0.47136518}
+  - Coords: {x: 0, y: -10}
+    Direction: {x: -0.99941313, y: 0.03425508}
+  - Coords: {x: 0, y: -9}
+    Direction: {x: -0.90644413, y: -0.42232567}
+  - Coords: {x: 0, y: -8}
+    Direction: {x: -0.71919036, y: -0.69481313}
+  - Coords: {x: 0, y: -7}
+    Direction: {x: -0.5634344, y: -0.8261608}
+  - Coords: {x: 1, y: -11}
+    Direction: {x: -0.9420036, y: 0.33560288}
+  - Coords: {x: 1, y: -10}
+    Direction: {x: -0.9997391, y: 0.022841275}
+  - Coords: {x: 1, y: -9}
+    Direction: {x: -0.95500314, y: -0.29659578}
+  - Coords: {x: 1, y: -8}
+    Direction: {x: -0.8407456, y: -0.5414303}
+  - Coords: {x: 1, y: -7}
+    Direction: {x: -0.71513957, y: -0.69898164}
+  - Coords: {x: 2, y: -11}
+    Direction: {x: -0.9661109, y: 0.25812727}
+  - Coords: {x: 2, y: -10}
+    Direction: {x: -0.99985325, y: 0.017131828}
+  - Coords: {x: 2, y: -9}
+    Direction: {x: -0.97393167, y: -0.22684146}
+  - Coords: {x: 2, y: -8}
+    Direction: {x: -0.90048045, y: -0.4348966}
+  - Coords: {x: 2, y: -7}
+    Direction: {x: -0.8065301, y: -0.5911931}
+  - Coords: {x: 3, y: -11}
+    Direction: {x: -0.9779122, y: 0.20901632}
+  - Coords: {x: 3, y: -10}
+    Direction: {x: -0.99990606, y: 0.013705665}
+  - Coords: {x: 3, y: -9}
+    Direction: {x: -0.98308104, y: -0.18317102}
+  - Coords: {x: 3, y: -8}
+    Direction: {x: -0.93280125, y: -0.3603913}
+  - Coords: {x: 3, y: -7}
+    Direction: {x: -0.8626312, y: -0.50583327}
+  - Coords: {x: -1, y: -13}
+    Direction: {x: -0.8579158, y: 0.5137903}
+  - Coords: {x: -1, y: -12}
+    Direction: {x: -0.43497595, y: 0.9004421}
+  - Coords: {x: 0, y: -13}
+    Direction: {x: -0.9409719, y: 0.3384845}
+  - Coords: {x: 0, y: -12}
+    Direction: {x: -0.69496226, y: 0.7190462}
+  - Coords: {x: 1, y: -13}
+    Direction: {x: -0.9685122, y: 0.24896632}
+  - Coords: {x: 1, y: -12}
+    Direction: {x: -0.8232022, y: 0.5677483}
+  - Coords: {x: 2, y: -13}
+    Direction: {x: -0.79337263, y: 0.60873634}
+  - Coords: {x: 2, y: -12}
+    Direction: {x: -0.88822204, y: 0.45941445}
+  - Coords: {x: 3, y: -13}
+    Direction: {x: -0.8522613, y: 0.52311635}
+  - Coords: {x: 3, y: -12}
+    Direction: {x: -0.9240251, y: 0.38233173}
+  - Coords: {x: -4, y: -16}
+    Direction: {x: -0.67661333, y: 0.7363385}
+  - Coords: {x: -4, y: -15}
+    Direction: {x: -0.81770915, y: 0.5756316}
+  - Coords: {x: -4, y: -14}
+    Direction: {x: -0.95252305, y: 0.30446646}
+  - Coords: {x: -4, y: -13}
+    Direction: {x: -0.99791527, y: -0.06453746}
+  - Coords: {x: -4, y: -12}
+    Direction: {x: 0.6952351, y: 0.7187824}
+  - Coords: {x: -3, y: -16}
+    Direction: {x: -0.7861541, y: 0.61803055}
+  - Coords: {x: -3, y: -15}
+    Direction: {x: -0.89136755, y: 0.45328137}
+  - Coords: {x: -3, y: -14}
+    Direction: {x: -0.9743627, y: 0.22498308}
+  - Coords: {x: -3, y: -13}
+    Direction: {x: -0.9989105, y: -0.04666702}
+  - Coords: {x: -3, y: -12}
+    Direction: {x: 0.43551174, y: 0.900183}
+  - Coords: {x: -2, y: -16}
+    Direction: {x: -0.85168326, y: 0.52405685}
+  - Coords: {x: -2, y: -15}
+    Direction: {x: -0.9291085, y: 0.36980733}
+  - Coords: {x: -2, y: -14}
+    Direction: {x: -0.984058, y: 0.1778476}
+  - Coords: {x: -2, y: -13}
+    Direction: {x: -0.99933213, y: -0.036541924}
+  - Coords: {x: -2, y: -12}
+    Direction: {x: 0.00036710376, y: 0.9999999}
+  - Coords: {x: -1, y: -16}
+    Direction: {x: -0.8924622, y: 0.45112225}
+  - Coords: {x: -1, y: -15}
+    Direction: {x: -0.95048106, y: 0.3107826}
+  - Coords: {x: -1, y: -14}
+    Direction: {x: -0.620525, y: 0.7841867}
+  - Coords: {x: 0, y: -16}
+    Direction: {x: -0.91903025, y: 0.39418697}
+  - Coords: {x: 0, y: -15}
+    Direction: {x: -0.96359986, y: 0.26734865}
+  - Coords: {x: 0, y: -14}
+    Direction: {x: -0.7965194, y: 0.604613}
+  - Coords: {x: -4, y: -17}
+    Direction: {x: -0.56178826, y: 0.82728106}
+  - Coords: {x: -3, y: -17}
+    Direction: {x: -0.6849322, y: 0.7286068}
+  - Coords: {x: -2, y: -17}
+    Direction: {x: -0.76849306, y: 0.6398581}
+  - Coords: {x: -1, y: -17}
+    Direction: {x: -0.8253932, y: 0.56455827}
+  - Coords: {x: 0, y: -17}
+    Direction: {x: -0.86488676, y: 0.50196695}
+  - Coords: {x: 1, y: -14}
+    Direction: {x: -0.8790058, y: 0.476811}
+  - Coords: {x: -10, y: -17}
+    Direction: {x: -0.41650474, y: 0.90913355}
+  - Coords: {x: -10, y: -16}
+    Direction: {x: -0.5258586, y: 0.85057205}
+  - Coords: {x: -10, y: -15}
+    Direction: {x: -0.68889266, y: 0.7248633}
+  - Coords: {x: -10, y: -14}
+    Direction: {x: -0.8990752, y: 0.43779424}
+  - Coords: {x: -10, y: -13}
+    Direction: {x: -0.99694556, y: -0.07809912}
+  - Coords: {x: -10, y: -12}
+    Direction: {x: -0.84088844, y: -0.54120857}
+  - Coords: {x: -9, y: -17}
+    Direction: {x: -0.58275485, y: 0.81264806}
+  - Coords: {x: -9, y: -16}
+    Direction: {x: -0.6954127, y: 0.7186106}
+  - Coords: {x: -9, y: -15}
+    Direction: {x: -0.8299159, y: 0.55788857}
+  - Coords: {x: -9, y: -14}
+    Direction: {x: -0.95486313, y: 0.29704618}
+  - Coords: {x: -9, y: -13}
+    Direction: {x: -0.99875, y: -0.04998507}
+  - Coords: {x: -9, y: -12}
+    Direction: {x: -0.92486745, y: -0.38028976}
+  - Coords: {x: -8, y: -17}
+    Direction: {x: -0.6984957, y: 0.71561426}
+  - Coords: {x: -8, y: -16}
+    Direction: {x: -0.79647344, y: 0.60467356}
+  - Coords: {x: -8, y: -15}
+    Direction: {x: -0.8966151, y: 0.44281074}
+  - Coords: {x: -8, y: -14}
+    Direction: {x: -0.974863, y: 0.22280511}
+  - Coords: {x: -8, y: -13}
+    Direction: {x: -0.9993247, y: -0.036744203}
+  - Coords: {x: -8, y: -12}
+    Direction: {x: -0.9572743, y: -0.28918132}
+  - Coords: {x: -7, y: -17}
+    Direction: {x: -0.7771843, y: 0.6292731}
+  - Coords: {x: -7, y: -16}
+    Direction: {x: -0.85749376, y: 0.5144943}
+  - Coords: {x: -7, y: -15}
+    Direction: {x: -0.9315561, y: 0.3635976}
+  - Coords: {x: -7, y: -14}
+    Direction: {x: -0.98407567, y: 0.17775014}
+  - Coords: {x: -7, y: -13}
+    Direction: {x: -0.99957806, y: -0.029046835}
+  - Coords: {x: -7, y: -12}
+    Direction: {x: -0.97266376, y: -0.2322183}
+  - Coords: {x: -6, y: -17}
+    Direction: {x: -0.83102596, y: 0.55623364}
+  - Coords: {x: -6, y: -16}
+    Direction: {x: -0.8958579, y: 0.44434077}
+  - Coords: {x: -6, y: -15}
+    Direction: {x: -0.9516877, y: 0.30706757}
+  - Coords: {x: -6, y: -14}
+    Direction: {x: -0.9890353, y: 0.14767967}
+  - Coords: {x: -6, y: -13}
+    Direction: {x: -0.99971163, y: -0.024015097}
+  - Coords: {x: -6, y: -12}
+    Direction: {x: -0.9810754, y: -0.19362597}
+  - Coords: {x: -5, y: -17}
+    Direction: {x: -0.86860824, y: 0.4954994}
+  - Coords: {x: -5, y: -16}
+    Direction: {x: -0.92108494, y: 0.38936174}
+  - Coords: {x: -5, y: -15}
+    Direction: {x: -0.964208, y: 0.265147}
+  - Coords: {x: -5, y: -14}
+    Direction: {x: -0.9919997, y: 0.12624}
+  - Coords: {x: -5, y: -13}
+    Direction: {x: -0.9997905, y: -0.02046893}
+  - Coords: {x: -5, y: -12}
+    Direction: {x: -0.9861469, y: -0.16587439}
+  - Coords: {x: -16, y: -17}
+    Direction: {x: -0.326652, y: 0.9451447}
+  - Coords: {x: -16, y: -16}
+    Direction: {x: -0.4296868, y: 0.902978}
+  - Coords: {x: -16, y: -15}
+    Direction: {x: -0.60691214, y: 0.79476887}
+  - Coords: {x: -16, y: -14}
+    Direction: {x: -0.8880956, y: 0.45965874}
+  - Coords: {x: -16, y: -13}
+    Direction: {x: -0.9643599, y: -0.26459405}
+  - Coords: {x: -16, y: -12}
+    Direction: {x: -0.6840583, y: -0.72942734}
+  - Coords: {x: -15, y: -17}
+    Direction: {x: -0.5265202, y: 0.85016257}
+  - Coords: {x: -15, y: -16}
+    Direction: {x: -0.6488444, y: 0.7609211}
+  - Coords: {x: -15, y: -15}
+    Direction: {x: -0.8073855, y: 0.59002435}
+  - Coords: {x: -15, y: -14}
+    Direction: {x: -0.96072805, y: 0.27749184}
+  - Coords: {x: -15, y: -13}
+    Direction: {x: -0.98848027, y: -0.15135016}
+  - Coords: {x: -15, y: -12}
+    Direction: {x: -0.8593591, y: -0.51137275}
+  - Coords: {x: -14, y: -17}
+    Direction: {x: -0.6660849, y: 0.74587595}
+  - Coords: {x: -14, y: -16}
+    Direction: {x: -0.7758113, y: 0.63096505}
+  - Coords: {x: -14, y: -15}
+    Direction: {x: -0.8919868, y: 0.4520615}
+  - Coords: {x: -14, y: -14}
+    Direction: {x: -0.98052245, y: 0.1964072}
+  - Coords: {x: -14, y: -13}
+    Direction: {x: -0.99440956, y: -0.10559182}
+  - Coords: {x: -14, y: -12}
+    Direction: {x: -0.92438006, y: -0.3814728}
+  - Coords: {x: -13, y: -17}
+    Direction: {x: -0.7592741, y: 0.65077096}
+  - Coords: {x: -13, y: -16}
+    Direction: {x: -0.8489495, y: 0.5284739}
+  - Coords: {x: -13, y: -15}
+    Direction: {x: -0.9323124, y: 0.36165383}
+  - Coords: {x: -13, y: -14}
+    Direction: {x: -0.98845, y: 0.15154691}
+  - Coords: {x: -13, y: -13}
+    Direction: {x: -0.99671346, y: -0.08100799}
+  - Coords: {x: -13, y: -12}
+    Direction: {x: -0.9535612, y: -0.3011994}
+  - Coords: {x: -12, y: -17}
+    Direction: {x: -0.821451, y: 0.5702792}
+  - Coords: {x: -12, y: -16}
+    Direction: {x: -0.8929157, y: 0.4502238}
+  - Coords: {x: -12, y: -15}
+    Direction: {x: -0.9540168, y: 0.29975322}
+  - Coords: {x: -12, y: -14}
+    Direction: {x: -0.9923771, y: 0.123238206}
+  - Coords: {x: -12, y: -13}
+    Direction: {x: -0.99784017, y: -0.06568932}
+  - Coords: {x: -12, y: -12}
+    Direction: {x: -0.9687948, y: -0.24786408}
+  - Coords: {x: -11, y: -17}
+    Direction: {x: -0.8637607, y: 0.5039023}
+  - Coords: {x: -11, y: -16}
+    Direction: {x: -0.92075914, y: 0.39013156}
+  - Coords: {x: -11, y: -15}
+    Direction: {x: -0.96686643, y: 0.2552827}
+  - Coords: {x: -11, y: -14}
+    Direction: {x: -0.994599, y: 0.10379196}
+  - Coords: {x: -11, y: -13}
+    Direction: {x: -0.9984734, y: -0.055235375}
+  - Coords: {x: -11, y: -12}
+    Direction: {x: -0.97766006, y: -0.21019226}
+  - Coords: {x: -22, y: -17}
+    Direction: {x: -0.29510194, y: 0.9554658}
+  - Coords: {x: -22, y: -16}
+    Direction: {x: -0.38384396, y: 0.923398}
+  - Coords: {x: -22, y: -15}
+    Direction: {x: -0.5363548, y: 0.84399265}
+  - Coords: {x: -22, y: -14}
+    Direction: {x: -0.8032718, y: 0.59561265}
+  - Coords: {x: -22, y: -13}
+    Direction: {x: -0.9959205, y: -0.09023532}
+  - Coords: {x: -22, y: -12}
+    Direction: {x: -0.734944, y: -0.6781278}
+  - Coords: {x: -21, y: -17}
+    Direction: {x: -0.49247617, y: 0.87032586}
+  - Coords: {x: -21, y: -16}
+    Direction: {x: -0.60587674, y: 0.7955585}
+  - Coords: {x: -21, y: -15}
+    Direction: {x: -0.75859946, y: 0.6515573}
+  - Coords: {x: -21, y: -14}
+    Direction: {x: -0.92696023, y: 0.37515962}
+  - Coords: {x: -21, y: -13}
+    Direction: {x: -0.9987794, y: -0.0493941}
+  - Coords: {x: -21, y: -12}
+    Direction: {x: -0.8931269, y: -0.4498048}
+  - Coords: {x: -20, y: -17}
+    Direction: {x: -0.635394, y: 0.7721881}
+  - Coords: {x: -20, y: -16}
+    Direction: {x: -0.74219865, y: 0.6701799}
+  - Coords: {x: -20, y: -15}
+    Direction: {x: -0.86102766, y: 0.50855815}
+  - Coords: {x: -20, y: -14}
+    Direction: {x: -0.96338403, y: 0.26812533}
+  - Coords: {x: -20, y: -13}
+    Direction: {x: -0.9994222, y: -0.033988964}
+  - Coords: {x: -20, y: -12}
+    Direction: {x: -0.9449336, y: -0.32726204}
+  - Coords: {x: -19, y: -17}
+    Direction: {x: -0.73371196, y: 0.67946064}
+  - Coords: {x: -19, y: -16}
+    Direction: {x: -0.8238243, y: 0.56684524}
+  - Coords: {x: -19, y: -15}
+    Direction: {x: -0.9118968, y: 0.4104194}
+  - Coords: {x: -19, y: -14}
+    Direction: {x: -0.97824264, y: 0.20746443}
+  - Coords: {x: -19, y: -13}
+    Direction: {x: -0.9996644, y: -0.025906088}
+  - Coords: {x: -19, y: -12}
+    Direction: {x: -0.9668957, y: -0.25517178}
+  - Coords: {x: -18, y: -17}
+    Direction: {x: -0.8007556, y: 0.59899116}
+  - Coords: {x: -18, y: -16}
+    Direction: {x: -0.87406987, y: 0.4858002}
+  - Coords: {x: -18, y: -15}
+    Direction: {x: -0.9398196, y: 0.34167117}
+  - Coords: {x: -18, y: -14}
+    Direction: {x: -0.98564196, y: 0.16884877}
+  - Coords: {x: -18, y: -13}
+    Direction: {x: -0.99978095, y: -0.020928307}
+  - Coords: {x: -18, y: -12}
+    Direction: {x: -0.9780246, y: -0.20848961}
+  - Coords: {x: -17, y: -17}
+    Direction: {x: -0.8470769, y: 0.53147036}
+  - Coords: {x: -17, y: -16}
+    Direction: {x: -0.9063544, y: 0.42251822}
+  - Coords: {x: -17, y: -15}
+    Direction: {x: -0.9565187, y: 0.29167092}
+  - Coords: {x: -17, y: -14}
+    Direction: {x: -0.9898343, y: 0.14222535}
+  - Coords: {x: -17, y: -13}
+    Direction: {x: -0.99984586, y: -0.01755489}
+  - Coords: {x: -17, y: -12}
+    Direction: {x: -0.9843884, y: -0.17600985}
+  - Coords: {x: -28, y: -17}
+    Direction: {x: -0.35132617, y: 0.9362532}
+  - Coords: {x: -28, y: -16}
+    Direction: {x: -0.4527421, y: 0.8916415}
+  - Coords: {x: -28, y: -15}
+    Direction: {x: -0.6174584, y: 0.7866035}
+  - Coords: {x: -28, y: -14}
+    Direction: {x: -0.8656126, y: 0.50071424}
+  - Coords: {x: -28, y: -13}
+    Direction: {x: -0.9932208, y: -0.11624289}
+  - Coords: {x: -28, y: -12}
+    Direction: {x: -0.77610517, y: -0.6306035}
+  - Coords: {x: -27, y: -17}
+    Direction: {x: -0.536793, y: 0.8437139}
+  - Coords: {x: -27, y: -16}
+    Direction: {x: -0.65243334, y: 0.7578462}
+  - Coords: {x: -27, y: -15}
+    Direction: {x: -0.799474, y: 0.6007006}
+  - Coords: {x: -27, y: -14}
+    Direction: {x: -0.94643444, y: 0.32289582}
+  - Coords: {x: -27, y: -13}
+    Direction: {x: -0.997626, y: -0.06886426}
+  - Coords: {x: -27, y: -12}
+    Direction: {x: -0.9017948, y: -0.4321645}
+  - Coords: {x: -26, y: -17}
+    Direction: {x: -0.6678148, y: 0.7443274}
+  - Coords: {x: -26, y: -16}
+    Direction: {x: -0.7718689, y: 0.63578176}
+  - Coords: {x: -26, y: -15}
+    Direction: {x: -0.88254416, y: 0.47022942}
+  - Coords: {x: -26, y: -14}
+    Direction: {x: -0.97195977, y: 0.2351472}
+  - Coords: {x: -26, y: -13}
+    Direction: {x: -0.99880415, y: -0.04889068}
+  - Coords: {x: -26, y: -12}
+    Direction: {x: -0.9468219, y: -0.32175794}
+  - Coords: {x: -25, y: -17}
+    Direction: {x: -0.75690407, y: 0.653526}
+  - Coords: {x: -25, y: -16}
+    Direction: {x: -0.8430035, y: 0.53790796}
+  - Coords: {x: -25, y: -15}
+    Direction: {x: -0.92435706, y: 0.38152865}
+  - Coords: {x: -25, y: -14}
+    Direction: {x: -0.9828872, y: 0.18420832}
+  - Coords: {x: -25, y: -13}
+    Direction: {x: -0.9992818, y: -0.03789202}
+  - Coords: {x: -25, y: -12}
+    Direction: {x: -0.9670517, y: -0.25458026}
+  - Coords: {x: -24, y: -17}
+    Direction: {x: -0.81744605, y: 0.57600516}
+  - Coords: {x: -24, y: -16}
+    Direction: {x: -0.88694674, y: 0.4618717}
+  - Coords: {x: -24, y: -15}
+    Direction: {x: -0.94767964, y: 0.31922302}
+  - Coords: {x: -24, y: -14}
+    Direction: {x: -0.9885044, y: 0.1511922}
+  - Coords: {x: -24, y: -13}
+    Direction: {x: -0.99952155, y: -0.030931232}
+  - Coords: {x: -24, y: -12}
+    Direction: {x: -0.9776907, y: -0.21004955}
+  - Coords: {x: -23, y: -17}
+    Direction: {x: -0.8593121, y: 0.5114515}
+  - Coords: {x: -23, y: -16}
+    Direction: {x: -0.9153637, y: 0.40262783}
+  - Coords: {x: -23, y: -15}
+    Direction: {x: -0.9618258, y: 0.2736625}
+  - Coords: {x: -23, y: -14}
+    Direction: {x: -0.9917577, y: 0.12812759}
+  - Coords: {x: -23, y: -13}
+    Direction: {x: -0.9996585, y: -0.026130216}
+  - Coords: {x: -23, y: -12}
+    Direction: {x: -0.98393005, y: -0.17855449}
+  - Coords: {x: -34, y: -17}
+    Direction: {x: -0.5132821, y: 0.8582199}
+  - Coords: {x: -34, y: -16}
+    Direction: {x: -0.6270412, y: 0.7789861}
+  - Coords: {x: -34, y: -15}
+    Direction: {x: -0.7760696, y: 0.6306473}
+  - Coords: {x: -34, y: -14}
+    Direction: {x: -0.93387705, y: 0.35759422}
+  - Coords: {x: -34, y: -13}
+    Direction: {x: -0.99890715, y: -0.04673868}
+  - Coords: {x: -34, y: -12}
+    Direction: {x: -0.90275437, y: -0.43015635}
+  - Coords: {x: -33, y: -17}
+    Direction: {x: -0.6498843, y: 0.7600332}
+  - Coords: {x: -33, y: -16}
+    Direction: {x: -0.7548408, y: 0.6559081}
+  - Coords: {x: -33, y: -15}
+    Direction: {x: -0.869382, y: 0.49414065}
+  - Coords: {x: -33, y: -14}
+    Direction: {x: -0.96595526, y: 0.2587092}
+  - Coords: {x: -33, y: -13}
+    Direction: {x: -0.9994649, y: -0.032709427}
+  - Coords: {x: -33, y: -12}
+    Direction: {x: -0.94869816, y: -0.3161832}
+  - Coords: {x: -32, y: -17}
+    Direction: {x: -0.7435809, y: 0.668646}
+  - Coords: {x: -32, y: -16}
+    Direction: {x: -0.8314893, y: 0.5555407}
+  - Coords: {x: -32, y: -15}
+    Direction: {x: -0.9163153, y: 0.4004575}
+  - Coords: {x: -32, y: -14}
+    Direction: {x: -0.9794472, y: 0.20170069}
+  - Coords: {x: -32, y: -13}
+    Direction: {x: -0.9996835, y: -0.025155874}
+  - Coords: {x: -32, y: -12}
+    Direction: {x: -0.9686987, y: -0.24823956}
+  - Coords: {x: -31, y: -17}
+    Direction: {x: -0.8075235, y: 0.5898355}
+  - Coords: {x: -31, y: -16}
+    Direction: {x: -0.8789081, y: 0.4769912}
+  - Coords: {x: -31, y: -15}
+    Direction: {x: -0.94238204, y: 0.33453858}
+  - Coords: {x: -31, y: -14}
+    Direction: {x: -0.9862963, y: 0.16498387}
+  - Coords: {x: -31, y: -13}
+    Direction: {x: -0.99979115, y: -0.020435905}
+  - Coords: {x: -31, y: -12}
+    Direction: {x: -0.979015, y: -0.20378835}
+  - Coords: {x: -30, y: -17}
+    Direction: {x: -0.85181105, y: 0.5238492}
+  - Coords: {x: -30, y: -16}
+    Direction: {x: -0.909546, y: 0.41560316}
+  - Coords: {x: -30, y: -15}
+    Direction: {x: -0.9581194, y: 0.28636906}
+  - Coords: {x: -30, y: -14}
+    Direction: {x: -0.9902274, y: 0.13946213}
+  - Coords: {x: -30, y: -13}
+    Direction: {x: -0.99985194, y: -0.017207095}
+  - Coords: {x: -30, y: -12}
+    Direction: {x: -0.9849874, y: -0.17262669}
+  - Coords: {x: -29, y: -17}
+    Direction: {x: -0.8831884, y: 0.46901828}
+  - Coords: {x: -29, y: -16}
+    Direction: {x: -0.9302072, y: 0.36703482}
+  - Coords: {x: -29, y: -15}
+    Direction: {x: -0.9682702, y: 0.24990584}
+  - Coords: {x: -29, y: -14}
+    Direction: {x: -0.9926857, y: 0.12072758}
+  - Coords: {x: -29, y: -13}
+    Direction: {x: -0.99988955, y: -0.014859265}
+  - Coords: {x: -29, y: -12}
+    Direction: {x: -0.9887413, y: -0.14963505}
+  - Coords: {x: -39, y: -16}
+    Direction: {x: -0.5333295, y: 0.8459076}
+  - Coords: {x: -39, y: -15}
+    Direction: {x: -0.66239715, y: 0.74915284}
+  - Coords: {x: -39, y: -14}
+    Direction: {x: -0.82851946, y: 0.55996025}
+  - Coords: {x: -39, y: -13}
+    Direction: {x: -0.9764925, y: 0.21555153}
+  - Coords: {x: -39, y: -12}
+    Direction: {x: -0.97361624, y: -0.22819157}
+  - Coords: {x: -38, y: -16}
+    Direction: {x: -0.67602795, y: 0.73687595}
+  - Coords: {x: -38, y: -15}
+    Direction: {x: -0.7895585, y: 0.61367536}
+  - Coords: {x: -38, y: -14}
+    Direction: {x: -0.9069454, y: 0.42124817}
+  - Coords: {x: -38, y: -13}
+    Direction: {x: -0.9886885, y: 0.1499837}
+  - Coords: {x: -38, y: -12}
+    Direction: {x: -0.9872753, y: -0.15902027}
+  - Coords: {x: -37, y: -16}
+    Direction: {x: -0.7693633, y: 0.63881147}
+  - Coords: {x: -37, y: -15}
+    Direction: {x: -0.86049235, y: 0.5094633}
+  - Coords: {x: -37, y: -14}
+    Direction: {x: -0.94273347, y: 0.3335472}
+  - Coords: {x: -37, y: -13}
+    Direction: {x: -0.9933894, y: 0.11479307}
+  - Coords: {x: -37, y: -12}
+    Direction: {x: -0.9925569, y: -0.12178146}
+  - Coords: {x: -36, y: -16}
+    Direction: {x: -0.83055794, y: 0.55693215}
+  - Coords: {x: -36, y: -15}
+    Direction: {x: -0.9021759, y: 0.4313683}
+  - Coords: {x: -36, y: -14}
+    Direction: {x: -0.9615193, y: 0.2747372}
+  - Coords: {x: -36, y: -13}
+    Direction: {x: -0.9956737, y: 0.09291894}
+  - Coords: {x: -36, y: -12}
+    Direction: {x: -0.9951267, y: -0.09860416}
+  - Coords: {x: -35, y: -16}
+    Direction: {x: -0.8716313, y: 0.49016204}
+  - Coords: {x: -35, y: -15}
+    Direction: {x: -0.92816013, y: 0.37218118}
+  - Coords: {x: -35, y: -14}
+    Direction: {x: -0.9724698, y: 0.23302907}
+  - Coords: {x: -35, y: -13}
+    Direction: {x: -0.99695134, y: 0.07802534}
+  - Coords: {x: -35, y: -12}
+    Direction: {x: -0.99656516, y: -0.08281271}
+  - Coords: {x: -44, y: -16}
+    Direction: {x: -0.12973166, y: 0.99154913}
+  - Coords: {x: -44, y: -15}
+    Direction: {x: -0.17930505, y: 0.98379356}
+  - Coords: {x: -44, y: -14}
+    Direction: {x: -0.28758577, y: 0.9577549}
+  - Coords: {x: -44, y: -13}
+    Direction: {x: -0.64845353, y: 0.76125425}
+  - Coords: {x: -44, y: -12}
+    Direction: {x: -0.71334887, y: -0.70080906}
+  - Coords: {x: -43, y: -16}
+    Direction: {x: -0.38170347, y: 0.9242848}
+  - Coords: {x: -43, y: -15}
+    Direction: {x: -0.49865162, y: 0.86680245}
+  - Coords: {x: -43, y: -14}
+    Direction: {x: -0.6878971, y: 0.7258083}
+  - Coords: {x: -43, y: -13}
+    Direction: {x: -0.9372715, y: 0.34860027}
+  - Coords: {x: -43, y: -12}
+    Direction: {x: -0.95481914, y: -0.29718736}
+  - Coords: {x: -42, y: -16}
+    Direction: {x: -0.5707622, y: 0.8211153}
+  - Coords: {x: -42, y: -15}
+    Direction: {x: -0.69562674, y: 0.7184034}
+  - Coords: {x: -42, y: -14}
+    Direction: {x: -0.8472908, y: 0.53112924}
+  - Coords: {x: -42, y: -13}
+    Direction: {x: -0.9764455, y: 0.21576428}
+  - Coords: {x: -42, y: -12}
+    Direction: {x: -0.98332906, y: -0.1818349}
+  - Coords: {x: -41, y: -16}
+    Direction: {x: -0.69892114, y: 0.71519876}
+  - Coords: {x: -41, y: -15}
+    Direction: {x: -0.8059239, y: 0.5920192}
+  - Coords: {x: -41, y: -14}
+    Direction: {x: -0.91332453, y: 0.40723255}
+  - Coords: {x: -41, y: -13}
+    Direction: {x: -0.98787236, y: 0.15526803}
+  - Coords: {x: -41, y: -12}
+    Direction: {x: -0.99146044, y: -0.13040777}
+  - Coords: {x: -40, y: -16}
+    Direction: {x: -0.78313863, y: 0.62184715}
+  - Coords: {x: -40, y: -15}
+    Direction: {x: -0.8687708, y: 0.49521455}
+  - Coords: {x: -40, y: -14}
+    Direction: {x: -0.9450339, y: 0.32697245}
+  - Coords: {x: -40, y: -13}
+    Direction: {x: -0.9926445, y: 0.12106577}
+  - Coords: {x: -40, y: -12}
+    Direction: {x: -0.99483174, y: -0.10153695}
+  - Coords: {x: -49, y: -16}
+    Direction: {x: -0.66176814, y: 0.7497086}
+  - Coords: {x: -49, y: -15}
+    Direction: {x: -0.7748169, y: 0.6321858}
+  - Coords: {x: -49, y: -14}
+    Direction: {x: -0.8948043, y: 0.44645867}
+  - Coords: {x: -49, y: -13}
+    Direction: {x: -0.9838428, y: 0.17903467}
+  - Coords: {x: -49, y: -12}
+    Direction: {x: -0.9910107, y: -0.13378236}
+  - Coords: {x: -48, y: -16}
+    Direction: {x: -0.758102, y: 0.65213597}
+  - Coords: {x: -48, y: -15}
+    Direction: {x: -0.8500777, y: 0.52665734}
+  - Coords: {x: -48, y: -14}
+    Direction: {x: -0.9351376, y: 0.35428488}
+  - Coords: {x: -48, y: -13}
+    Direction: {x: -0.9905882, y: 0.13687636}
+  - Coords: {x: -48, y: -12}
+    Direction: {x: -0.99478745, y: -0.10197052}
+  - Coords: {x: -47, y: -16}
+    Direction: {x: -0.8217926, y: 0.5697868}
+  - Coords: {x: -47, y: -15}
+    Direction: {x: -0.89465797, y: 0.44675165}
+  - Coords: {x: -47, y: -14}
+    Direction: {x: -0.95640296, y: 0.29205027}
+  - Coords: {x: -47, y: -13}
+    Direction: {x: -0.9938553, y: 0.110687375}
+  - Coords: {x: -47, y: -12}
+    Direction: {x: -0.9966043, y: -0.08233922}
+  - Coords: {x: -46, y: -16}
+    Direction: {x: -0.8647698, y: 0.5021684}
+  - Coords: {x: -46, y: -15}
+    Direction: {x: -0.92256635, y: 0.38583848}
+  - Coords: {x: -46, y: -14}
+    Direction: {x: -0.96881765, y: 0.24777502}
+  - Coords: {x: -46, y: -13}
+    Direction: {x: -0.99567795, y: 0.09287366}
+  - Coords: {x: -46, y: -12}
+    Direction: {x: -0.9976145, y: -0.06903121}
+  - Coords: {x: -45, y: -16}
+    Direction: {x: -0.8945935, y: 0.44688082}
+  - Coords: {x: -45, y: -15}
+    Direction: {x: -0.94095635, y: 0.33852792}
+  - Coords: {x: -45, y: -14}
+    Direction: {x: -0.97664344, y: 0.21486644}
+  - Coords: {x: -45, y: -13}
+    Direction: {x: -0.99679625, y: 0.07998291}
+  - Coords: {x: -45, y: -12}
+    Direction: {x: -0.9982331, y: -0.059419885}
+  - Coords: {x: -53, y: -15}
+    Direction: {x: -0.5369738, y: 0.84359896}
+  - Coords: {x: -53, y: -14}
+    Direction: {x: -0.7237033, y: 0.6901113}
+  - Coords: {x: -53, y: -13}
+    Direction: {x: -0.9478817, y: 0.31862256}
+  - Coords: {x: -53, y: -12}
+    Direction: {x: -0.9626385, y: -0.2707899}
+  - Coords: {x: -52, y: -15}
+    Direction: {x: -0.7173247, y: 0.6967391}
+  - Coords: {x: -52, y: -14}
+    Direction: {x: -0.8614341, y: 0.5078694}
+  - Coords: {x: -52, y: -13}
+    Direction: {x: -0.97908, y: 0.20347546}
+  - Coords: {x: -52, y: -12}
+    Direction: {x: -0.9852112, y: -0.17134444}
+  - Coords: {x: -51, y: -15}
+    Direction: {x: -0.81809413, y: 0.57508427}
+  - Coords: {x: -51, y: -14}
+    Direction: {x: -0.9197733, y: 0.3924502}
+  - Coords: {x: -51, y: -13}
+    Direction: {x: -0.98887724, y: 0.14873393}
+  - Coords: {x: -51, y: -12}
+    Direction: {x: -0.9921715, y: -0.12488241}
+  - Coords: {x: -50, y: -15}
+    Direction: {x: -0.87592447, y: 0.48244825}
+  - Coords: {x: -50, y: -14}
+    Direction: {x: -0.94840276, y: 0.31706804}
+  - Coords: {x: -50, y: -13}
+    Direction: {x: -0.9931274, y: 0.11703843}
+  - Coords: {x: -50, y: -12}
+    Direction: {x: -0.99517214, y: -0.09814509}
+  - Coords: {x: -57, y: -15}
+    Direction: {x: -0.38207933, y: 0.92412955}
+  - Coords: {x: -57, y: -14}
+    Direction: {x: -0.5601007, y: 0.8284246}
+  - Coords: {x: -57, y: -13}
+    Direction: {x: -0.8801105, y: 0.47476894}
+  - Coords: {x: -57, y: -12}
+    Direction: {x: -0.9284195, y: -0.37153384}
+  - Coords: {x: -56, y: -15}
+    Direction: {x: -0.62561375, y: 0.78013295}
+  - Coords: {x: -56, y: -14}
+    Direction: {x: -0.7951832, y: 0.6063692}
+  - Coords: {x: -56, y: -13}
+    Direction: {x: -0.96343344, y: 0.2679476}
+  - Coords: {x: -56, y: -12}
+    Direction: {x: -0.97937274, y: -0.20206226}
+  - Coords: {x: -55, y: -15}
+    Direction: {x: -0.76568896, y: 0.64321095}
+  - Coords: {x: -55, y: -14}
+    Direction: {x: -0.8895, y: 0.45693517}
+  - Coords: {x: -55, y: -13}
+    Direction: {x: -0.9828979, y: 0.1841515}
+  - Coords: {x: -55, y: -12}
+    Direction: {x: -0.99047893, y: -0.13766424}
+  - Coords: {x: -54, y: -15}
+    Direction: {x: -0.844812, y: 0.5350633}
+  - Coords: {x: -54, y: -14}
+    Direction: {x: -0.93250287, y: 0.3611627}
+  - Coords: {x: -54, y: -13}
+    Direction: {x: -0.99017006, y: 0.13986875}
+  - Coords: {x: -54, y: -12}
+    Direction: {x: -0.9945543, y: -0.10421938}
+  - Coords: {x: -60, y: -15}
+    Direction: {x: 0.6010252, y: 0.79923004}
+  - Coords: {x: -60, y: -14}
+    Direction: {x: 0.7758557, y: 0.63091034}
+  - Coords: {x: -60, y: -13}
+    Direction: {x: 0.9587235, y: 0.2843402}
+  - Coords: {x: -59, y: -15}
+    Direction: {x: 0.34164724, y: 0.9398283}
+  - Coords: {x: -59, y: -14}
+    Direction: {x: 0.5109892, y: 0.85958713}
+  - Coords: {x: -59, y: -13}
+    Direction: {x: 0.8523629, y: 0.5229509}
+  - Coords: {x: -58, y: -15}
+    Direction: {x: -0.024955675, y: 0.9996885}
+  - Coords: {x: -58, y: -14}
+    Direction: {x: -0.04078829, y: 0.9991678}
+  - Coords: {x: -58, y: -13}
+    Direction: {x: -0.111233436, y: 0.9937943}
+  - Coords: {x: -62, y: -15}
+    Direction: {x: 0.83689785, y: 0.5473591}
+  - Coords: {x: -62, y: -14}
+    Direction: {x: 0.9284922, y: 0.37135196}
+  - Coords: {x: -62, y: -13}
+    Direction: {x: 0.9895278, y: 0.14434233}
+  - Coords: {x: -61, y: -15}
+    Direction: {x: 0.7518995, y: 0.6592778}
+  - Coords: {x: -61, y: -14}
+    Direction: {x: 0.8813065, y: 0.47254506}
+  - Coords: {x: -61, y: -13}
+    Direction: {x: 0.98141015, y: 0.1919221}
+  - Coords: {x: -58, y: -12}
+    Direction: {x: -0.14919077, y: -0.9888084}
+  - Coords: {x: -50, y: -17}
+    Direction: {x: -0.16069019, y: 0.98700494}
+  - Coords: {x: -49, y: -17}
+    Direction: {x: -0.41649023, y: 0.90914017}
+  - Coords: {x: -47, y: -17}
+    Direction: {x: -0.72372144, y: 0.6900922}
+  - Coords: {x: -46, y: -17}
+    Direction: {x: -0.8022949, y: 0.5969278}
+  - Coords: {x: -45, y: -17}
+    Direction: {x: -0.8537042, y: 0.52075815}
+  - Coords: {x: -48, y: -17}
+    Direction: {x: -0.6017482, y: 0.7986858}
+  - Coords: {x: -45, y: -18}
+    Direction: {x: -0.7846299, y: 0.6199644}
+  - Coords: {x: -46, y: -18}
+    Direction: {x: -0.7200397, y: 0.6939329}
+  - Coords: {x: -47, y: -18}
+    Direction: {x: -0.629252, y: 0.77720135}
+  - Coords: {x: -48, y: -18}
+    Direction: {x: -0.50278836, y: 0.86440957}
+  - Coords: {x: -49, y: -18}
+    Direction: {x: -0.3334328, y: 0.94277394}
+  - Coords: {x: -50, y: -18}
+    Direction: {x: -0.12470768, y: 0.99219346}
+  - Coords: {x: -35, y: -17}
+    Direction: {x: -0.7246625, y: 0.6891041}
+  - Coords: {x: -37, y: -17}
+    Direction: {x: -0.6957653, y: 0.7182692}
+  - Coords: {x: -38, y: -17}
+    Direction: {x: -0.5113159, y: 0.8593929}
+  - Coords: {x: -36, y: -17}
+    Direction: {x: -0.58618224, y: 0.81017923}
+  - Coords: {x: -33, y: -18}
+    Direction: {x: -0.7893921, y: 0.61388934}
+  - Coords: {x: -34, y: -18}
+    Direction: {x: -0.72045106, y: 0.69350576}
+  - Coords: {x: -35, y: -18}
+    Direction: {x: -0.6207773, y: 0.783987}
+  - Coords: {x: -36, y: -18}
+    Direction: {x: -0.478401, y: 0.8781415}
+  - Coords: {x: -37, y: -18}
+    Direction: {x: -0.5762867, y: 0.8172476}
+  - Coords: {x: -38, y: -18}
+    Direction: {x: -0.39744163, y: 0.9176275}
+  - Coords: {x: -33, y: -19}
+    Direction: {x: -0.81564224, y: 0.5785565}
+  - Coords: {x: -35, y: -19}
+    Direction: {x: -0.70068157, y: 0.71347415}
+  - Coords: {x: -36, y: -19}
+    Direction: {x: -0.60920244, y: 0.79301476}
+  - Coords: {x: -37, y: -19}
+    Direction: {x: -0.484838, y: 0.874604}
+  - Coords: {x: -38, y: -19}
+    Direction: {x: -0.3223204, y: 0.9466306}
+  - Coords: {x: -34, y: -19}
+    Direction: {x: -0.76715004, y: 0.64146775}
+  - Coords: {x: -26, y: -18}
+    Direction: {x: -0.37411517, y: 0.92738223}
+  - Coords: {x: -24, y: -18}
+    Direction: {x: -0.6877887, y: 0.7259109}
+  - Coords: {x: -23, y: -18}
+    Direction: {x: -0.77326995, y: 0.634077}
+  - Coords: {x: -22, y: -18}
+    Direction: {x: -0.8306009, y: 0.5568682}
+  - Coords: {x: -21, y: -18}
+    Direction: {x: -0.8698889, y: 0.49324772}
+  - Coords: {x: -25, y: -18}
+    Direction: {x: -0.5597272, y: 0.82867694}
+  - Coords: {x: -25, y: -19}
+    Direction: {x: -0.46898043, y: 0.8832086}
+  - Coords: {x: -24, y: -19}
+    Direction: {x: -0.59735626, y: 0.80197597}
+  - Coords: {x: -23, y: -19}
+    Direction: {x: -0.6920489, y: 0.72185063}
+  - Coords: {x: -22, y: -19}
+    Direction: {x: -0.7608778, y: 0.64889526}
+  - Coords: {x: -21, y: -19}
+    Direction: {x: -0.8110436, y: 0.5849857}
+  - Coords: {x: -22, y: -20}
+    Direction: {x: -0.6947699, y: 0.7192321}
+  - Coords: {x: -23, y: -20}
+    Direction: {x: -0.6198055, y: 0.78475547}
+  - Coords: {x: -21, y: -20}
+    Direction: {x: -0.7523803, y: 0.65872896}
+  - Coords: {x: -24, y: -20}
+    Direction: {x: -0.5230098, y: 0.85232675}
+  - Coords: {x: -25, y: -20}
+    Direction: {x: -0.40077627, y: 0.91617596}
+  - Coords: {x: -26, y: -20}
+    Direction: {x: -0.25277862, y: 0.9675242}
+  - Coords: {x: -26, y: -19}
+    Direction: {x: -0.3022991, y: 0.95321316}
+  - Coords: {x: -18, y: -18}
+    Direction: {x: -0.19645287, y: 0.9805133}
+  - Coords: {x: -18, y: -19}
+    Direction: {x: -0.13054654, y: 0.9914422}
+  - Coords: {x: -17, y: -19}
+    Direction: {x: -0.42867357, y: 0.9034594}
+  - Coords: {x: -17, y: -18}
+    Direction: {x: -0.5853613, y: 0.8107726}
+  - Coords: {x: -16, y: -18}
+    Direction: {x: -0.77930176, y: 0.6266488}
+  - Coords: {x: -15, y: -18}
+    Direction: {x: -0.87008435, y: 0.49290287}
+  - Coords: {x: -16, y: -19}
+    Direction: {x: -0.63282263, y: 0.7742968}
+  - Coords: {x: -19, y: -18}
+    Direction: {x: -0.13267519, y: 0.9911596}
+  - Coords: {x: -13, y: -18}
+    Direction: {x: -0.233131, y: 0.97244537}
+  - Coords: {x: -11, y: -18}
+    Direction: {x: -0.6482419, y: 0.7614345}
+  - Coords: {x: -10, y: -18}
+    Direction: {x: -0.75661385, y: 0.653862}
+  - Coords: {x: -9, y: -18}
+    Direction: {x: -0.825561, y: 0.5643129}
+  - Coords: {x: -8, y: -18}
+    Direction: {x: -0.8705058, y: 0.49215817}
+  - Coords: {x: -12, y: -18}
+    Direction: {x: -0.47890988, y: 0.87786406}
+  - Coords: {x: -12, y: -19}
+    Direction: {x: -0.38549146, y: 0.92271143}
+  - Coords: {x: -13, y: -19}
+    Direction: {x: -0.18057539, y: 0.9835612}
+  - Coords: {x: -11, y: -19}
+    Direction: {x: -0.5461473, y: 0.8376892}
+  - Coords: {x: -10, y: -19}
+    Direction: {x: -0.6632207, y: 0.7484238}
+  - Coords: {x: -9, y: -19}
+    Direction: {x: -0.74603933, y: 0.66590184}
+  - Coords: {x: -8, y: -19}
+    Direction: {x: -0.8045098, y: 0.5939393}
+  - Coords: {x: -8, y: -20}
+    Direction: {x: -0.73918045, y: 0.67350745}
+  - Coords: {x: -9, y: -20}
+    Direction: {x: -0.67213243, y: 0.74043095}
+  - Coords: {x: -10, y: -20}
+    Direction: {x: -0.58323854, y: 0.8123009}
+  - Coords: {x: -11, y: -20}
+    Direction: {x: -0.46709034, y: 0.88420963}
+  - Coords: {x: -12, y: -20}
+    Direction: {x: -0.3206348, y: 0.9472029}
+  - Coords: {x: -13, y: -20}
+    Direction: {x: -0.14713743, y: 0.989116}
+  - Coords: {x: -38, y: -11}
+    Direction: {x: -0.8772338, y: -0.48006344}
+  - Coords: {x: -38, y: -10}
+    Direction: {x: -0.7597475, y: -0.6502181}
+  - Coords: {x: -37, y: -11}
+    Direction: {x: -0.92257506, y: -0.3858177}
+  - Coords: {x: -37, y: -10}
+    Direction: {x: -0.8369053, y: -0.5473477}
+  - Coords: {x: -36, y: -11}
+    Direction: {x: -0.94723463, y: -0.32054108}
+  - Coords: {x: -36, y: -10}
+    Direction: {x: -0.8838596, y: -0.4677523}
+  - Coords: {x: -35, y: -11}
+    Direction: {x: -0.961915, y: -0.27334875}
+  - Coords: {x: -35, y: -10}
+    Direction: {x: -0.9138222, y: -0.40611464}
+  - Coords: {x: -34, y: -11}
+    Direction: {x: -0.97129136, y: -0.23789288}
+  - Coords: {x: -34, y: -10}
+    Direction: {x: -0.9338392, y: -0.3576931}
+  - Coords: {x: -33, y: -11}
+    Direction: {x: -0.9776184, y: -0.21038598}
+  - Coords: {x: -33, y: -10}
+    Direction: {x: -0.9477638, y: -0.31897312}
+  - Coords: {x: -46, y: -11}
+    Direction: {x: -0.9612057, y: -0.27583244}
+  - Coords: {x: -46, y: -10}
+    Direction: {x: -0.9046387, y: -0.4261794}
+  - Coords: {x: -45, y: -11}
+    Direction: {x: -0.97186875, y: -0.2355232}
+  - Coords: {x: -45, y: -10}
+    Direction: {x: -0.92916536, y: -0.36966425}
+  - Coords: {x: -47, y: -11}
+    Direction: {x: -0.9433475, y: -0.33180642}
+  - Coords: {x: -47, y: -10}
+    Direction: {x: -0.86599445, y: -0.5000536}
+  - Coords: {x: -49, y: -11}
+    Direction: {x: -0.8418331, y: -0.53973794}
+  - Coords: {x: -49, y: -10}
+    Direction: {x: -0.68877536, y: -0.7249748}
+  - Coords: {x: -48, y: -11}
+    Direction: {x: -0.91046464, y: -0.4135869}
+  - Coords: {x: -48, y: -10}
+    Direction: {x: -0.8016332, y: -0.5978163}
+  - Coords: {x: -50, y: -11}
+    Direction: {x: -0.6762693, y: -0.7366546}
+  - Coords: {x: -50, y: -10}
+    Direction: {x: -0.48807195, y: -0.8728034}
+  - Coords: {x: 0, y: 5}
+    Direction: {x: -0.9463683, y: -0.3230898}
 --- !u!1 &853815998
 GameObject:
   m_ObjectHideFlags: 0
@@ -20888,6 +22156,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1239699222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 92112383889017798, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_Name
+      value: GhostAI (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -63.295074
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4876275
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36863f0c4e4ac1644a41f368ff5a78f4, type: 3}
 --- !u!1 &1241824312
 GameObject:
   m_ObjectHideFlags: 0
@@ -21062,6 +22399,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1244678997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 92112383889017798, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_Name
+      value: GhostAI (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -64.295074
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5123725
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95174906061418480, guid: 36863f0c4e4ac1644a41f368ff5a78f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36863f0c4e4ac1644a41f368ff5a78f4, type: 3}
 --- !u!1 &1253947475
 GameObject:
   m_ObjectHideFlags: 0
