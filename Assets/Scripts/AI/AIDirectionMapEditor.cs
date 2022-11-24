@@ -27,5 +27,25 @@ public class AIDirectionMapEditor : Editor
             Handles.color = Color.blue;
             Handles.DrawAAPolyLine(5f , new Vector3[] {worldPos, point});
         }
+
+        if (directionMap.RectangularMap.Count > 0)
+        {
+            Vector2 borderPos = (Vector2)directionMap.StartCoords;
+            var size = (Vector2)directionMap.Dimension;
+            borderPos.y -= size.y - 1f;
+            var rect = new Rect(borderPos, size);
+            Handles.DrawSolidRectangleWithOutline(rect, new Color(0, 0, 0, 0.1f), Color.cyan);
+
+            for (int y = 0; y < directionMap.Dimension.y; y++)
+            {
+                for (int x = 0; x < directionMap.Dimension.x; x++)
+                {
+                    var pos = new Vector2(directionMap.StartCoords.x + x, directionMap.StartCoords.y - y) + new Vector2(grid.cellSize.x / 2f, grid.cellSize.y / 2f);
+                    var point = pos + (directionMap.RectangularMap[(y * directionMap.Dimension.x) + x] / 2f);
+                    Handles.color = Color.cyan;
+                    Handles.DrawAAPolyLine(5f, new Vector3[] {pos, point});
+                }
+            }
+        }
     }
 }

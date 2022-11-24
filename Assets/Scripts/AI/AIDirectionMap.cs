@@ -20,9 +20,15 @@ public class AIDirectionMap : MonoBehaviour
     [SerializeField] DirectionMapVariable _variable;
     [SerializeField] Grid _grid;
     [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
+    [SerializeField] List<Vector2> _rectangularMap = new List<Vector2>();
+    [SerializeField] Vector2Int _rectangularMapStartCoords;
+    [SerializeField] Vector2Int _rectangularMapDimension;
 
     public Grid Grid => _grid;
     public IReadOnlyList<DirectionMapEntry> DirectionMap => _directionMap;
+    public IReadOnlyList<Vector2> RectangularMap => _rectangularMap;
+    public Vector2Int StartCoords => _rectangularMapStartCoords;
+    public Vector2Int Dimension => _rectangularMapDimension;
 
     void OnEnable()
     {
@@ -34,28 +40,37 @@ public class AIDirectionMap : MonoBehaviour
         _variable.UnregisterVariable(this);
     }
 
-    public void SetDirection(Vector2Int coords, Vector2 direction)
-    {
-        var entry = _directionMap.Find(e => e.Coords == coords);
-        if (entry == null)
-        {
-            _directionMap.Add(new DirectionMapEntry(coords, direction));
-        }
-        else
-        {
-            entry.Direction = direction;
-        }
-    }
-
     public Vector2 GetDirection(Vector2 position)
     {
         var cellCoords = (Vector2Int)_grid.WorldToCell(position);
-        var entry = _directionMap.Find(e => e.Coords == cellCoords);
-        if (entry == null)
+
+        if (InMapBounds(cellCoords))
         {
-            Debug.LogWarning($"Direction for coords {cellCoords} was not found.");
-            return Vector2.zero;
+            var normalizedCoords = cellCoords - _rectangularMapStartCoords;
+            return _rectangularMap[(-normalizedCoords.y * _rectangularMapDimension.x) + normalizedCoords.x];
         }
-        return entry.Direction;
+        else
+        {
+            var entry = _directionMap.Find(e => e.Coords == cellCoords);
+            if (entry == null)
+            {
+                Debug.LogWarning($"Direction for coords {cellCoords} was not found.");
+                return Vector2.zero;
+            }
+            else
+            {
+                Debug.Log($"Direction for coords {cellCoords} not found in Rectangular Map.");
+            }
+            return entry.Direction;
+        }
+    }
+
+    public bool InMapBounds(Vector2Int coords)
+    {
+        var normalizedCoords = coords - _rectangularMapStartCoords;
+        return normalizedCoords.x >= 0 &&
+            normalizedCoords.x < _rectangularMapDimension.x &&
+            normalizedCoords.y <= 0 &&
+            normalizedCoords.y > -_rectangularMapDimension.y;
     }
 }
