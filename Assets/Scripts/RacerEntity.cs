@@ -10,17 +10,20 @@ namespace EasyClick
         bool _isPlayer;
 
         IBody _body;
+        BuffableEntity _buffableEntity;
 
         public string Name => _name;
         public bool IsPlayer => _isPlayer;
         public IBody Body => _body;
         public GameObject Prefab => _thisPrefab;
+        public BuffableEntity BuffableEntity => _buffableEntity;
 
         void Awake()
         {
             _body = GetComponent<IBody>();
             LevelLoader.OnBeforeLevelUnload += HandleOnBeforeLevelUnload;
             _isPlayer = TryGetComponent<PlayerInput>(out var _);
+            _buffableEntity = GetComponent<BuffableEntity>();
             _allRacers.Add(this);
         }
 
