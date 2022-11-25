@@ -8,6 +8,7 @@ namespace EasyClick
     {
         static PlayerManager _Instance;
         public static event Action onRebindPerformed = delegate { };
+        [SerializeField] RacerEntityCollection _racerCollection;
         [SerializeField] SpawnerVariable _SpawnerVariable;
 
         void Awake()
@@ -18,37 +19,31 @@ namespace EasyClick
             }
         }
 
-        void ReplacePlayerInner(PlayerInput oldPlayerInput, GameObject playerPrefab)
+        RacerEntity ReplacePlayerInner(RacerEntity oldRacerEntity, GameObject playerPrefab)
         {
-            if (PlayerInput.AllPlayers.Contains(oldPlayerInput))
+            var newPlayerGameObject = Instantiate(playerPrefab);
+            var newPlayerBody = newPlayerGameObject.GetComponent<ICharacterbody>();
+
+            if (oldRacerEntity.IsPlayer)
             {
-                var newPlayerGameObject = Instantiate(playerPrefab);
+                var oldPlayerInput = oldRacerEntity.GetComponent<PlayerInput>();
                 var newPlayerInput = newPlayerGameObject.GetComponent<PlayerInput>();
-                var newPlayerBody = newPlayerGameObject.GetComponent<ICharacterbody>();
-
                 newPlayerInput.RebindControls(oldPlayerInput.PlayerControls);
-
-                _SpawnerVariable.Value.Respawn(newPlayerBody);
 
                 var newPlayerIndex = PlayerInput.AllPlayers.IndexOf(newPlayerInput);
                 PlayerInput.AllPlayers[PlayerInput.AllPlayers.IndexOf(oldPlayerInput)] = newPlayerInput;
                 PlayerInput.AllPlayers[newPlayerIndex] = oldPlayerInput;
-
-                Destroy(oldPlayerInput.gameObject);
             }
+
+            _SpawnerVariable.Value.Respawn(newPlayerBody);
+            Destroy(oldRacerEntity.gameObject);
+
+            return newPlayerGameObject.GetComponent<RacerEntity>();
         }
 
-        public static void ReplacePlayer(PlayerInput oldPlayerInput, GameObject playerPrefab)
+        public static RacerEntity ReplacePlayer(RacerEntity oldRacerEntity, GameObject playerPrefab)
         {
-            _Instance.ReplacePlayerInner(oldPlayerInput, playerPrefab);
-        }
-
-        public static void ReplacePlayer(int oldPlayerId, GameObject playerPrefab)
-        {
-            if (oldPlayerId >= 0 && oldPlayerId < PlayerInput.AllPlayers.Count)
-            {
-                ReplacePlayer(PlayerInput.AllPlayers[oldPlayerId], playerPrefab);
-            }
+            return _Instance.ReplacePlayerInner(oldRacerEntity, playerPrefab);
         }
 
         public static void PerformRebinding(InputAction inputAction, int bindingIndex = 0, Action callback = null)

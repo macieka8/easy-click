@@ -2,6 +2,6 @@
 {
     public interface ISpawner
     {
-        public void Spawn();
+        public RacerEntity Spawn(bool isPlayer);
     }
 }

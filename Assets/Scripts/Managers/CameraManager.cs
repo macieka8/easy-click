@@ -82,7 +82,7 @@ namespace EasyClick
             PlayerInput.onPlayerJoined += OnPlayerJoined;
             PlayerInput.onPlayerLeft += OnPlayerLeft;
 
-            LevelLoader.onLevelLoaded += OnLevelLoaded;
+            LevelLoader.OnLevelLoaded += OnLevelLoaded;
         }
 
         void OnPlayerJoined(PlayerInput newPlayer)

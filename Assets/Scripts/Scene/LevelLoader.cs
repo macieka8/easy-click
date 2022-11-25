@@ -10,8 +10,8 @@ namespace EasyClick
         string _CurrentLevel = "";
         public static string CurrentLevel { get => Instance._CurrentLevel; }
 
-        public static event System.Action onLevelLoaded = delegate { };
-        public static event System.Action onLevelUnload = delegate { };
+        public static event System.Action OnLevelLoaded = delegate { };
+        public static event System.Action OnBeforeLevelUnload = delegate { };
 
         void Start()
         {
@@ -26,17 +26,18 @@ namespace EasyClick
         {
             if (_CurrentLevel != "")
             {
-                onLevelUnload?.Invoke();
+                OnBeforeLevelUnload?.Invoke();
                 SceneManager.UnloadSceneAsync(_CurrentLevel);
             }
 
-            AsyncOperation asyncNew = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            while (!asyncNew.isDone)
+            AsyncOperation newSceneHandle = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            while (!newSceneHandle.isDone)
             {
                 yield return null;
             }
+            yield return new WaitUntil(() => newSceneHandle.isDone);
             _CurrentLevel = sceneName;
-            onLevelLoaded?.Invoke();
+            OnLevelLoaded?.Invoke();
         }
 
         public static void StartLevel(string sceneName)

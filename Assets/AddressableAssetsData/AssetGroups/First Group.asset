@@ -27,6 +27,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Playable Characters
+  - m_GUID: 36863f0c4e4ac1644a41f368ff5a78f4
+    m_Address: Assets/Prefabs/World Objects/Characters/Bots/GhostAI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Bot Characters
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b51c68b7049a1ff428eee4ca8e78de9b, type: 2}
   m_SchemaSet:

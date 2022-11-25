@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -21,7 +20,6 @@ namespace EasyClick
         private void Awake()
         {
             _PlayerControls = new PlayerControls();
-            LevelLoader.onLevelUnload += LevelLoader_onLevelUnload;
         }
 
         private void OnEnable()
@@ -34,16 +32,6 @@ namespace EasyClick
         {
             AllPlayers.Remove(this);
             onPlayerLeft?.Invoke(this);
-        }
-
-        private void OnDestroy()
-        {
-            LevelLoader.onLevelUnload -= LevelLoader_onLevelUnload;
-        }
-
-        private void LevelLoader_onLevelUnload()
-        {
-            DontDestroyOnLoad(this);
         }
 
         public void RebindControls(PlayerControls newControls)

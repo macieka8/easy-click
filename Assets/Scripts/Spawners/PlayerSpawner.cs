@@ -25,10 +25,16 @@ namespace EasyClick
             _spawnerVariable.RegisterVariable(this);
         }
 
-        public void Spawn()
+        public RacerEntity Spawn(bool isPlayer)
         {
-            var player = Instantiate(GameCharactersManager.PlayableCharacters[0]);
-            Respawn(player.GetComponent<IBody>());
+            RacerEntity racer;
+            if (isPlayer)
+                racer = Instantiate(GameCharactersManager.PlayableCharacters[0]).GetComponent<RacerEntity>();
+            else
+                racer = Instantiate(GameCharactersManager.BotCharacters[0]).GetComponent<RacerEntity>();
+
+            Respawn(racer.Body);
+            return racer;
         }
 
         public void Respawn(IBody playerBody)

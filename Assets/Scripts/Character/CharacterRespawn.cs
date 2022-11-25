@@ -33,12 +33,12 @@ namespace EasyClick
                 _Checkpoints.Add(checkpoints.GetChild(i).GetComponent<Collider2D>());
             }
 
-            LevelLoader.onLevelLoaded += LevelLoader_onLevelLoaded;
+            LevelLoader.OnLevelLoaded += LevelLoader_onLevelLoaded;
         }
 
         private void OnDestroy()
         {
-            LevelLoader.onLevelLoaded -= LevelLoader_onLevelLoaded;
+            LevelLoader.OnLevelLoaded -= LevelLoader_onLevelLoaded;
         }
 
         private void OnTriggerEnter2D(Collider2D collider)

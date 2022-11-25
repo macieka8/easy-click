@@ -28,12 +28,12 @@ namespace EasyClick
 
         void Start()
         {
-            LevelLoader.onLevelLoaded += LevelLoader_onLevelLoaded;
+            LevelLoader.OnLevelLoaded += LevelLoader_onLevelLoaded;
         }
 
         void OnDestroy()
         {
-            LevelLoader.onLevelLoaded -= LevelLoader_onLevelLoaded;
+            LevelLoader.OnLevelLoaded -= LevelLoader_onLevelLoaded;
             _MovementInput.onRotationChanged -= OnRotate;
             _MovementInput.onJump -= OnJump;
         }

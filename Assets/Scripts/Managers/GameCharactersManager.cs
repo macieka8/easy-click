@@ -8,13 +8,16 @@ namespace EasyClick
     public class GameCharactersManager : MonoBehaviour
     {
         [SerializeField] AssetLabelReference _playableCharactersAssetLabel;
+        [SerializeField] AssetLabelReference _botCharactersAssetLabel;
         public static GameCharactersManager Instance;
 
-        IList<GameObject> _PlayableCharacters;
+        IList<GameObject> _playableCharacters;
+        IList<GameObject> _botCharacters;
 
-        public static IList<GameObject> PlayableCharacters { get => Instance._PlayableCharacters; }
+        public static IList<GameObject> PlayableCharacters { get => Instance._playableCharacters; }
+        public static IList<GameObject> BotCharacters { get => Instance._botCharacters; }
 
-        private void Awake()
+        void Awake()
         {
             if (Instance == null)
             {
@@ -22,21 +25,38 @@ namespace EasyClick
             }
         }
 
-        private void Start()
+        void Start()
         {
             if (Instance == this)
             {
-                var handle = Addressables.LoadAssetsAsync<GameObject>(
+                var playerHandle = Addressables.LoadAssetsAsync<GameObject>(
                     _playableCharactersAssetLabel,
                     addressable => { });
-                handle.Completed += obj =>
+                playerHandle.Completed += obj =>
                 {
                     if (obj.Status != AsyncOperationStatus.Succeeded)
-                        Debug.LogWarning("Could not load assets");
+                        Debug.LogWarning("Could not load playable character assets");
 
-                    _PlayableCharacters = obj.Result;
+                    _playableCharacters = obj.Result;
+                };
+
+                var botHandle = Addressables.LoadAssetsAsync<GameObject>(
+                    _botCharactersAssetLabel,
+                    addressable => { });
+                botHandle.Completed += obj =>
+                {
+                    if (obj.Status != AsyncOperationStatus.Succeeded)
+                        Debug.LogWarning("Could not load bot character assets");
+
+                    _botCharacters = obj.Result;
                 };
             }
+        }
+
+        public static GameObject GetNextPlayableCharacterPrefab(RacerEntity current)
+        {
+            var index = (PlayableCharacters.IndexOf(current.Prefab) + 1) % PlayableCharacters.Count;
+            return Instance._playableCharacters[index];
         }
     }
 }

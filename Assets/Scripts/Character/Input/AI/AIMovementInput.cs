@@ -25,8 +25,7 @@ namespace EasyClick
         void Update()
         {
             _TimeTillLastJump += Time.deltaTime;
-
-            if (_directionMap != null)
+            if (_directionMap.Value != null)
             {
                 _TargetDir = _directionMap.Value.GetDirection(_transform.position);
                 _TargetDir.Normalize();

@@ -503,6 +503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playableCharactersAssetLabel:
     m_LabelString: Playable Characters
+  _botCharactersAssetLabel:
+    m_LabelString: Bot Characters
 --- !u!4 &455507965
 Transform:
   m_ObjectHideFlags: 0
@@ -1216,7 +1218,7 @@ GameObject:
   - component: {fileID: 1096837872}
   - component: {fileID: 1096837873}
   m_Layer: 0
-  m_Name: Player Input Manager
+  m_Name: Player Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1249,6 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476a5fc3a7c3a144191f2ed43ff09e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _racerCollection: {fileID: 11400000, guid: c01218b4c2f3ec243a2ea959cd0e8311, type: 2}
   _SpawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
 --- !u!1 &1171808935
 GameObject:
