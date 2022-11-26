@@ -37,6 +37,11 @@ namespace EasyClick
             return racer;
         }
 
+        public void SpawnPlayer()
+        {
+            Spawn(true);
+        }
+
         public void Respawn(IBody playerBody)
         {
             playerBody.Position = _SpawnLocations[CurrentSpawnLocationIndex].position;

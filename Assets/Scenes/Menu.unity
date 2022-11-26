@@ -6301,8 +6301,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 946901710}
-        m_TargetAssemblyTypeName: EasyClick.PlayerSpawner, Assembly-CSharp
-        m_MethodName: Spawn
+        m_TargetAssemblyTypeName: EasyClick.PlayerSpawner, EasyClick
+        m_MethodName: SpawnPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
