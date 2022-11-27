@@ -460,9 +460,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
-  _RotateSpeed:
+  _rotateSpeed:
     _baseValue: 5
-  _JumpForce: 7.5
+  _jumpForce:
+    _baseValue: 7.5
   _TimeBeforeJump: 0.3
 --- !u!114 &1376449780302305443
 MonoBehaviour:

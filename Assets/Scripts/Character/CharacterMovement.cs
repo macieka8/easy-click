@@ -5,8 +5,8 @@ namespace EasyClick
     public class CharacterMovement : MonoBehaviour
     {
         [SerializeField] SpawnerVariable _spawnerVariable;
-        [SerializeField] Attribute _RotateSpeed;
-        [SerializeField] float _JumpForce = 4f;
+        [SerializeField] Attribute _rotateSpeed;
+        [SerializeField] Attribute _jumpForce;
         [SerializeField] float _TimeBeforeJump;
 
         ICharacterbody _Characterbody;
@@ -16,6 +16,8 @@ namespace EasyClick
         float _DesiredRotation;
         float _BeforeJumpStopwatch;
         float _DesiredRotationMultiplier = 1f;
+
+        public Attribute JumpForce => _jumpForce;
 
         void Awake()
         {
@@ -44,16 +46,16 @@ namespace EasyClick
             {
                 if (_Characterbody.Rotation > _DesiredRotation * _DesiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(-_RotateSpeed.Value);
+                    _Characterbody.AddTorque(-_rotateSpeed.Value);
                 }
                 else if (_Characterbody.Rotation < _DesiredRotation * _DesiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(_RotateSpeed.Value);
+                    _Characterbody.AddTorque(_rotateSpeed.Value);
                 }
             }
             else if (_CharacterState == CharacterState.Jump)
             {
-                _Characterbody.AddForce(_Characterbody.Up * _JumpForce, ForceMode2D.Impulse);
+                _Characterbody.AddForce(_Characterbody.Up * _jumpForce.Value, ForceMode2D.Impulse);
                 _CharacterState = CharacterState.Flying;
                 _BeforeJumpStopwatch = _TimeBeforeJump;
             }
