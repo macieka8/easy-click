@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c8446627178294daf9afe6e5214cd7, type: 3}
   m_Name: Reverse Controls
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
+  _icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
   _isPermanent: 0
   _duration: 20
   _isDurationStackable: 0

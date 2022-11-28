@@ -19,7 +19,7 @@ namespace EasyClick
     {
         public float TimeLeft { get; protected set; }
         protected int _EffectStacks;
-        protected TimedBuffData TimedBuffData => BuffData as TimedBuffData;
+        public TimedBuffData TimedBuffData => BuffData as TimedBuffData;
 
         public TimedBuff(TimedBuffData buff, GameObject obj) : base(buff, obj)
         {
