@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace EasyClick
@@ -19,18 +17,7 @@ namespace EasyClick
         [SerializeField] bool _FirstNodeAttached;
         [SerializeField] bool _LastNodeAttached;
 
-        GameObject[] _Nodes;
-
-        private void Awake()
-        {
-            var nodesCount = transform.Find("Nodes Parent").childCount;
-
-            _Nodes = new GameObject[nodesCount];
-            for (int i = 0; i < nodesCount; i++)
-            {
-                _Nodes[i] = transform.Find("Nodes Parent").GetChild(i).gameObject;
-            }
-        }
+        [HideInInspector] [SerializeField] GameObject[] _Nodes;
 
         public void BuildBridge()
         {

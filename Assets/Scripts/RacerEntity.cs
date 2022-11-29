@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace EasyClick
 {
+    [SelectionBase]
     public class RacerEntity : MonoBehaviour
     {
         [SerializeField] RacerEntityCollection _allRacers;
