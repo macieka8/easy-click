@@ -35,6 +35,7 @@ namespace EasyClick
 
         void HandleOnBeforeLevelUnload()
         {
+            transform.SetParent(null);
             DontDestroyOnLoad(this);
         }
 
