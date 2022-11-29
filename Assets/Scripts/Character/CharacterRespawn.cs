@@ -1,88 +1,44 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace EasyClick
 {
-    public class CharacterRespawn : MonoBehaviour
+    public interface IRespawnable
+    {
+        public int CheckpointIndex { get; set; }
+    }
+    public class CharacterRespawn : MonoBehaviour, IRespawnable
     {
         IRespawnInput _RespawnInput;
         ICharacterbody _Characterbody;
 
-        [SerializeField] List<Collider2D> _Checkpoints;
+        [SerializeField] CheckpointsManagerVariable _checkpointsManagerVariable;
         [SerializeField] float _TimeToRespawn = 2.0f;
-        
-        int _CurrentCheckpointId = 0;
+
+        int _checkpointIndex;
 
         public event Action<float> OnRespawnStarted;
 
-        private void Awake()
+        public int CheckpointIndex { get => _checkpointIndex; set => _checkpointIndex = value; }
+
+        void Awake()
         {
             _Characterbody = GetComponent<ICharacterbody>();
             _RespawnInput = GetComponent<IRespawnInput>();
-            _RespawnInput.onRespawn += OnRespawn;
+            _RespawnInput.onRespawn += HandleRespawnInput;
         }
 
-        private void Start()
+        void HandleRespawnInput(IInputData obj)
         {
-            var checkpoints = GameObject.Find("Gameplay Logic").transform.Find("Checkpoints").transform;
-            int checkpointCount = checkpoints.childCount;
-            for (int i = 0; i < checkpointCount; i++)
-            {
-                _Checkpoints.Add(checkpoints.GetChild(i).GetComponent<Collider2D>());
-            }
-
-            LevelLoader.OnLevelLoaded += LevelLoader_onLevelLoaded;
+            OnRespawnStarted?.Invoke(_TimeToRespawn);
+            StartCoroutine(MoveBodyToCheckpoint());
         }
 
-        private void OnDestroy()
-        {
-            LevelLoader.OnLevelLoaded -= LevelLoader_onLevelLoaded;
-        }
-
-        private void OnTriggerEnter2D(Collider2D collider)
-        {
-            if (collider.CompareTag("Checkpoint"))
-            {
-                if (_CurrentCheckpointId + 1 < _Checkpoints.Count)
-                {
-                    if (collider == _Checkpoints[_CurrentCheckpointId + 1])
-                    {
-                        _CurrentCheckpointId++;
-                    }
-                }
-            }
-        }
-
-        private void OnRespawn(IInputData obj)
-        {
-            if (obj.ReadValue<bool>())
-            {
-                OnRespawnStarted?.Invoke(_TimeToRespawn);
-                StartCoroutine(MoveBodyToCheckpoint());
-            }
-        }
         IEnumerator MoveBodyToCheckpoint()
         {
             yield return new WaitForSeconds(_TimeToRespawn);
-            _Characterbody.Position = _Checkpoints[_CurrentCheckpointId].transform.position;
-        }
-
-        private void LevelLoader_onLevelLoaded()
-        {
-            _Checkpoints.Clear();
-            _CurrentCheckpointId = 0;
-
-            var checkpoints = GameObject.Find("Gameplay Logic")?.transform.Find("Checkpoints")?.transform;
-            if (checkpoints)
-            {
-                int checkpointCount = checkpoints.childCount;
-                for (int i = 0; i < checkpointCount; i++)
-                {
-                    _Checkpoints.Add(checkpoints.GetChild(i).GetComponent<Collider2D>());
-                }
-            }
+            _Characterbody.Position = _checkpointsManagerVariable.Value.GetCheckpointPosition(this);
         }
     }
 }

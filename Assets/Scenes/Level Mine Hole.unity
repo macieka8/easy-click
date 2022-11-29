@@ -264,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250945577}
   - component: {fileID: 250945578}
+  - component: {fileID: 250945579}
   m_Layer: 0
   m_Name: Checkpoint 1
   m_TagString: Untagged
@@ -312,6 +313,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.274386, y: 4.091462}
   m_EdgeRadius: 0
+--- !u!114 &250945579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250945576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252129481
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605519122}
+  - component: {fileID: 605519123}
   m_Layer: 0
   m_Name: Checkpoints
   m_TagString: Untagged
@@ -914,6 +928,22 @@ Transform:
   m_Father: {fileID: 840376922}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605519123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605519121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb91fc435933c3498f3c38dfa32edc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _variable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90, type: 2}
+  _checkpoints:
+  - {fileID: 250945579}
+  - {fileID: 1514213806}
 --- !u!1 &637015508
 GameObject:
   m_ObjectHideFlags: 0
@@ -15724,6 +15754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514213804}
   - component: {fileID: 1514213805}
+  - component: {fileID: 1514213806}
   m_Layer: 0
   m_Name: Checkpoint 2
   m_TagString: Untagged
@@ -15772,6 +15803,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.659488, y: 8.250618}
   m_EdgeRadius: 0
+--- !u!114 &1514213806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514213803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1876619987
 PrefabInstance:
   m_ObjectHideFlags: 0

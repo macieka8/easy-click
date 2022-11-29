@@ -930,6 +930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912691673}
   - component: {fileID: 912691674}
+  - component: {fileID: 912691675}
   m_Layer: 0
   m_Name: Checkpoint 3
   m_TagString: Checkpoint
@@ -944,8 +945,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912691672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.33, y: 1.48, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 39.280422, y: 2.316411, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -978,6 +979,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.158749, y: 8.262241}
   m_EdgeRadius: 0
+--- !u!114 &912691675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912691672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &949286288
 GameObject:
   m_ObjectHideFlags: 0
@@ -22901,6 +22914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357005604}
+  - component: {fileID: 1357005605}
   m_Layer: 0
   m_Name: Checkpoints
   m_TagString: Untagged
@@ -22915,8 +22929,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357005603}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.95042014, y: 0.836411, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22927,6 +22941,24 @@ Transform:
   m_Father: {fileID: 1808865228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1357005605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357005603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb91fc435933c3498f3c38dfa32edc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _variable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90, type: 2}
+  _checkpoints:
+  - {fileID: 1555527683}
+  - {fileID: 2033511883}
+  - {fileID: 912691675}
+  - {fileID: 2093265606}
 --- !u!1 &1427426223
 GameObject:
   m_ObjectHideFlags: 0
@@ -23369,6 +23401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1555527681}
   - component: {fileID: 1555527682}
+  - component: {fileID: 1555527683}
   m_Layer: 0
   m_Name: Checkpoint 1
   m_TagString: Checkpoint
@@ -23383,8 +23416,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555527680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.89, y: -0.13, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.93958, y: 0.706411, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23417,6 +23450,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.363958, y: 7.0065613}
   m_EdgeRadius: 0
+--- !u!114 &1555527683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555527680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761321168
 GameObject:
   m_ObjectHideFlags: 0
@@ -23567,6 +23612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2033511881}
   - component: {fileID: 2033511882}
+  - component: {fileID: 2033511883}
   m_Layer: 0
   m_Name: Checkpoint 2
   m_TagString: Checkpoint
@@ -23581,8 +23627,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033511880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.33, y: 0.02, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.28042, y: 0.856411, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23615,6 +23661,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.071436, y: 7.172447}
   m_EdgeRadius: 0
+--- !u!114 &2033511883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033511880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093265603
 GameObject:
   m_ObjectHideFlags: 0
@@ -23625,6 +23683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093265604}
   - component: {fileID: 2093265605}
+  - component: {fileID: 2093265606}
   m_Layer: 0
   m_Name: Checkpoint 4
   m_TagString: Checkpoint
@@ -23639,8 +23698,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093265603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.44, y: -8.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 58.39042, y: -8.00359, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23673,6 +23732,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.93581, y: 6.7683144}
   m_EdgeRadius: 0
+--- !u!114 &2093265606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093265603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b86bc437dba4429b04f209f4e2040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3174647308781664837
 MonoBehaviour:
   m_ObjectHideFlags: 0

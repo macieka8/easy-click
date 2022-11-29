@@ -490,7 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b4a211bea7ec64f8fb55aa1a3d7757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Checkpoints: []
+  _checkpointsManagerVariable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90,
+    type: 2}
   _TimeToRespawn: 2
 --- !u!114 &-384991868642188462
 MonoBehaviour:
