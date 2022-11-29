@@ -27,6 +27,12 @@ namespace EasyClick
             _Characterbody = GetComponent<ICharacterbody>();
             _RespawnInput = GetComponent<IRespawnInput>();
             _RespawnInput.onRespawn += HandleRespawnInput;
+            LevelLoader.OnBeforeLevelUnload += ResetCheckpoint;
+        }
+
+        void Destroy()
+        {
+            LevelLoader.OnBeforeLevelUnload -= ResetCheckpoint;
         }
 
         void HandleRespawnInput(IInputData obj)
@@ -39,6 +45,11 @@ namespace EasyClick
         {
             yield return new WaitForSeconds(_TimeToRespawn);
             _Characterbody.Position = _checkpointsManagerVariable.Value.GetCheckpointPosition(this);
+        }
+
+        void ResetCheckpoint()
+        {
+            _checkpointIndex = 0;
         }
     }
 }
