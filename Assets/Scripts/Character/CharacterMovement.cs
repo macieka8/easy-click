@@ -18,6 +18,7 @@ namespace EasyClick
         float _DesiredRotationMultiplier = 1f;
 
         public Attribute JumpForce => _jumpForce;
+        public bool CanJump => _CharacterState == CharacterState.OnGround;
 
         void Awake()
         {

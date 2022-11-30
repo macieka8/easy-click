@@ -61,11 +61,8 @@ GameObject:
   - component: {fileID: 8900042810367859920}
   - component: {fileID: 8900042810367859922}
   - component: {fileID: 8900042810367859923}
-  - component: {fileID: 8900042810367859927}
   - component: {fileID: 8900042810367859925}
   - component: {fileID: 8900042810367859928}
-  - component: {fileID: 8900042810367859929}
-  - component: {fileID: 8900042810367859926}
   - component: {fileID: 8900042810367859931}
   - component: {fileID: 8900042810367859924}
   - component: {fileID: -7261281215115677418}
@@ -86,7 +83,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8900042810367859503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.46, y: -0.17, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -209,18 +206,6 @@ CircleCollider2D:
   m_Offset: {x: 0.000000059604645, y: 0.00000011920929}
   serializedVersion: 2
   m_Radius: 0.2
---- !u!114 &8900042810367859927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8900042810367859503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6bd26a6fd8ce6e418ec9bdadb9d514f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8900042810367859925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,30 +239,6 @@ MonoBehaviour:
   _checkpointsManagerVariable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90,
     type: 2}
   _TimeToRespawn: 2
---- !u!114 &8900042810367859929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8900042810367859503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afa6b36aaed227c4cbfa4a834644c0d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8900042810367859926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8900042810367859503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd5801167930b14183f65b4a2a39262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8900042810367859931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,15 +976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuffableEntityDisplayer Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1511293889157432116, guid: 60e5d3ced5ccdc24db0141194175989d,
+    - target: {fileID: 1474032737902567608, guid: 60e5d3ced5ccdc24db0141194175989d,
         type: 3}
-      propertyPath: m_CellSize.x
-      value: 85.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511293889157432116, guid: 60e5d3ced5ccdc24db0141194175989d,
-        type: 3}
-      propertyPath: m_CellSize.y
-      value: 85.5
+      propertyPath: _positionOffset.y
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
         type: 3}
@@ -1059,16 +1015,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 171
-      objectReference: {fileID: 0}
-    - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 171
       objectReference: {fileID: 0}
     - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
         type: 3}
@@ -1113,7 +1059,7 @@ PrefabInstance:
     - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.09
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4938168355043394979, guid: 60e5d3ced5ccdc24db0141194175989d,
         type: 3}

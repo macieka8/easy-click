@@ -17,21 +17,28 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: ec46a85d0804b904dac3ca0ac09ba0e9
   m_SerializeEntries:
-  - m_GUID: e8ef1a9021e8da5489b492b8a7b7de0e
-    m_Address: Ghost.prefab
+  - m_GUID: 62648fb818c03284285801856981775c
+    m_Address: Assets/Prefabs/World Objects/Characters/Playable Characters/Ghost
+      Playable.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - Playable Characters
-  - m_GUID: a89cfa288645f914a9ee790b6be43d0d
-    m_Address: Softbody.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Playable Characters
-  - m_GUID: 36863f0c4e4ac1644a41f368ff5a78f4
-    m_Address: Assets/Prefabs/World Objects/Characters/Bots/GhostAI.prefab
+  - m_GUID: e79a8cc672ad4b0438c43c7993d9a7bd
+    m_Address: Assets/Prefabs/World Objects/Characters/Bots/Ghost Bot.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - Bot Characters
+  - m_GUID: 26f374f4f780dee41999bed63dfa40fe
+    m_Address: Assets/Prefabs/World Objects/Characters/Bots/Softbody Bot.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Bot Characters
+  - m_GUID: f5d5ed5248dce0e4d9aa2b8e90f4f4b3
+    m_Address: Assets/Prefabs/World Objects/Characters/Playable Characters/Softbody
+      Playable.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Playable Characters
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b51c68b7049a1ff428eee4ca8e78de9b, type: 2}
   m_SchemaSet:
