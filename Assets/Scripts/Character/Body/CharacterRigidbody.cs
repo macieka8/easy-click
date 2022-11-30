@@ -7,7 +7,6 @@ namespace EasyClick
     {
         Rigidbody2D _Rigidbody;
         bool _TouchingGround;
-        bool _IsTouching;
 
         [SerializeField] Transform _GroundChecker;
         [SerializeField] LayerMask _WhatIsGround;
@@ -15,35 +14,25 @@ namespace EasyClick
 
         public Vector2 Position { get => _Rigidbody.position; set => _Rigidbody.position = value; }
         public float Rotation => _Rigidbody.rotation;
-        public bool TouchingGround => _TouchingGround || _IsTouching;
+        public bool TouchingGround => _TouchingGround;
         public Vector2 Up => transform.up;
-        
-        private void Awake()
+
+        void Awake()
         {
             _Rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        private void Update()
+        void Update()
         {
             _TouchingGround = Physics2D.OverlapCircle(_GroundChecker.position, _CheckRadius, _WhatIsGround);
         }
 
-        private void FixedUpdate()
+        void FixedUpdate()
         {
             _Rigidbody.rotation = NormalizeAngle(_Rigidbody.rotation);
         }
 
-        private void OnCollisionStay2D(Collision2D collision)
-        {
-            _IsTouching = true;
-        }
-
-        private void OnCollisionExit2D(Collision2D collision)
-        {
-            _IsTouching = false;
-        }
-
-        private float NormalizeAngle(float angle)
+        float NormalizeAngle(float angle)
         {
             if (angle >= 360 || angle <= -360)
                 angle %= 360;
@@ -55,7 +44,6 @@ namespace EasyClick
 
             return angle;
         }
-
 
         public void AddForce(Vector2 force, ForceMode2D mode)
         {

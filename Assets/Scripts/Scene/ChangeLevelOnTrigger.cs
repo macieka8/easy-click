@@ -5,31 +5,23 @@ namespace EasyClick
 {
     public class ChangeLevelOnTrigger : MonoBehaviour
     {
-        [SerializeField]
-        string _levelName;
-
-        [SerializeField]
-        PostGameLobbyData _gameResults;
-
-        [SerializeField]
-        LevelTimer _levelTimer;
+        [SerializeField] PostGameLobbyData _gameResults;
+        [SerializeField] LevelTimer _levelTimer;
+        [SerializeField] string _levelName;
 
         public event Action onLevelFinished = delegate { };
 
-        private void OnTriggerEnter2D(Collider2D collider)
+        void OnTriggerEnter2D(Collider2D collider)
         {
-            if (collider.CompareTag("Player"))
+            if (collider.TryGetComponent<RacerEntity>(out var raceWinner))
             {
                 onLevelFinished?.Invoke();
                 var bestScore = LevelTimer.getBestScore(LevelLoader.CurrentLevel);
-                float bestScoreValue = bestScore.HasValue
-                    ? bestScore.Value
-                    : _levelTimer.TimeElapsed;
+                float bestScoreValue = bestScore.HasValue ? bestScore.Value : _levelTimer.TimeElapsed;
 
-                var playerName = $"Player {PlayerInput.AllPlayers.IndexOf(collider.GetComponent<PlayerInput>())}";
+                var playerName = raceWinner.Name;
 
                 _gameResults.SetupData(
-                    LevelLoader.CurrentLevel,
                     _levelTimer.TimeElapsed,
                     bestScoreValue,
                     playerName,

@@ -6,15 +6,11 @@ namespace EasyClick
 {
     public class PostGameLobby : MonoBehaviour
     {
-        [SerializeField]
-        PostGameLobbyData _gameResults;
+        [SerializeField] PostGameLobbyData _gameResults;
 
-        [SerializeField]
-        TextMeshProUGUI _winnerName;
-        [SerializeField]
-        TextMeshProUGUI _winnerTimeText;
-        [SerializeField]
-        TextMeshProUGUI _bestTimeText;
+        [SerializeField] TextMeshProUGUI _winnerNameText;
+        [SerializeField] TextMeshProUGUI _winnerTimeText;
+        [SerializeField] TextMeshProUGUI _bestTimeText;
 
         void Start()
         {
@@ -23,6 +19,8 @@ namespace EasyClick
 
             TimeSpan bestTime = TimeSpan.FromSeconds(_gameResults.BestTime);
             _bestTimeText.text = $"{bestTime.Minutes:d2}:{bestTime.Seconds:d2}";
+
+            _winnerNameText.text = _gameResults.WinnerName;
         }
 
         public void OnMainMenu()

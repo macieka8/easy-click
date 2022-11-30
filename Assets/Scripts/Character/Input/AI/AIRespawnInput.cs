@@ -10,9 +10,10 @@ namespace EasyClick
     {
         public event Action<IInputData> onRespawn;
 
-        private void Start()
+        void Start()
         {
-            Respawn();
+            //todo:
+            //Respawn();
         }
 
         async void Respawn()

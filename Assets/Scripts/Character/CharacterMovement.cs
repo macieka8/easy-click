@@ -88,6 +88,8 @@ namespace EasyClick
             {
                 if (_Characterbody.TouchingGround)
                     _CharacterState = CharacterState.Jump;
+                else
+                    _CharacterState = CharacterState.Flying;
             }
         }
 

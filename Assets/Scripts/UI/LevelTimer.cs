@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -27,8 +26,7 @@ namespace EasyClick
             }
         }
 
-        [SerializeField]
-        ChangeLevelOnTrigger _levelChanger;
+        [SerializeField] ChangeLevelOnTrigger _levelChanger;
 
         public static string SaveFileName = "bestTimes.json";
         string _scorePath;

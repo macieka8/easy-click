@@ -84,6 +84,7 @@ namespace EasyClick
 
         public void UpdateDisplay()
         {
+            if (!_racer.IsPlayer) return;
             var gameplayActions = _racer.GetComponent<PlayerInput>().PlayerControls.Gameplay;
             UpdateDisplay(_rotateLeftText, gameplayActions.Rotate, 1);
             UpdateDisplay(_rotateRightText, gameplayActions.Rotate, 2);
