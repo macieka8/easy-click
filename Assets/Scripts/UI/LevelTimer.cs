@@ -7,6 +7,8 @@ namespace EasyClick
 {
     public class LevelTimer : MonoBehaviour
     {
+        public static string SaveFileName = "bestTimes.json";
+
         [Serializable]
         class TimeScoreList
         {
@@ -28,9 +30,7 @@ namespace EasyClick
 
         [SerializeField] ChangeLevelOnTrigger _levelChanger;
 
-        public static string SaveFileName = "bestTimes.json";
         string _scorePath;
-
         float _timeElapsed;
 
         public float TimeElapsed { get => _timeElapsed; }
@@ -45,44 +45,41 @@ namespace EasyClick
             _timeElapsed += Time.deltaTime;
         }
 
-        private void OnEnable()
+        void OnEnable()
         {
             _levelChanger.onLevelFinished += SaveScore;
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             _levelChanger.onLevelFinished -= SaveScore;
         }
 
-        private void SaveScore()
+        void SaveScore()
         {
-            if (File.Exists(_scorePath))
+            TimeScoreList data;
+            if (!File.Exists(_scorePath))
             {
-                var fileContent = File.ReadAllText(_scorePath);
-                var data = JsonUtility.FromJson<TimeScoreList>(fileContent);
-                if (data != null)
-                {
-                    var entry = data.Scores.Find(entry => entry.LevelName == LevelLoader.CurrentLevel);
-                    if (entry != null && entry.Time > _timeElapsed)
-                    {
-                        entry.Time = _timeElapsed;
-                        File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
-                    }
-                }
-                else
-                {
-                    data = new TimeScoreList();
-                    data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
-                    File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
-                }
+                data = new TimeScoreList();
             }
             else
             {
-                var data = new TimeScoreList();
-                data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
-                File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
+                var fileContent = File.ReadAllText(_scorePath);
+                data = JsonUtility.FromJson<TimeScoreList>(fileContent);
             }
+
+            var entry = data.Scores.Find(entry => entry.LevelName == LevelLoader.CurrentLevel);
+            if (entry != null)
+            {
+                if (entry.Time > _timeElapsed)
+                    entry.Time = _timeElapsed;
+            }
+            else
+            {
+                data.Scores.Add(new TimeScoreEntry(LevelLoader.CurrentLevel, _timeElapsed));
+            }
+
+            File.WriteAllText(_scorePath, JsonUtility.ToJson(data));
         }
 
         public static float? getBestScore(string levelName)

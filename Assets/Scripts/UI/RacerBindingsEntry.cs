@@ -8,7 +8,7 @@ namespace EasyClick
     public class RacerBindingsEntry : MonoBehaviour
     {
         [Header("Internal References")]
-        [SerializeField] TextMeshProUGUI _racerNameText;
+        [SerializeField] TMP_InputField _racerNameInputField;
         [SerializeField] Button _rotateLeftButton;
         [SerializeField] TextMeshProUGUI _rotateLeftText;
         [SerializeField] Button _rotateRightButton;
@@ -29,7 +29,7 @@ namespace EasyClick
             _racer = racer;
             _menu = menu;
 
-            _racerNameText.text = racer.Name;
+            CreatePlayerNameEntry();
             if (_racer.IsPlayer)
             {
                 CreateBindingEntry(_rotateLeftButton, _rotateLeftText, "Rotate", 1);
@@ -39,6 +39,12 @@ namespace EasyClick
 
             CreateChangeCharacterEntry();
             CreateRemoveRacerEntry();
+        }
+
+        void CreatePlayerNameEntry()
+        {
+            _racerNameInputField.text = _racer.Name;
+            _racerNameInputField.onEndEdit.AddListener((string str) => _racer.ChangeName(str));
         }
 
         void CreateBindingEntry(Button button, TextMeshProUGUI text, string actionName, int bindingIndex)
