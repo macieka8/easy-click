@@ -44,6 +44,7 @@ namespace EasyClick
 
         public void AddPlayer()
         {
+            if (PlayerInput.AllPlayers.Count >= 4) return;
             var spawnedRacerEntity = _spawnerVariable.Value.Spawn(true);
             _PlayerSaver.LoadPlayerInputs(spawnedRacerEntity.GetComponent<PlayerInput>());
             CreateRacerEntry(spawnedRacerEntity);

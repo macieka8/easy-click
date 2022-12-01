@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: -7261281215115677418}
   - component: {fileID: 3442333298004870877}
   - component: {fileID: 3453194051877351922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Softbody
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -270,10 +270,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e667ae7d3d2f8af4f8351ac6627e7adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _GroundChecker: {fileID: 8900042810173098807}
-  _WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
+  _groundChecker: {fileID: 8900042810173098807}
+  _contactFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _ignoredColliders:
+  - {fileID: 8900042811049166946}
+  - {fileID: 8900042810777252818}
+  - {fileID: 8900042811662379923}
+  - {fileID: 8900042811947198671}
+  - {fileID: 8900042810367859923}
 --- !u!114 &-7261281215115677418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +345,7 @@ GameObject:
   - component: {fileID: 8900042810777252823}
   - component: {fileID: 8900042810777252820}
   - component: {fileID: 8900042810777252825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bone 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +499,7 @@ GameObject:
   - component: {fileID: 8900042811049166951}
   - component: {fileID: 8900042811049166948}
   - component: {fileID: 8900042811049166953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +653,7 @@ GameObject:
   - component: {fileID: 8900042811662379924}
   - component: {fileID: 8900042811662379925}
   - component: {fileID: 8900042811662379926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bone 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +807,7 @@ GameObject:
   - component: {fileID: 8900042811947198704}
   - component: {fileID: 8900042811947198705}
   - component: {fileID: 8900042811947198706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bone 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

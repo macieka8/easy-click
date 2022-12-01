@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 3574644723332232834}
   - component: {fileID: 7497804300922018263}
   - component: {fileID: 3858006344145322297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ghost
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -391,10 +391,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d895e2ffff96604459ef17f9e8ca598a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _GroundChecker: {fileID: 221062373732490095}
-  _WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
+  _groundChecker: {fileID: 221062373732490095}
+  _contactFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _ignoredColliders:
+  - {fileID: 141890264929757325}
 --- !u!114 &5307880075439909213
 MonoBehaviour:
   m_ObjectHideFlags: 0

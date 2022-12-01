@@ -1,35 +1,43 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace EasyClick
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class CharacterRigidbody : MonoBehaviour, ICharacterbody
     {
-        Rigidbody2D _Rigidbody;
-        bool _TouchingGround;
+        Rigidbody2D _rigidbody;
+        bool _touchingGround;
 
-        [SerializeField] Transform _GroundChecker;
-        [SerializeField] LayerMask _WhatIsGround;
-        readonly float _CheckRadius = 0.4f;
+        [SerializeField] Transform _groundChecker;
+        [SerializeField] ContactFilter2D _contactFilter;
+        [SerializeField] List<Collider2D> _ignoredColliders;
+        readonly float _checkRadius = 0.4f;
 
-        public Vector2 Position { get => _Rigidbody.position; set => _Rigidbody.position = value; }
-        public float Rotation => _Rigidbody.rotation;
-        public bool TouchingGround => _TouchingGround;
+        public Vector2 Position { get => _rigidbody.position; set => _rigidbody.position = value; }
+        public float Rotation => _rigidbody.rotation;
+        public bool TouchingGround => _touchingGround;
         public Vector2 Up => transform.up;
+
+        Collider2D[] _foundColliders;
 
         void Awake()
         {
-            _Rigidbody = GetComponent<Rigidbody2D>();
+            _foundColliders = new Collider2D[_ignoredColliders.Count + 1];
+            _rigidbody = GetComponent<Rigidbody2D>();
         }
 
         void Update()
         {
-            _TouchingGround = Physics2D.OverlapCircle(_GroundChecker.position, _CheckRadius, _WhatIsGround);
+            Array.Clear(_foundColliders, 0, _foundColliders.Length);
+            Physics2D.OverlapCircle(_groundChecker.position, _checkRadius, _contactFilter, _foundColliders);
+            _touchingGround = IgnoreCollisionHelper.CheckIfNotIgnoredColliderExist(_foundColliders, _ignoredColliders);
         }
 
         void FixedUpdate()
         {
-            _Rigidbody.rotation = NormalizeAngle(_Rigidbody.rotation);
+            _rigidbody.rotation = NormalizeAngle(_rigidbody.rotation);
         }
 
         float NormalizeAngle(float angle)
@@ -47,12 +55,12 @@ namespace EasyClick
 
         public void AddForce(Vector2 force, ForceMode2D mode)
         {
-            _Rigidbody.AddForce(force, mode);
+            _rigidbody.AddForce(force, mode);
         }
 
         public void AddTorque(float torque)
         {
-            _Rigidbody.AddTorque(torque);
+            _rigidbody.AddTorque(torque);
         }
     }
 }
