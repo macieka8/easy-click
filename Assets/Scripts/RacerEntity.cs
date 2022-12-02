@@ -22,15 +22,20 @@ namespace EasyClick
         void Awake()
         {
             _body = GetComponent<IBody>();
-            LevelLoader.OnBeforeLevelUnload += HandleOnBeforeLevelUnload;
             _isPlayer = TryGetComponent<PlayerInput>(out var _);
             _buffableEntity = GetComponent<BuffableEntity>();
+
+            LevelLoader.OnBeforeLevelUnload += HandleOnBeforeLevelUnload;
+            LevelLoader.OnLevelLoaded += HandleLevelLoaded;
+
             _allRacers.Add(this);
         }
 
         void OnDestroy()
         {
             LevelLoader.OnBeforeLevelUnload -= HandleOnBeforeLevelUnload;
+            LevelLoader.OnLevelLoaded -= HandleLevelLoaded;
+
             _allRacers.Remove(this);
         }
 
@@ -38,6 +43,13 @@ namespace EasyClick
         {
             transform.SetParent(null);
             DontDestroyOnLoad(this);
+
+            gameObject.SetActive(false);
+        }
+
+        void HandleLevelLoaded()
+        {
+            gameObject.SetActive(true);
         }
 
         public void ChangeName(string name)

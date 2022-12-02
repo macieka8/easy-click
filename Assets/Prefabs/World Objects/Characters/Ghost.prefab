@@ -420,7 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2777f86f017688843a6e3c75f4154185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
   _rotateSpeed:
     _baseValue: 5
   _jumpForce:
@@ -438,6 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b4a211bea7ec64f8fb55aa1a3d7757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
   _checkpointsManagerVariable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90,
     type: 2}
   _TimeToRespawn: 2

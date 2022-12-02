@@ -62,5 +62,10 @@ namespace EasyClick
         {
             _rigidbody.AddTorque(torque);
         }
+
+        public void TeleportTo(Vector2 position)
+        {
+            transform.position = position;
+        }
     }
 }

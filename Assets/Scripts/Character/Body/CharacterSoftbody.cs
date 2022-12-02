@@ -60,5 +60,10 @@ namespace EasyClick
         {
             _Softbody.AddTorque(torque * Time.deltaTime);
         }
+
+        public void TeleportTo(Vector2 position)
+        {
+            transform.position = position;
+        }
     }
 }

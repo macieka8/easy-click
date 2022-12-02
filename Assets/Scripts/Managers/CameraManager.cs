@@ -79,8 +79,8 @@ namespace EasyClick
             }
 
             // Change layout / camera settings on specified event
-            PlayerInput.onPlayerJoined += OnPlayerJoined;
-            PlayerInput.onPlayerLeft += OnPlayerLeft;
+            PlayerInput.OnPlayerJoined += OnPlayerJoined;
+            PlayerInput.OnPlayerLeft += OnPlayerLeft;
 
             LevelLoader.OnLevelLoaded += OnLevelLoaded;
         }

@@ -7,36 +7,29 @@ namespace EasyClick
     public class PlayerInput : MonoBehaviour
     {
         public static readonly List<PlayerInput> AllPlayers = new List<PlayerInput>();
-        public static event System.Action<PlayerInput> onPlayerJoined = delegate { };
-        public static event System.Action<PlayerInput> onPlayerLeft = delegate { };
+        public static event System.Action<PlayerInput> OnPlayerJoined = delegate { };
+        public static event System.Action<PlayerInput> OnPlayerLeft = delegate { };
 
-        PlayerControls _PlayerControls;
+        PlayerControls _playerControls;
 
-        public PlayerControls PlayerControls
+        public PlayerControls PlayerControls => _playerControls;
+
+        void Awake()
         {
-            get => _PlayerControls;
-        }
-
-        private void Awake()
-        {
-            _PlayerControls = new PlayerControls();
-        }
-
-        private void OnEnable()
-        {
+            _playerControls = new PlayerControls();
             AllPlayers.Add(this);
-            onPlayerJoined?.Invoke(this);
+            OnPlayerJoined?.Invoke(this);
         }
 
-        private void OnDisable()
+        void OnDestroy()
         {
             AllPlayers.Remove(this);
-            onPlayerLeft?.Invoke(this);
+            OnPlayerLeft?.Invoke(this);
         }
 
         public void RebindControls(PlayerControls newControls)
         {
-            _PlayerControls.Gameplay.Get().ApplyBindingOverrides(newControls.Gameplay.Get().bindings);
+            _playerControls.Gameplay.Get().ApplyBindingOverrides(newControls.Gameplay.Get().bindings);
         }
     }
 }

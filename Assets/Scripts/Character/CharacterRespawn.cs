@@ -4,17 +4,14 @@ using UnityEngine;
 
 namespace EasyClick
 {
-    public interface IRespawnable
-    {
-        public int CheckpointIndex { get; set; }
-    }
     public class CharacterRespawn : MonoBehaviour, IRespawnable
     {
-        IRespawnInput _RespawnInput;
-        ICharacterbody _Characterbody;
-
+        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] CheckpointsManagerVariable _checkpointsManagerVariable;
         [SerializeField] float _TimeToRespawn = 2.0f;
+
+        IRespawnInput _RespawnInput;
+        ICharacterbody _Characterbody;
 
         int _checkpointIndex;
 
@@ -28,17 +25,25 @@ namespace EasyClick
             _RespawnInput = GetComponent<IRespawnInput>();
             _RespawnInput.onRespawn += HandleRespawnInput;
             LevelLoader.OnBeforeLevelUnload += ResetCheckpoint;
+            LevelLoader.OnLevelLoaded += HandleLevelLoaded;
         }
 
-        void Destroy()
+        void OnDestroy()
         {
+            _RespawnInput.onRespawn -= HandleRespawnInput;
             LevelLoader.OnBeforeLevelUnload -= ResetCheckpoint;
+            LevelLoader.OnLevelLoaded -= HandleLevelLoaded;
         }
 
         void HandleRespawnInput(IInputData obj)
         {
             OnRespawnStarted?.Invoke(_TimeToRespawn);
             StartCoroutine(MoveBodyToCheckpoint());
+        }
+
+        void HandleLevelLoaded()
+        {
+            _spawnerVariable.Value.Respawn(_Characterbody);
         }
 
         IEnumerator MoveBodyToCheckpoint()

@@ -4,7 +4,6 @@ namespace EasyClick
 {
     public class CharacterMovement : MonoBehaviour
     {
-        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] Attribute _rotateSpeed;
         [SerializeField] Attribute _jumpForce;
         [SerializeField] float _TimeBeforeJump;
@@ -29,14 +28,8 @@ namespace EasyClick
             _MovementInput.onJump += OnJump;
         }
 
-        void Start()
-        {
-            LevelLoader.OnLevelLoaded += LevelLoader_onLevelLoaded;
-        }
-
         void OnDestroy()
         {
-            LevelLoader.OnLevelLoaded -= LevelLoader_onLevelLoaded;
             _MovementInput.onRotationChanged -= OnRotate;
             _MovementInput.onJump -= OnJump;
         }
@@ -70,11 +63,6 @@ namespace EasyClick
                 if (_BeforeJumpStopwatch <= 0f)
                     _CharacterState = CharacterState.OnGround;
             }
-        }
-
-        void LevelLoader_onLevelLoaded()
-        {
-            _spawnerVariable.Value.Respawn(_Characterbody);
         }
 
         void OnRotate(IInputData obj)
