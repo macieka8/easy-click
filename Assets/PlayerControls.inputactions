@@ -11,7 +11,8 @@
                     "id": "5d2a041e-b72e-4a91-9da7-3cfcfa35e8d7",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Respawn",
@@ -19,7 +20,8 @@
                     "id": "54318727-1771-47fd-909e-4a8875da7502",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Back",
@@ -27,14 +29,15 @@
                     "id": "b786bed3-329c-422d-8b7a-691b32385e60",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "62a551a5-9fb0-4d80-82c7-d2be24cdc645",
-                    "path": "<Keyboard>/r",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 1",

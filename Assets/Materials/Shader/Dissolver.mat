@@ -61,8 +61,8 @@ Material:
     - _EnableExternalAlpha: 0
     - _Fade: 0.503
     - _Height: 0
-    - _MaxHeight: 0.5
-    - _MinHeight: -0.5
+    - _MaxHeight: 10
+    - _MinHeight: -10
     - _NoiseScale: 16
     - _Progress: 0
     - _QueueControl: 0

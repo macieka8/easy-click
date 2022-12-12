@@ -61,7 +61,7 @@ namespace EasyClick
                 {
                     ""name"": """",
                     ""id"": ""62a551a5-9fb0-4d80-82c7-d2be24cdc645"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Player 1"",

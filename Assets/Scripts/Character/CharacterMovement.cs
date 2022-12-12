@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace EasyClick
 {
@@ -18,6 +19,8 @@ namespace EasyClick
 
         public Attribute JumpForce => _jumpForce;
         public bool CanJump => _CharacterState == CharacterState.OnGround;
+
+        public event Action OnJumpPerformed;
 
         void Awake()
         {
@@ -52,6 +55,7 @@ namespace EasyClick
                 _Characterbody.AddForce(_Characterbody.Up * _jumpForce.Value, ForceMode2D.Impulse);
                 _CharacterState = CharacterState.Flying;
                 _BeforeJumpStopwatch = _TimeBeforeJump;
+                OnJumpPerformed?.Invoke();
             }
             else if (_CharacterState == CharacterState.Flying)
             {
