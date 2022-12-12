@@ -16,7 +16,12 @@ namespace EasyClick
             _material.SetFloat("_MinHeight", _renderer.localBounds.center.y - _renderer.localBounds.extents.y);
         }
 
-        void OnEnable() => _characterRespawn.OnRespawnStarted += HandleRespawnStarted;
+        void OnEnable()
+        {
+            _characterRespawn.OnRespawnStarted += HandleRespawnStarted;
+            // Makes sure dissolving is reset when coroutine is canceled
+            _material.SetFloat("_Progress", 0f);
+        }
         void OnDisable() => _characterRespawn.OnRespawnStarted -= HandleRespawnStarted;
 
         void HandleRespawnStarted(float duration)
