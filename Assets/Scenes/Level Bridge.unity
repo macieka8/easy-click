@@ -213,6 +213,7 @@ MonoBehaviour:
   _BridgeMass: 5
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &158503500
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,9 +596,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045c494599c6c124d9643396bd437a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelName: Level Elevator
   _gameResults: {fileID: 11400000, guid: e7110af5a72861349a99c46da57b4a7d, type: 2}
   _levelTimer: {fileID: 1371552513}
+  _levelName: Level Elevator
 --- !u!61 &198676931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20144,6 +20145,7 @@ MonoBehaviour:
   _BridgeMass: 4
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &922225555
 GameObject:
   m_ObjectHideFlags: 0
@@ -21276,6 +21278,7 @@ MonoBehaviour:
   _BridgeMass: 5
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &1042756750
 GameObject:
   m_ObjectHideFlags: 0
@@ -22035,6 +22038,7 @@ MonoBehaviour:
   _BridgeMass: 10
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &1257617664
 GameObject:
   m_ObjectHideFlags: 0
@@ -36094,6 +36098,7 @@ MonoBehaviour:
   _BridgeMass: 5
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &1325240032
 GameObject:
   m_ObjectHideFlags: 0
@@ -37500,6 +37505,7 @@ MonoBehaviour:
   _BridgeMass: 5
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &1714112701
 GameObject:
   m_ObjectHideFlags: 0
@@ -37895,6 +37901,7 @@ MonoBehaviour:
   _BridgeMass: 5
   _FirstNodeAttached: 1
   _LastNodeAttached: 1
+  _Nodes: []
 --- !u!1 &1804486478
 GameObject:
   m_ObjectHideFlags: 0

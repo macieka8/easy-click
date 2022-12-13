@@ -5,90 +5,99 @@ namespace EasyClick
 {
     public class CharacterMovement : MonoBehaviour
     {
+        public delegate void CharacterStateChangedDelegate(CharacterState prevState, CharacterState currentState);
+
         [SerializeField] Attribute _rotateSpeed;
         [SerializeField] Attribute _jumpForce;
-        [SerializeField] float _TimeBeforeJump;
+        [SerializeField] float _timeBeforeJump;
 
-        ICharacterbody _Characterbody;
-        IMovementInput _MovementInput;
+        ICharacterbody _characterbody;
+        IMovementInput _movementInput;
 
-        CharacterState _CharacterState = CharacterState.Flying;
-        float _DesiredRotation;
-        float _BeforeJumpStopwatch;
-        float _DesiredRotationMultiplier = 1f;
+        CharacterState _characterState = CharacterState.Flying;
+        float _desiredRotation;
+        float _beforeJumpStopwatch;
+        float _desiredRotationMultiplier = 1f;
 
         public Attribute JumpForce => _jumpForce;
-        public bool CanJump => _CharacterState == CharacterState.OnGround;
+        public bool CanJump => _characterState == CharacterState.OnGround;
 
         public event Action OnJumpPerformed;
+        public event CharacterStateChangedDelegate OnStateChanged;
 
         void Awake()
         {
-            _Characterbody = GetComponent<ICharacterbody>();
-            _MovementInput = GetComponent<IMovementInput>();
+            _characterbody = GetComponent<ICharacterbody>();
+            _movementInput = GetComponent<IMovementInput>();
 
-            _MovementInput.onRotationChanged += OnRotate;
-            _MovementInput.onJump += OnJump;
+            _movementInput.onRotationChanged += OnRotate;
+            _movementInput.onJump += OnJump;
         }
 
         void OnDestroy()
         {
-            _MovementInput.onRotationChanged -= OnRotate;
-            _MovementInput.onJump -= OnJump;
+            _movementInput.onRotationChanged -= OnRotate;
+            _movementInput.onJump -= OnJump;
         }
 
         void FixedUpdate()
         {
-            if (_CharacterState == CharacterState.OnGround)
+            if (_characterState == CharacterState.OnGround)
             {
-                if (_Characterbody.Rotation > _DesiredRotation * _DesiredRotationMultiplier)
+                if (_characterbody.Rotation > _desiredRotation * _desiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(-_rotateSpeed.Value);
+                    _characterbody.AddTorque(-_rotateSpeed.Value);
                 }
-                else if (_Characterbody.Rotation < _DesiredRotation * _DesiredRotationMultiplier)
+                else if (_characterbody.Rotation < _desiredRotation * _desiredRotationMultiplier)
                 {
-                    _Characterbody.AddTorque(_rotateSpeed.Value);
+                    _characterbody.AddTorque(_rotateSpeed.Value);
                 }
             }
-            else if (_CharacterState == CharacterState.Jump)
+            else if (_characterState == CharacterState.Jump)
             {
-                _Characterbody.AddForce(_Characterbody.Up * _jumpForce.Value, ForceMode2D.Impulse);
-                _CharacterState = CharacterState.Flying;
-                _BeforeJumpStopwatch = _TimeBeforeJump;
+                _characterbody.AddForce(_characterbody.Up * _jumpForce.Value, ForceMode2D.Impulse);
+                _characterState = CharacterState.Flying;
+                _beforeJumpStopwatch = _timeBeforeJump;
+                OnStateChanged?.Invoke(CharacterState.Jump, _characterState);
                 OnJumpPerformed?.Invoke();
             }
-            else if (_CharacterState == CharacterState.Flying)
+            else if (_characterState == CharacterState.Flying)
             {
-                if (_Characterbody.TouchingGround)
-                    _BeforeJumpStopwatch -= Time.deltaTime;
+                if (_characterbody.TouchingGround)
+                    _beforeJumpStopwatch -= Time.deltaTime;
                 else
-                    _BeforeJumpStopwatch = _TimeBeforeJump;
+                    _beforeJumpStopwatch = _timeBeforeJump;
 
-                if (_BeforeJumpStopwatch <= 0f)
-                    _CharacterState = CharacterState.OnGround;
+                if (_beforeJumpStopwatch <= 0f)
+                {
+                    _characterState = CharacterState.OnGround;
+                    OnStateChanged?.Invoke(CharacterState.Flying, _characterState);
+                }
             }
         }
 
         void OnRotate(IInputData obj)
         {
-            _DesiredRotation = obj.ReadValue<float>() * 45f;
+            _desiredRotation = obj.ReadValue<float>() * 45f;
         }
 
         void OnJump(IInputData obj)
         {
-            _DesiredRotation = 45f * obj.ReadValue<float>();
-            if (_CharacterState == CharacterState.OnGround)
+            _desiredRotation = 45f * obj.ReadValue<float>();
+            if (_characterState == CharacterState.OnGround)
             {
-                if (_Characterbody.TouchingGround)
-                    _CharacterState = CharacterState.Jump;
+                if (_characterbody.TouchingGround)
+                    _characterState = CharacterState.Jump;
                 else
-                    _CharacterState = CharacterState.Flying;
+                    _characterState = CharacterState.Flying;
+
+                OnStateChanged?.Invoke(CharacterState.OnGround, _characterState);
             }
         }
 
         public void ReverseControls()
         {
-            _DesiredRotationMultiplier *= -1f;
+            _desiredRotationMultiplier *= -1f;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace EasyClick
 {
-    enum CharacterState
+    public enum CharacterState
     {
         OnGround,
         Jump,
