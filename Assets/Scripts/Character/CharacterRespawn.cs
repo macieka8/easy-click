@@ -14,6 +14,7 @@ namespace EasyClick
         ICharacterbody _Characterbody;
 
         int _checkpointIndex;
+        bool _isRespawning;
 
         public event Action<float> OnRespawnStarted;
 
@@ -28,6 +29,11 @@ namespace EasyClick
             LevelLoader.OnLevelLoaded += HandleLevelLoaded;
         }
 
+        void OnEnable()
+        {
+            _isRespawning = false;
+        }
+
         void OnDestroy()
         {
             _RespawnInput.onRespawn -= HandleRespawnInput;
@@ -35,8 +41,9 @@ namespace EasyClick
             LevelLoader.OnLevelLoaded -= HandleLevelLoaded;
         }
 
-        void HandleRespawnInput(IInputData obj)
+        void HandleRespawnInput(IInputData obj = null)
         {
+            if (_isRespawning) return;
             OnRespawnStarted?.Invoke(_TimeToRespawn);
             StartCoroutine(MoveBodyToCheckpoint());
         }
@@ -48,13 +55,20 @@ namespace EasyClick
 
         IEnumerator MoveBodyToCheckpoint()
         {
+            _isRespawning = true;
             yield return new WaitForSeconds(_TimeToRespawn);
             _Characterbody.Position = _checkpointsManagerVariable.Value.GetCheckpointPosition(this);
+            _isRespawning = false;
         }
 
         void ResetCheckpoint()
         {
             _checkpointIndex = 0;
+        }
+
+        public void ForceRespawn()
+        {
+            HandleRespawnInput();
         }
     }
 }
