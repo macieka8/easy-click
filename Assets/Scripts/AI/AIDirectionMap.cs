@@ -19,10 +19,11 @@ namespace EasyClick
     {
         [SerializeField] DirectionMapVariable _variable;
         [SerializeField] Grid _grid;
-        [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
-        [SerializeField] List<Vector2> _rectangularMap = new List<Vector2>();
-        [SerializeField] Vector2Int _rectangularMapStartCoords;
-        [SerializeField] Vector2Int _rectangularMapDimension;
+        [SerializeField] DirectionMapVariation[] _variations = new DirectionMapVariation[0];
+        [HideInInspector] [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
+        [HideInInspector] [SerializeField] List<Vector2> _rectangularMap = new List<Vector2>();
+        [HideInInspector] [SerializeField] Vector2Int _rectangularMapStartCoords;
+        [HideInInspector] [SerializeField] Vector2Int _rectangularMapDimension;
 
         public Grid Grid => _grid;
         public IReadOnlyList<DirectionMapEntry> DirectionMap => _directionMap;
@@ -42,6 +43,13 @@ namespace EasyClick
 
         public Vector2 GetDirection(Vector2 position)
         {
+            foreach (var variation in _variations)
+            {
+                if (variation.IsPositionInBounds(position))
+                {
+                    return variation.GetDirection(position);
+                }
+            }
             var cellCoords = (Vector2Int)_grid.WorldToCell(position);
 
             if (InMapBounds(cellCoords))

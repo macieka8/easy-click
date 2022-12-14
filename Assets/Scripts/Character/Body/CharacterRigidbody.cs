@@ -15,7 +15,7 @@ namespace EasyClick
         [SerializeField] List<Collider2D> _ignoredColliders;
         readonly float _checkRadius = 0.4f;
 
-        public Vector2 Position { get => _rigidbody.position; set => _rigidbody.MovePosition(value); }
+        public Vector2 Position { get => _rigidbody.position; set => TeleportTo(value); }
         public float Rotation => _rigidbody.rotation;
         public bool TouchingGround => _touchingGround;
         public Vector2 Up => transform.up;
@@ -66,6 +66,7 @@ namespace EasyClick
         public void TeleportTo(Vector2 position)
         {
             transform.position = position;
+            _rigidbody.velocity = Vector2.zero;
         }
     }
 }

@@ -6,30 +6,32 @@ namespace EasyClick
     public class AIMovementInput : MonoBehaviour, IMovementInput
     {
         [SerializeField] DirectionMapVariable _directionMap;
-        public event Action<IInputData> onRotationChanged;
-        public event Action<IInputData> onJump;
+        [SerializeField] float _maxTimeTillJump;
 
-        ICharacterbody _Body;
+        ICharacterbody _body;
         Transform _transform;
 
-        Vector2 _TargetDir;
-        [SerializeField] float _MaxTimeTillJump;
-        float _TimeTillLastJump;
+        Vector2 _targetDir;
+        float _timeTillLastJump;
+
+        public event Action<IInputData> onRotationChanged;
+        public event Action<IInputData> onJump;
 
         void Awake()
         {
             _transform = transform;
-            _Body = GetComponent<ICharacterbody>();
+            _body = GetComponent<ICharacterbody>();
         }
 
         void Update()
         {
             if (_directionMap.Value != null)
             {
-                _TimeTillLastJump += Time.deltaTime;
-                _TargetDir = _directionMap.Value.GetDirection(_transform.position);
-                _TargetDir.Normalize();
+                _targetDir = _directionMap.Value.GetDirection(_transform.position);
+                if (_targetDir == Vector2.zero) return;
+                _timeTillLastJump += Time.deltaTime;
 
+                _targetDir.Normalize();
                 DecideRotation();
                 DecideJump();
             }
@@ -37,7 +39,7 @@ namespace EasyClick
 
         void DecideRotation()
         {
-            float angle = Vector2.SignedAngle(Vector2.up, _TargetDir);
+            float angle = Vector2.SignedAngle(Vector2.up, _targetDir);
             if (angle > 15f)
             {
                 RotateLeft();
@@ -54,12 +56,12 @@ namespace EasyClick
 
         void DecideJump()
         {
-            float dot = Vector2.Dot(_Body.Up, _TargetDir);
+            float dot = Vector2.Dot(_body.Up, _targetDir);
             if (dot > 0.9)
             {
                 Jump();
             }
-            else if (_TimeTillLastJump > _MaxTimeTillJump)
+            else if (_timeTillLastJump > _maxTimeTillJump)
             {
                 Jump();
             }
@@ -82,7 +84,7 @@ namespace EasyClick
 
         void Jump()
         {
-            _TimeTillLastJump = 0f;
+            _timeTillLastJump = 0f;
             onJump?.Invoke(new MovementInputData(0f));
         }
     }

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 8900042810367859503, guid: a89cfa288645f914a9ee790b6be43d0d,
         type: 3}
       propertyPath: m_Name
-      value: Softbody
+      value: Softbody Bot
       objectReference: {fileID: 0}
     - target: {fileID: 8900042810367859921, guid: a89cfa288645f914a9ee790b6be43d0d,
         type: 3}
@@ -75,6 +75,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2141788959256330500}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1381447432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366310632341969451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fabe7c711809374892ae37557a16121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1381447433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,16 +100,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionMap: {fileID: 11400000, guid: 7de13140e25518a49952567c63803990, type: 2}
-  _MaxTimeTillJump: 5
---- !u!114 &1381447432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7366310632341969451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fabe7c711809374892ae37557a16121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _maxTimeTillJump: 3
