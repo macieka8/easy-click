@@ -1,18 +1,49 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class MultiplayerMenu : MonoBehaviour
     {
-        [SerializeField] RacerEntityCollection _racerCollection;
-        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] PlayerControlsSave _PlayerSaver;
 
         [SerializeField] RacerBindingsEntry _HotKeyPrefab;
         [SerializeField] Transform _HotKeysParent;
 
         List<RacerBindingsEntry> _PlayerBindingEntries = new List<RacerBindingsEntry>();
+
+        [SerializeField] AssetReference _spawnerVariableAssetReference;
+        SpawnerVariable _spawner;
+        SpawnerVariable _spawnerVariable
+        {
+            get
+            {
+                if (_spawner == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
+                    handler.WaitForCompletion();
+                    _spawner = handler.Result;
+                }
+                return _spawner;
+            }
+        }
+
+        [SerializeField] AssetReference _racerCollectionAssetReference;
+        RacerEntityCollection _racerCollectionInner;
+        RacerEntityCollection _racerCollection
+        {
+            get
+            {
+                if (_racerCollectionInner == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<RacerEntityCollection>(_racerCollectionAssetReference);
+                    handler.WaitForCompletion();
+                    _racerCollectionInner = handler.Result;
+                }
+                return _racerCollectionInner;
+            }
+        }
 
         void Start()
         {

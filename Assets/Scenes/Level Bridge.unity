@@ -2639,10 +2639,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb91fc435933c3498f3c38dfa32edc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _variable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90, type: 2}
   _checkpoints:
   - {fileID: 1732694157}
   - {fileID: 1653531331}
+  _checkpointsManagerVariableAssetReference:
+    m_AssetGUID: 5d651e4d0cf82a44a83aaf7941614b90
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &668875105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,8 +3399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88de3bd378747b4098b3c5c8042a0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _variable: {fileID: 11400000, guid: 7de13140e25518a49952567c63803990, type: 2}
   _grid: {fileID: 1068049552}
+  _variations: []
   _directionMap: []
   _rectangularMap:
   - {x: 0, y: 0}
@@ -5389,6 +5393,11 @@ MonoBehaviour:
   - {x: 0, y: 0}
   _rectangularMapStartCoords: {x: -65, y: 7}
   _rectangularMapDimension: {x: 71, y: 28}
+  _directionMapVariableAssetReference:
+    m_AssetGUID: 7de13140e25518a49952567c63803990
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &853815998
 GameObject:
   m_ObjectHideFlags: 0
@@ -37623,12 +37632,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889e0095eb9254468aa4919bdf80050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
   _SpawnLocations:
   - {fileID: 878766308}
   - {fileID: 1528026684}
   - {fileID: 1793893280}
   - {fileID: 158503501}
+  _spawnerVariableAssetReference:
+    m_AssetGUID: 2289e6c0280ec3246b849acc8d4aa5de
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &1732694154
 GameObject:
   m_ObjectHideFlags: 0
@@ -39378,23 +39391,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeae60fdc79f8af489c9fdf73f8e22a2, type: 3}
---- !u!1 &9084624688078020635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7567588165991376459, guid: aeae60fdc79f8af489c9fdf73f8e22a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 9084624688078020634}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9084624688078020636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9084624688078020635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bbc78218d53cbc48b5b93e4baa8ab2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _racerCollection: {fileID: 11400000, guid: c01218b4c2f3ec243a2ea959cd0e8311, type: 2}
-  _buffData: {fileID: 11400000, guid: 2fcbe0e7ebd9195479cc03692e231f95, type: 2}

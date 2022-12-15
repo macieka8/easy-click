@@ -39,6 +39,42 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Playable Characters
+  - m_GUID: db7a57a7b2796c1429c3022905a0af45
+    m_Address: Assets/Prefabs/World Objects/Characters/Ghost.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a89cfa288645f914a9ee790b6be43d0d
+    m_Address: Assets/Prefabs/World Objects/Characters/Softbody.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5d651e4d0cf82a44a83aaf7941614b90
+    m_Address: Assets/Scriptable Objects/Checkpoints Manager.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7de13140e25518a49952567c63803990
+    m_Address: Assets/Scriptable Objects/Direction Map.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c01218b4c2f3ec243a2ea959cd0e8311
+    m_Address: Assets/Scriptable Objects/Racers Collection.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e7110af5a72861349a99c46da57b4a7d
+    m_Address: Assets/Scriptable Objects/PostGame Lobby Data.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2289e6c0280ec3246b849acc8d4aa5de
+    m_Address: Assets/Scriptable Objects/Spawner.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2fcbe0e7ebd9195479cc03692e231f95
+    m_Address: Assets/Scriptable Objects/Buffs/Reverse Controls.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d1d8c0d2270781b4c855ecfbaa5074f3
+    m_Address: Assets/Scriptable Objects/Buffs/Rocket Jump.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b51c68b7049a1ff428eee4ca8e78de9b, type: 2}
   m_SchemaSet:

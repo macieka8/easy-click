@@ -440,10 +440,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b4a211bea7ec64f8fb55aa1a3d7757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
-  _checkpointsManagerVariable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90,
-    type: 2}
   _TimeToRespawn: 2
+  _spawnerVariableAssetReference:
+    m_AssetGUID: 2289e6c0280ec3246b849acc8d4aa5de
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _checkpointsManagerVariableAssetReference:
+    m_AssetGUID: 5d651e4d0cf82a44a83aaf7941614b90
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!114 &7497804300922018263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,7 +828,7 @@ VFXRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
 --- !u!1 &7598354710981521124
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +888,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _buff: {fileID: 11400000, guid: d1d8c0d2270781b4c855ecfbaa5074f3, type: 2}
+  _buffDataAssetReference:
+    m_AssetGUID: d1d8c0d2270781b4c855ecfbaa5074f3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   _onJumpWithBuffEvent:
     m_PersistentCalls:
       m_Calls:

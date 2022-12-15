@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class BatMovement : MonoBehaviour
     {
-        [SerializeField] RacerEntityCollection _racers;
         [SerializeField] float _pushForce;
         [SerializeField] float _jumpForce;
         [SerializeField] float _secondsBatweenPushes;
@@ -16,6 +16,22 @@ namespace EasyClick
 
         Rigidbody2D _rigidbody;
         float _aggresionRangeSqr;
+
+        [SerializeField] AssetReference _racerCollectionAssetReference;
+        RacerEntityCollection _racerCollectionInner;
+        RacerEntityCollection _racers
+        {
+            get
+            {
+                if (_racerCollectionInner == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<RacerEntityCollection>(_racerCollectionAssetReference);
+                    handler.WaitForCompletion();
+                    _racerCollectionInner = handler.Result;
+                }
+                return _racerCollectionInner;
+            }
+        }
 
         void Awake()
         {

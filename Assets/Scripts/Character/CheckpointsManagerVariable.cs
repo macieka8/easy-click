@@ -15,6 +15,7 @@ namespace EasyClick
         public void Register(CheckpointsManager checkpointsManager)
         {
             _checkpointsManager = checkpointsManager;
+            Debug.Log($"Chekcpoints Manager Varaible: {Value.name}");
             OnChanged?.Invoke();
         }
 

@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class CharacterRespawn : MonoBehaviour, IRespawnable
     {
-        [SerializeField] SpawnerVariable _spawnerVariable;
-        [SerializeField] CheckpointsManagerVariable _checkpointsManagerVariable;
         [SerializeField] float _TimeToRespawn = 2.0f;
 
         IRespawnInput _RespawnInput;
@@ -17,6 +16,38 @@ namespace EasyClick
         bool _isRespawning;
 
         public event Action<float> OnRespawnStarted;
+
+        [SerializeField] AssetReference _spawnerVariableAssetReference;
+        SpawnerVariable _spawner;
+        SpawnerVariable _spawnerVariable
+        {
+            get
+            {
+                if (_spawner == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
+                    handler.WaitForCompletion();
+                    _spawner = handler.Result;
+                }
+                return _spawner;
+            }
+        }
+
+        [SerializeField] AssetReference _checkpointsManagerVariableAssetReference;
+        CheckpointsManagerVariable _checkpointManager;
+        CheckpointsManagerVariable _checkpointsManagerVariable
+        {
+            get
+            {
+                if (_checkpointManager == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<CheckpointsManagerVariable>(_checkpointsManagerVariableAssetReference);
+                    handler.WaitForCompletion();
+                    _checkpointManager = handler.Result;
+                }
+                return _checkpointManager;
+            }
+        }
 
         public int CheckpointIndex { get => _checkpointIndex; set => _checkpointIndex = value; }
 
@@ -50,6 +81,7 @@ namespace EasyClick
 
         void HandleLevelLoaded()
         {
+            Debug.Log($"Respawn Character is null: {_spawnerVariable.Value == null}");
             _spawnerVariable.Value.Respawn(_Characterbody);
         }
 

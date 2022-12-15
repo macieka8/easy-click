@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PostGame Lobby.unity
     guid: 8c26239d4c846c54695fc5fb1e694b09
   - enabled: 1
+    path: Assets/Scenes/Level Bridge.unity
+    guid: 04689b5f925b63a47abc9b464732c3dd
+  - enabled: 1
     path: Assets/Scenes/Level Elevator.unity
     guid: 4a06a854eb0f9c1448b1ecc72cffbc9f
   - enabled: 1
@@ -23,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Mine Hole.unity
     guid: 5f41cbbed99220344ba94221eb3b7f15
-  - enabled: 1
-    path: Assets/Scenes/Level Bridge.unity
-    guid: 04689b5f925b63a47abc9b464732c3dd
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 30cb49bae0a1d8d4ea91d78c337780ea,
       type: 2}

@@ -1,11 +1,20 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class BuffPickup : MonoBehaviour
     {
-        [SerializeField] BuffData _buffData;
+        [SerializeField] AssetReference _buffDataAssetReference;
+        BuffData _buffData;
         bool _isUsed;
+
+        void Start()
+        {
+            var handle = Addressables.LoadAssetAsync<BuffData>(_buffDataAssetReference);
+            handle.WaitForCompletion();
+            _buffData = handle.Result;
+        }
 
         void OnTriggerEnter2D(Collider2D collider)
         {

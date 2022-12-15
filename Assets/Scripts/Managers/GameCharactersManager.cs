@@ -14,25 +14,42 @@ namespace EasyClick
         IList<GameObject> _playableCharacters;
         IList<GameObject> _botCharacters;
 
-        public static IList<GameObject> PlayableCharacters { get => Instance._playableCharacters; }
-        public static IList<GameObject> BotCharacters { get => Instance._botCharacters; }
+        AsyncOperationHandle<IList<GameObject>> _playableCharactersHandler;
+        AsyncOperationHandle<IList<GameObject>> _botCharactersHandler;
+
+        public static IList<GameObject> PlayableCharacters
+        {
+             get
+             {
+                if (Instance._playableCharacters == null)
+                {
+                    Instance._playableCharactersHandler.WaitForCompletion();
+                }
+                return Instance._playableCharacters;
+             }
+        }
+        public static IList<GameObject> BotCharacters
+        {
+            get
+            {
+                if (Instance._botCharacters == null)
+                {
+                    Instance._botCharactersHandler.WaitForCompletion();
+                }
+                return Instance._botCharacters;
+            }
+        }
 
         void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
-            }
-        }
 
-        void Start()
-        {
-            if (Instance == this)
-            {
-                var playerHandle = Addressables.LoadAssetsAsync<GameObject>(
+                _playableCharactersHandler = Addressables.LoadAssetsAsync<GameObject>(
                     _playableCharactersAssetLabel,
                     addressable => { });
-                playerHandle.Completed += obj =>
+                _playableCharactersHandler.Completed += obj =>
                 {
                     if (obj.Status != AsyncOperationStatus.Succeeded)
                         Debug.LogWarning("Could not load playable character assets");
@@ -40,10 +57,10 @@ namespace EasyClick
                     _playableCharacters = obj.Result;
                 };
 
-                var botHandle = Addressables.LoadAssetsAsync<GameObject>(
+                _botCharactersHandler = Addressables.LoadAssetsAsync<GameObject>(
                     _botCharactersAssetLabel,
                     addressable => { });
-                botHandle.Completed += obj =>
+                _botCharactersHandler.Completed += obj =>
                 {
                     if (obj.Status != AsyncOperationStatus.Succeeded)
                         Debug.LogWarning("Could not load bot character assets");

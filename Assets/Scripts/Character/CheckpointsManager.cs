@@ -1,13 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class CheckpointsManager : MonoBehaviour
     {
-        [SerializeField] CheckpointsManagerVariable _variable;
         [SerializeField] List<Checkpoint> _checkpoints;
 
+        [SerializeField] AssetReference _checkpointsManagerVariableAssetReference;
+        CheckpointsManagerVariable _checkpointManager;
+        CheckpointsManagerVariable _variable
+        {
+            get
+            {
+                if (_checkpointManager == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<CheckpointsManagerVariable>(_checkpointsManagerVariableAssetReference);
+                    handler.WaitForCompletion();
+                    _checkpointManager = handler.Result;
+                }
+                return _checkpointManager;
+            }
+        }
+        
         void Awake()
         {
             foreach (var checkpoint in _checkpoints)

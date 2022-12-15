@@ -120,3 +120,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cfe3cc5ea5b29740ae3057d7b8a468a, type: 3}
+--- !u!1 &7567588165991376459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1663635115810544349, guid: 0cfe3cc5ea5b29740ae3057d7b8a468a,
+    type: 3}
+  m_PrefabInstance: {fileID: 9084624687255616662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &31440431775576140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567588165991376459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bbc78218d53cbc48b5b93e4baa8ab2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buffDataAssetReference:
+    m_AssetGUID: 2fcbe0e7ebd9195479cc03692e231f95
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _racerCollectionAssetReference:
+    m_AssetGUID: c01218b4c2f3ec243a2ea959cd0e8311
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
 
 namespace EasyClick
@@ -7,13 +8,21 @@ namespace EasyClick
     {
         [Header("Unity Events")]
         [SerializeField] UnityEvent _onJumpEvent;
-        [SerializeField] BuffData _buff;
+        [SerializeField] AssetReference _buffDataAssetReference;
+        BuffData _buffData;
         [SerializeField] UnityEvent _onJumpWithBuffEvent;
         [SerializeField] UnityEvent _onFlyingStateExitEvent;
 
         [Header("Character References")]
         [SerializeField] CharacterMovement _characterMovement;
         [SerializeField] BuffableEntity _buffableEntity;
+
+        void Start()
+        {
+            var handle = Addressables.LoadAssetAsync<BuffData>(_buffDataAssetReference);
+            handle.WaitForCompletion();
+            _buffData = handle.Result;
+        }
 
         void OnEnable()
         {
@@ -30,7 +39,7 @@ namespace EasyClick
         void HandleJumpPerformed()
         {
             _onJumpEvent.Invoke();
-            if (_buffableEntity.Contains(_buff))
+            if (_buffableEntity.Contains(_buffData))
             {
                 _onJumpWithBuffEvent.Invoke();
             }

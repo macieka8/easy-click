@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class PlayerSpawner : MonoBehaviour, ISpawner, IRespawner
     {
-        [SerializeField] SpawnerVariable _spawnerVariable;
         [SerializeField] Transform[] _SpawnLocations;
 
         int _CurrentSpawnLocationIndex;
@@ -17,6 +17,22 @@ namespace EasyClick
                     _CurrentSpawnLocationIndex = 0;
                 }
                 return _CurrentSpawnLocationIndex++;
+            }
+        }
+
+        [SerializeField] AssetReference _spawnerVariableAssetReference;
+        SpawnerVariable _spawner;
+        SpawnerVariable _spawnerVariable
+        {
+            get
+            {
+                if (_spawner == null)
+                {
+                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
+                    handler.WaitForCompletion();
+                    _spawner = handler.Result;
+                }
+                return _spawner;
             }
         }
 

@@ -1252,7 +1252,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _racerCollection: {fileID: 11400000, guid: c01218b4c2f3ec243a2ea959cd0e8311, type: 2}
-  _SpawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
+  _spawnerVariableAssetReference:
+    m_AssetGUID: 2289e6c0280ec3246b849acc8d4aa5de
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &1171808935
 GameObject:
   m_ObjectHideFlags: 0

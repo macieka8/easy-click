@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
@@ -17,7 +18,6 @@ namespace EasyClick
     }
     public class AIDirectionMap : MonoBehaviour
     {
-        [SerializeField] DirectionMapVariable _variable;
         [SerializeField] Grid _grid;
         [SerializeField] DirectionMapVariation[] _variations = new DirectionMapVariation[0];
         [HideInInspector] [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
@@ -30,6 +30,22 @@ namespace EasyClick
         public IReadOnlyList<Vector2> RectangularMap => _rectangularMap;
         public Vector2Int StartCoords => _rectangularMapStartCoords;
         public Vector2Int Dimension => _rectangularMapDimension;
+
+        [SerializeField] AssetReference _directionMapVariableAssetReference;
+        DirectionMapVariable _directionMapInner;
+        DirectionMapVariable _variable
+        {
+            get
+            {
+                if (_directionMapInner == null)
+                {
+                    var handle = Addressables.LoadAssetAsync<DirectionMapVariable>(_directionMapVariableAssetReference);
+                    handle.WaitForCompletion();
+                    _directionMapInner = handle.Result;
+                }
+                return _directionMapInner;
+            }
+        }
 
         void OnEnable()
         {

@@ -2250,12 +2250,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889e0095eb9254468aa4919bdf80050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnerVariable: {fileID: 11400000, guid: 2289e6c0280ec3246b849acc8d4aa5de, type: 2}
   _SpawnLocations:
   - {fileID: 1301549623}
   - {fileID: 1276657051}
   - {fileID: 1793132536}
   - {fileID: 1313299993}
+  _spawnerVariableAssetReference:
+    m_AssetGUID: 2289e6c0280ec3246b849acc8d4aa5de
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1001 &572040286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26605,12 +26609,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb91fc435933c3498f3c38dfa32edc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _variable: {fileID: 11400000, guid: 5d651e4d0cf82a44a83aaf7941614b90, type: 2}
   _checkpoints:
   - {fileID: 1970798394}
   - {fileID: 1950731545}
   - {fileID: 1722250830}
   - {fileID: 1597571043}
+  _checkpointsManagerVariableAssetReference:
+    m_AssetGUID: 5d651e4d0cf82a44a83aaf7941614b90
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1001 &1040002876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26831,7 +26839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88de3bd378747b4098b3c5c8042a0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _variable: {fileID: 11400000, guid: 7de13140e25518a49952567c63803990, type: 2}
   _grid: {fileID: 1760722791}
   _variations:
   - {fileID: 470468891}
@@ -30465,6 +30472,11 @@ MonoBehaviour:
   - {x: 0, y: 0}
   _rectangularMapStartCoords: {x: -6, y: 33}
   _rectangularMapDimension: {x: 98, y: 37}
+  _directionMapVariableAssetReference:
+    m_AssetGUID: 7de13140e25518a49952567c63803990
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &1194120305
 GameObject:
   m_ObjectHideFlags: 0

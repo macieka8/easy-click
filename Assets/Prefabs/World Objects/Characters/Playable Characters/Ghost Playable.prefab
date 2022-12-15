@@ -67,11 +67,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost Playable
       objectReference: {fileID: 0}
-    - target: {fileID: 1576925875925755365, guid: db7a57a7b2796c1429c3022905a0af45,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db7a57a7b2796c1429c3022905a0af45, type: 3}
 --- !u!1 &2661961965033438315 stripped
