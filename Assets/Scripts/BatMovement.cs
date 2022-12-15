@@ -6,51 +6,79 @@ namespace EasyClick
     [RequireComponent(typeof(Rigidbody2D))]
     public class BatMovement : MonoBehaviour
     {
-        [SerializeField] float _PushForce;
-        [SerializeField] float _PushRotation;
-        [SerializeField] float _SecondsBatweenPushes;
-        [SerializeField] float _MetersAboveGround;
-        [SerializeField] LayerMask _GroundLayer;
+        [SerializeField] RacerEntityCollection _racers;
+        [SerializeField] float _pushForce;
+        [SerializeField] float _jumpForce;
+        [SerializeField] float _secondsBatweenPushes;
+        [SerializeField] float _metersAboveGround;
+        [SerializeField] float _aggresionRange;
+        [SerializeField] LayerMask _groundLayer;
 
-        [SerializeField] Transform _Destination;
+        Rigidbody2D _rigidbody;
+        float _aggresionRangeSqr;
 
-        Rigidbody2D _Rigidbody;
-
-        private void Awake()
+        void Awake()
         {
-            _Rigidbody = GetComponent<Rigidbody2D>();
+            _rigidbody = GetComponent<Rigidbody2D>();
+            _aggresionRangeSqr = _aggresionRange * _aggresionRange;
         }
 
-        private void Start()
+        void Start()
         {
             StartCoroutine(UpdateMovement());
         }
 
-        private void Update()
+        void Update()
         {
-            var hit = Physics2D.Raycast(_Rigidbody.position, -transform.up, _MetersAboveGround, _GroundLayer);
+            var hit = Physics2D.Raycast(_rigidbody.position, -transform.up, _metersAboveGround, _groundLayer);
             if (hit)
             {
-                _Rigidbody.velocity = new Vector2(_Rigidbody.velocity.x, _PushForce);
+                _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             }
-
         }
 
         IEnumerator UpdateMovement()
         {
             FlyTorwardDestination();
 
-            yield return new WaitForSeconds(_SecondsBatweenPushes);
+            yield return new WaitForSeconds(_secondsBatweenPushes);
             yield return UpdateMovement();
         }
 
-
         void FlyTorwardDestination()
         {
-            Vector2 dirToDest = _Destination.position - transform.position;
-            dirToDest.Normalize();
+            if (TryFindClosestRacer(out var foundRacer))
+            {
+                Vector2 dirToDest = foundRacer.transform.position - transform.position;
+                dirToDest.Normalize();
 
-            _Rigidbody.AddForce(dirToDest * _PushForce, ForceMode2D.Impulse);
+                _rigidbody.AddForce(dirToDest * _pushForce, ForceMode2D.Impulse);
+            }
+        }
+
+        bool TryFindClosestRacer(out RacerEntity foundRacer)
+        {
+            RacerEntity closestRacer = null;
+            var minSqrMagnitude = float.MaxValue;
+            foreach (var racer in _racers.Collection)
+            {
+                var sqrMagnitude = (racer.transform.position - transform.position).sqrMagnitude;
+                if (sqrMagnitude > _aggresionRangeSqr) continue;
+                if (sqrMagnitude < minSqrMagnitude)
+                {
+                    minSqrMagnitude = sqrMagnitude;
+                    closestRacer = racer;
+                }
+            }
+
+            foundRacer = closestRacer;
+            return minSqrMagnitude != float.MaxValue;
+        }
+
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(transform.position, _aggresionRange);
         }
     }
 }

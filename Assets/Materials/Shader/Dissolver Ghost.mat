@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dissolver
+  m_Name: Dissolver Ghost
   m_Shader: {fileID: -6465566751694194690, guid: 9f2b8b9a1c143994293332de453ea0ea,
     type: 3}
   m_ValidKeywords: []

@@ -12,8 +12,8 @@ namespace EasyClick
         {
             _renderer = GetComponent<Renderer>();
             _material = _renderer.material;
-            _material.SetFloat("_MaxHeight", _renderer.localBounds.center.y + _renderer.localBounds.extents.y);
-            _material.SetFloat("_MinHeight", _renderer.localBounds.center.y - _renderer.localBounds.extents.y);
+            _material.SetFloat("_MaxHeight", (_renderer.localBounds.center.y + _renderer.localBounds.extents.y) * 1.1f);
+            _material.SetFloat("_MinHeight", (_renderer.localBounds.center.y - _renderer.localBounds.extents.y) * 1.1f);
         }
 
         void OnEnable()
