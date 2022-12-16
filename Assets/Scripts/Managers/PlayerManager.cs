@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using UnityEngine.InputSystem;
 
 namespace EasyClick
@@ -10,26 +9,22 @@ namespace EasyClick
         static PlayerManager _Instance;
         public static event Action onRebindPerformed = delegate { };
 
-        [SerializeField] AssetReference _spawnerVariableAssetReference;
-        SpawnerVariable _spawner;
-        SpawnerVariable _spawnerVariable
-        {
-            get
-            {
-                if (_spawner == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
-                    handler.WaitForCompletion();
-                    _spawner = handler.Result;
-                }
-                return _spawner;
-            }
-        }
+        [SerializeField] AssetReferenceLoaderSpawnerVariable _spawnerVariableLoader;
+
         void Awake()
         {
             if (_Instance == null)
             {
                 _Instance = this;
+                _spawnerVariableLoader.LoadAssetAsync();
+            }
+        }
+
+        void OnDestroy()
+        {
+            if (_Instance == this)
+            {
+                _spawnerVariableLoader.Release();
             }
         }
 
@@ -49,7 +44,7 @@ namespace EasyClick
                 PlayerInput.AllPlayers[newPlayerIndex] = oldPlayerInput;
             }
 
-            _spawnerVariable.Value.Respawn(newPlayerBody);
+            _spawnerVariableLoader.Value.Value.Respawn(newPlayerBody);
             Destroy(oldRacerEntity.gameObject);
 
             return newPlayerGameObject.GetComponent<RacerEntity>();

@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class AIMovementInput : MonoBehaviour, IMovementInput
     {
+        [SerializeField] AssetReferenceLoaderDirectionMapVariable _directionMapVariableLoader;
         [SerializeField] float _maxTimeTillJump;
 
         ICharacterbody _body;
@@ -17,33 +17,19 @@ namespace EasyClick
         public event Action<IInputData> onRotationChanged;
         public event Action<IInputData> onJump;
 
-        [SerializeField] AssetReference _directionMapVariableAssetReference;
-        DirectionMapVariable _directionMapInner;
-        DirectionMapVariable _directionMap
-        {
-            get
-            {
-                if (_directionMapInner == null)
-                {
-                    var handle = Addressables.LoadAssetAsync<DirectionMapVariable>(_directionMapVariableAssetReference);
-                    handle.WaitForCompletion();
-                    _directionMapInner = handle.Result;
-                }
-                return _directionMapInner;
-            }
-        }
-
         void Awake()
         {
+            _directionMapVariableLoader.LoadAssetAsync();
+
             _transform = transform;
             _body = GetComponent<ICharacterbody>();
         }
 
         void Update()
         {
-            if (_directionMap.Value != null)
+            if (_directionMapVariableLoader.Value.Value != null)
             {
-                _targetDir = _directionMap.Value.GetDirection(_transform.position);
+                _targetDir = _directionMapVariableLoader.Value.Value.GetDirection(_transform.position);
                 if (_targetDir == Vector2.zero) return;
                 _timeTillLastJump += Time.deltaTime;
 

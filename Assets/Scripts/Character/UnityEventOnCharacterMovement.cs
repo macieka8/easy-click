@@ -8,8 +8,7 @@ namespace EasyClick
     {
         [Header("Unity Events")]
         [SerializeField] UnityEvent _onJumpEvent;
-        [SerializeField] AssetReference _buffDataAssetReference;
-        BuffData _buffData;
+        [SerializeField] AssetReferenceLoaderBuffData _buffDataLoader;
         [SerializeField] UnityEvent _onJumpWithBuffEvent;
         [SerializeField] UnityEvent _onFlyingStateExitEvent;
 
@@ -17,11 +16,9 @@ namespace EasyClick
         [SerializeField] CharacterMovement _characterMovement;
         [SerializeField] BuffableEntity _buffableEntity;
 
-        void Start()
+        void Awake()
         {
-            var handle = Addressables.LoadAssetAsync<BuffData>(_buffDataAssetReference);
-            handle.WaitForCompletion();
-            _buffData = handle.Result;
+            _buffDataLoader.LoadAssetAsync();
         }
 
         void OnEnable()
@@ -36,10 +33,15 @@ namespace EasyClick
             _characterMovement.OnStateChanged -= HandleStateChanged;
         }
 
+        void OnDestroy()
+        {
+            _buffDataLoader.Release();
+        }
+
         void HandleJumpPerformed()
         {
             _onJumpEvent.Invoke();
-            if (_buffableEntity.Contains(_buffData))
+            if (_buffableEntity.Contains(_buffDataLoader.Value))
             {
                 _onJumpWithBuffEvent.Invoke();
             }

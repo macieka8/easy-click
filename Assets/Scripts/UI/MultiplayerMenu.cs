@@ -6,48 +6,23 @@ namespace EasyClick
 {
     public class MultiplayerMenu : MonoBehaviour
     {
+        [SerializeField] AssetReferenceLoaderSpawnerVariable _spawnerVariableLoader;
+        [SerializeField] AssetReferenceLoaderRacerEntityCollection _racerCollectionLoader;
         [SerializeField] PlayerControlsSave _PlayerSaver;
-
         [SerializeField] RacerBindingsEntry _HotKeyPrefab;
         [SerializeField] Transform _HotKeysParent;
 
         List<RacerBindingsEntry> _PlayerBindingEntries = new List<RacerBindingsEntry>();
 
-        [SerializeField] AssetReference _spawnerVariableAssetReference;
-        SpawnerVariable _spawner;
-        SpawnerVariable _spawnerVariable
+        void Awake()
         {
-            get
-            {
-                if (_spawner == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
-                    handler.WaitForCompletion();
-                    _spawner = handler.Result;
-                }
-                return _spawner;
-            }
-        }
-
-        [SerializeField] AssetReference _racerCollectionAssetReference;
-        RacerEntityCollection _racerCollectionInner;
-        RacerEntityCollection _racerCollection
-        {
-            get
-            {
-                if (_racerCollectionInner == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<RacerEntityCollection>(_racerCollectionAssetReference);
-                    handler.WaitForCompletion();
-                    _racerCollectionInner = handler.Result;
-                }
-                return _racerCollectionInner;
-            }
+            _spawnerVariableLoader.LoadAssetAsync();
+            _racerCollectionLoader.LoadAssetAsync();
         }
 
         void Start()
         {
-            foreach (var racer in _racerCollection.Collection)
+            foreach (var racer in _racerCollectionLoader.Value.Collection)
             {
                 if (racer.IsPlayer)
                 {
@@ -55,6 +30,12 @@ namespace EasyClick
                 }
                 CreateRacerEntry(racer);
             }
+        }
+
+        void OnDestroy()
+        {
+            _spawnerVariableLoader.Release();
+            _racerCollectionLoader.Release();
         }
 
         void CreateRacerEntry(RacerEntity spawnedRacerEntity)
@@ -76,14 +57,14 @@ namespace EasyClick
         public void AddPlayer()
         {
             if (PlayerInput.AllPlayers.Count >= 4) return;
-            var spawnedRacerEntity = _spawnerVariable.Value.Spawn(true);
+            var spawnedRacerEntity = _spawnerVariableLoader.Value.Value.Spawn(true);
             _PlayerSaver.LoadPlayerInputs(spawnedRacerEntity.GetComponent<PlayerInput>());
             CreateRacerEntry(spawnedRacerEntity);
         }
 
         public void AddBot()
         {
-            var spawnedRacerEntity = _spawnerVariable.Value.Spawn(false);
+            var spawnedRacerEntity = _spawnerVariableLoader.Value.Value.Spawn(false);
             CreateRacerEntry(spawnedRacerEntity);
         }
 

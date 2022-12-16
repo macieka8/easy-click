@@ -18,8 +18,10 @@ namespace EasyClick
     }
     public class AIDirectionMap : MonoBehaviour
     {
+        [SerializeField] AssetReferenceLoaderDirectionMapVariable _directionMapVariableLoader;
         [SerializeField] Grid _grid;
         [SerializeField] DirectionMapVariation[] _variations = new DirectionMapVariation[0];
+
         [HideInInspector] [SerializeField] List<DirectionMapEntry> _directionMap = new List<DirectionMapEntry>();
         [HideInInspector] [SerializeField] List<Vector2> _rectangularMap = new List<Vector2>();
         [HideInInspector] [SerializeField] Vector2Int _rectangularMapStartCoords;
@@ -31,30 +33,24 @@ namespace EasyClick
         public Vector2Int StartCoords => _rectangularMapStartCoords;
         public Vector2Int Dimension => _rectangularMapDimension;
 
-        [SerializeField] AssetReference _directionMapVariableAssetReference;
-        DirectionMapVariable _directionMapInner;
-        DirectionMapVariable _variable
+        void Awake()
         {
-            get
-            {
-                if (_directionMapInner == null)
-                {
-                    var handle = Addressables.LoadAssetAsync<DirectionMapVariable>(_directionMapVariableAssetReference);
-                    handle.WaitForCompletion();
-                    _directionMapInner = handle.Result;
-                }
-                return _directionMapInner;
-            }
+            _directionMapVariableLoader.LoadAssetAsync();
         }
 
         void OnEnable()
         {
-            _variable.RegisterVariable(this);
+            _directionMapVariableLoader.Value.RegisterVariable(this);
         }
 
         void OnDisable()
         {
-            _variable.UnregisterVariable(this);
+            _directionMapVariableLoader.Value.UnregisterVariable(this);
+        }
+
+        void OnDestroy()
+        {
+            _directionMapVariableLoader.Release();
         }
 
         public Vector2 GetDirection(Vector2 position)

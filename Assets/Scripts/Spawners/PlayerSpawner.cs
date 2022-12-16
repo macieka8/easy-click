@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class PlayerSpawner : MonoBehaviour, ISpawner, IRespawner
     {
+        [SerializeField] AssetReferenceLoaderSpawnerVariable _spawnerVariableLoader;
         [SerializeField] Transform[] _SpawnLocations;
 
         int _CurrentSpawnLocationIndex;
@@ -20,25 +20,16 @@ namespace EasyClick
             }
         }
 
-        [SerializeField] AssetReference _spawnerVariableAssetReference;
-        SpawnerVariable _spawner;
-        SpawnerVariable _spawnerVariable
-        {
-            get
-            {
-                if (_spawner == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<SpawnerVariable>(_spawnerVariableAssetReference);
-                    handler.WaitForCompletion();
-                    _spawner = handler.Result;
-                }
-                return _spawner;
-            }
-        }
-
         void Awake()
         {
-            _spawnerVariable.RegisterVariable(this);
+            _spawnerVariableLoader.LoadAssetAsync();
+            _spawnerVariableLoader.Value.RegisterVariable(this);
+        }
+
+        void OnDestroy()
+        {
+            _spawnerVariableLoader.Value.UnregisterVariable(this);
+            _spawnerVariableLoader.Release();
         }
 
         public RacerEntity Spawn(bool isPlayer)

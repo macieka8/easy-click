@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class BatMovement : MonoBehaviour
     {
+        [SerializeField] AssetReferenceLoaderRacerEntityCollection _racerCollectionLoader;
         [SerializeField] float _pushForce;
         [SerializeField] float _jumpForce;
         [SerializeField] float _secondsBatweenPushes;
@@ -17,26 +17,12 @@ namespace EasyClick
         Rigidbody2D _rigidbody;
         float _aggresionRangeSqr;
 
-        [SerializeField] AssetReference _racerCollectionAssetReference;
-        RacerEntityCollection _racerCollectionInner;
-        RacerEntityCollection _racers
-        {
-            get
-            {
-                if (_racerCollectionInner == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<RacerEntityCollection>(_racerCollectionAssetReference);
-                    handler.WaitForCompletion();
-                    _racerCollectionInner = handler.Result;
-                }
-                return _racerCollectionInner;
-            }
-        }
-
         void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             _aggresionRangeSqr = _aggresionRange * _aggresionRange;
+
+            _racerCollectionLoader.LoadAssetAsync();
         }
 
         void Start()
@@ -51,6 +37,11 @@ namespace EasyClick
             {
                 _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             }
+        }
+
+        void OnDestroy()
+        {
+            _racerCollectionLoader.Release();
         }
 
         IEnumerator UpdateMovement()
@@ -76,7 +67,7 @@ namespace EasyClick
         {
             RacerEntity closestRacer = null;
             var minSqrMagnitude = float.MaxValue;
-            foreach (var racer in _racers.Collection)
+            foreach (var racer in _racerCollectionLoader.Value.Collection)
             {
                 var sqrMagnitude = (racer.transform.position - transform.position).sqrMagnitude;
                 if (sqrMagnitude > _aggresionRangeSqr) continue;

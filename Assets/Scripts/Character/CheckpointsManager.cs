@@ -1,42 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace EasyClick
 {
     public class CheckpointsManager : MonoBehaviour
     {
+        [SerializeField] AssetReferenceLoaderCheckpointsManagerVariable _checkpointsManagerVariableLoader;
         [SerializeField] List<Checkpoint> _checkpoints;
 
-        [SerializeField] AssetReference _checkpointsManagerVariableAssetReference;
-        CheckpointsManagerVariable _checkpointManager;
-        CheckpointsManagerVariable _variable
-        {
-            get
-            {
-                if (_checkpointManager == null)
-                {
-                    var handler = Addressables.LoadAssetAsync<CheckpointsManagerVariable>(_checkpointsManagerVariableAssetReference);
-                    handler.WaitForCompletion();
-                    _checkpointManager = handler.Result;
-                }
-                return _checkpointManager;
-            }
-        }
-        
         void Awake()
         {
+            _checkpointsManagerVariableLoader.LoadAssetAsync();
+
             foreach (var checkpoint in _checkpoints)
             {
                 checkpoint.OnRespawnableReachedCheckpoint += HandleBodyReachedCheckpoint;
             }
 
-            _variable.Register(this);
+            _checkpointsManagerVariableLoader.Value.Register(this);
         }
 
         void OnDestroy()
         {
-            _variable.Unregister(this);
+            _checkpointsManagerVariableLoader.Value.Unregister(this);
         }
 
         public Vector3 GetCheckpointPosition(IRespawnable respawnable)

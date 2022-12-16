@@ -138,13 +138,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bbc78218d53cbc48b5b93e4baa8ab2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buffDataAssetReference:
-    m_AssetGUID: 2fcbe0e7ebd9195479cc03692e231f95
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  _racerCollectionAssetReference:
-    m_AssetGUID: c01218b4c2f3ec243a2ea959cd0e8311
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
+  _buffDataLoader:
+    _assetReference:
+      m_AssetGUID: 2fcbe0e7ebd9195479cc03692e231f95
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  _racerCollectionLoader:
+    _assetReference:
+      m_AssetGUID: c01218b4c2f3ec243a2ea959cd0e8311
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

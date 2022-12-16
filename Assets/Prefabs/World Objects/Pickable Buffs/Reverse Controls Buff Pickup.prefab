@@ -143,8 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14269fc41ddb2b04984ec25b2f9445f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buffDataAssetReference:
-    m_AssetGUID: 2fcbe0e7ebd9195479cc03692e231f95
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
+  _buffDataLoader:
+    _assetReference:
+      m_AssetGUID: 2fcbe0e7ebd9195479cc03692e231f95
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

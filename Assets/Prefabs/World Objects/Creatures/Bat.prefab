@@ -136,6 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b0e30de8fa2274b96dc5373dd959d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _racerCollectionLoader:
+    _assetReference:
+      m_AssetGUID: c01218b4c2f3ec243a2ea959cd0e8311
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
   _pushForce: 12
   _jumpForce: 4
   _secondsBatweenPushes: 1
@@ -144,8 +150,3 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  _racerCollectionAssetReference:
-    m_AssetGUID: c01218b4c2f3ec243a2ea959cd0e8311
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
