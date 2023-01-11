@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2236817322635898450}
   - component: {fileID: 2236817322635898451}
   m_Layer: 0
-  m_Name: Vcam
+  m_Name: Split Screen Virtual Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
