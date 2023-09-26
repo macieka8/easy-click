@@ -1,4 +1,5 @@
 # Easy Click
 Simple platformer racing game with local multiplayer limited to 4 players.
-This game contains player movement in a shape of rotation your character and jumping, possibility to respawn near checkpoints,
-computer players, pickable buffs and multiple maps.
+This game contains player checkpoint respawns, AI opponents, pickable buffs and 4 maps.
+
+[Download on itch.io](https://unnamedbeggar.itch.io/easy-click)
